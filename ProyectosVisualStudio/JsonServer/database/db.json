@@ -96,24 +96,7 @@
         "pickup": "Expression System",
         "imageBase64": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAASABIAAD/4QBARXhpZgAATU0k3l8SoQwDEA85z9aMXjfa8to2jFWSLw2F9nzczvJ6tn//2Q=="
       }
-    ],
-
-    "bajos": [
-        {
-          "id": "0e89aa8f-550e-4c31-9d21-663d2e4b489f",
-          "model": "Gibson Les Paul",
-          "year": 1960,
-          "classification": "ELECTRIC",
-          "manufacturerId": "489a1f9d-3cc6-41a1-9070-f70d95cc7d71",
-          "bodyType": "Solid",
-          "neckJoint": "Set-neck",
-          "scaleMm": 628,
-          "bodyWood": "Mahogany",
-          "neckWood": "Mahogany",
-          "fretboardWood": "Rosewood",
-          "bridge": "Tune-o-Matic with Stopbar tailpiece",
-          "pickup": "Usually 2 Humbuckers",
-          "imageBase64": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAASABIAAD/4QBARXhpZgAATU0k3l8SoQwDEA85z9aMXjfa8to2jFWSLw2F9nzczvJ6tn//2Q=="
-        }
     ]
+
+    
   }
