@@ -1,0 +1,69 @@
+Lanzamiento servidor JSONserver . what is JSON server? 
+https://www.youtube.com/watch?v=H-6xvmTN83M
+
+1. Crea carpeta del proyecto
+2. Cambia de directorio en terminal para ubicarte en la carpeta del proyecto
+cd JS/Ejercicios/Formularios/04_JSONServer
+3. Inicializa el proyecto con:
+npm init
+Init es lo que crea JSON package para el proyecto. Esto iniciara el proyecto como npm package
+
+4. Crear la base de datos de JSON en una nueva carpeta, por organizar
+5. instalacion local del pacqete de JSON server
+npm i json-server
+
+Si quieres intalarlo globalmente en tu sistema
+npm install -g json-server
+
+Esto crea la carpeta de node_modules en nuestro proyecto
+6. Hay que modificar el package.json definiendo el atributo start en el nodo de scripts
+"start": "json-server database/db.json"
+
+7. Ahora lanzamos el servidor y podremos acceder a el a traves de una URL: http://localhost:3000/
+npm start
+
+8. Ahora con POSTMAN se puede testar la API de este servidor utilizando peticiones http.
+9. Haciendo una simple peticion Get a la URL local[...]/articles se puede ver en postman 
+el código de respuesta, status, 200 OK
+
+tiempo de responder: 24 node_modules
+tamaño de la respuesta: 490B
+
+10. En la propia pagina de JSonServer te dice qué operaciones te permite realizar la API.
+En este caso todas: get, post, put y del. Por tanto, en postman, podremos hacer esas operaciones también.
+Pruba un post en articles configurando el body del mensaje en raw y JSON, para escribir directamente en JSON
+{
+    "id":3,
+    "title":"Build an API Postman",
+    "authorId":2
+}
+
+11. PATCH, puedes hacer modificaciones en los valores de las entradas de la base de datos
+12. Con el asistente, puedes hacer filtros que terminaran direccionados en al URL, como una petició get, con authorId como KEY y valor 2
+http://localhost:3000/articles?authorId=2
+
+13. Modify the server home-page. 
+Hay que crear un index.html en un carpeta public. Guardar.
+14. Paramos el servidor y lo arrancamos de nuevo
+CTRL-C
+npm start
+
+
+14. Ahora el JS para el servidor: server.js
+/* "start": "json-server database/db.json" */
+"start": "node server.js"
+
+
+!!PROBLEMAS con este ultimo cambio - no rerutea el 
+Si instalamos concurrently
+https://www.npmjs.com/package/concurrently#installation
+podemos tirar varias instrucciones en scripts
+npm i -D concurrently
+
+"start": "concurrently \"json-server database/db.json\" && \"node server.js\""
+
+
+Tipica orden de script
+"start": "json-server --watch db.json --port 3000" - por defecto puerto 3000
+"start": "json-server --watch db.json --port $PORT"
+
