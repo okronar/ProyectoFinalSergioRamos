@@ -1,0 +1,68 @@
+ // Se usara este metodo para convertir una imagen en un array de bytes, para luego poder insertarlo en la base de datos.
+ public static byte[] ImageToBytes(Image image)
+ {
+     if (image == null)
+     {
+         return null;
+     }
+
+     try
+     {
+         using (MemoryStream ms = new MemoryStream())
+         {
+             // Guardar la imagen en el MemoryStream como JPEG
+             image.Save(ms, ImageFormat.Jpeg);
+             // Convertir el MemoryStream a byte array y retornarlo
+             return ms.ToArray();
+         }
+     }
+     catch (Exception ex)
+     {
+         MessageBox.Show("Failed to convert to bytes: " + ex.Message);
+         return null;
+     }
+ }
+
+ // Se convertira un array de bytes que se obtiene de la base de datos en una imagen para mostrarla al usuario.
+ public static Image BytesToImage(byte[] imageBytes)
+ {
+     if (imageBytes == null)
+     {
+         return null;
+     }
+
+     try
+     {
+         using (MemoryStream ms = new MemoryStream(imageBytes))
+         {
+             Image image = Image.FromStream(ms);
+             return image;
+         }
+     }
+     catch (Exception)
+     {
+         return null;
+     }
+ }
+
+
+ // Se convertira una ruta relativa en un objeto Image
+ public static Image LoadImageFromRelativePath(string relativePath)
+ {
+     try
+     {
+         // Obtener la ruta absoluta a partir de una ruta relativa
+         string basePath = AppDomain.CurrentDomain.BaseDirectory;
+         string fullPath = Path.Combine(basePath, relativePath);
+
+         // Cargar la imagen
+         Image image = Image.FromFile(fullPath);
+         return image;
+     }
+     catch (Exception ex)
+     {
+         // Manejo de errores 
+         Console.WriteLine("Error loading image: " + ex.Message);
+         return null;
+     }
+ }
