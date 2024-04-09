@@ -1,9 +1,93 @@
-<mxfile host="app.diagrams.net" modified="2024-04-09T13:53:09.169Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" version="24.2.2" etag="zgEhogGG-yj7FlA7FQbY" type="github">
+<mxfile host="app.diagrams.net" modified="2024-04-09T14:09:21.083Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="BC4zqzuqQ0x227xSsm5A" version="24.2.2" type="github">
   <diagram name="Página-1" id="DLDvNDs-lVxgfE3R2tk9">
-    <mxGraphModel>
+    <mxGraphModel dx="1434" dy="1915" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="EDpgdepx8dKIRgQkb4Bz-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="EDpgdepx8dKIRgQkb4Bz-2" target="EDpgdepx8dKIRgQkb4Bz-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EDpgdepx8dKIRgQkb4Bz-2" value="Usuario Normal" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;shadow=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="514" y="-320" width="40" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="EDpgdepx8dKIRgQkb4Bz-6" value="Pantalla de registro Usuarios&lt;div&gt;Resultados busqueda de guitarras&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="-230" width="120" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="EDpgdepx8dKIRgQkb4Bz-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="EDpgdepx8dKIRgQkb4Bz-7" target="EDpgdepx8dKIRgQkb4Bz-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="840" y="-200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EDpgdepx8dKIRgQkb4Bz-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="EDpgdepx8dKIRgQkb4Bz-7" target="EDpgdepx8dKIRgQkb4Bz-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EDpgdepx8dKIRgQkb4Bz-7" value="Interfaz Controlador&lt;div&gt;Buscador&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;textShadow=0;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="469" y="-50" width="130" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="EDpgdepx8dKIRgQkb4Bz-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="EDpgdepx8dKIRgQkb4Bz-10" target="EDpgdepx8dKIRgQkb4Bz-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EDpgdepx8dKIRgQkb4Bz-10" value="Publicidad" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;labelBorderColor=none;textShadow=0;" vertex="1" parent="1">
+          <mxGeometry x="480" y="142" width="30" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="EDpgdepx8dKIRgQkb4Bz-11" value="Modelo&amp;nbsp;&lt;div&gt;Guitarra&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="710" y="-240" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="EDpgdepx8dKIRgQkb4Bz-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="EDpgdepx8dKIRgQkb4Bz-12" target="EDpgdepx8dKIRgQkb4Bz-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EDpgdepx8dKIRgQkb4Bz-12" value="Modelo&amp;nbsp;&lt;div&gt;Usuario&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="710" y="-120" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="EDpgdepx8dKIRgQkb4Bz-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="EDpgdepx8dKIRgQkb4Bz-13" target="EDpgdepx8dKIRgQkb4Bz-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EDpgdepx8dKIRgQkb4Bz-13" value="Modelo&amp;nbsp;&lt;div&gt;Busqueda&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="650" y="272" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="EDpgdepx8dKIRgQkb4Bz-14" value="Admin" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;shadow=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="110" y="-48" width="40" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="EDpgdepx8dKIRgQkb4Bz-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.025;entryY=0.37;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="EDpgdepx8dKIRgQkb4Bz-11" target="EDpgdepx8dKIRgQkb4Bz-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EDpgdepx8dKIRgQkb4Bz-25" value="Modelo&amp;nbsp;&lt;div&gt;Guitarra&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="220" y="150" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="EDpgdepx8dKIRgQkb4Bz-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="EDpgdepx8dKIRgQkb4Bz-26" target="EDpgdepx8dKIRgQkb4Bz-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EDpgdepx8dKIRgQkb4Bz-26" value="Interfaz Controlador&lt;div&gt;CRUD&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;textShadow=0;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="-50" width="134" height="134" as="geometry" />
+        </mxCell>
+        <mxCell id="EDpgdepx8dKIRgQkb4Bz-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="EDpgdepx8dKIRgQkb4Bz-27" target="EDpgdepx8dKIRgQkb4Bz-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EDpgdepx8dKIRgQkb4Bz-27" value="Pantalla de registro Guitarras" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="80" width="120" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="EDpgdepx8dKIRgQkb4Bz-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.015;entryY=0.33;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="EDpgdepx8dKIRgQkb4Bz-14" target="EDpgdepx8dKIRgQkb4Bz-26">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="90" y="-50" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EDpgdepx8dKIRgQkb4Bz-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="EDpgdepx8dKIRgQkb4Bz-32" target="EDpgdepx8dKIRgQkb4Bz-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EDpgdepx8dKIRgQkb4Bz-32" value="Interfaz Controlador&amp;nbsp;&lt;div&gt;estadísticas&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;textShadow=0;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="623" y="100" width="134" height="134" as="geometry" />
+        </mxCell>
+        <mxCell id="EDpgdepx8dKIRgQkb4Bz-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="EDpgdepx8dKIRgQkb4Bz-33">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="495" y="222" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EDpgdepx8dKIRgQkb4Bz-33" value="Pantalla de consulta" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="435" y="262" width="120" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="EDpgdepx8dKIRgQkb4Bz-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.583;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="EDpgdepx8dKIRgQkb4Bz-25" target="EDpgdepx8dKIRgQkb4Bz-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
