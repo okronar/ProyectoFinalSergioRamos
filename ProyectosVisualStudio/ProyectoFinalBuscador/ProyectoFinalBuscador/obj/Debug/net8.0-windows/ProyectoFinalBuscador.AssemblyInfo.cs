@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProyectoFinalBuscador")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+50e4f9d89772dc8c5362ec07602136223844d409")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+851ab76d3de69819f261ba74214d3b64f6c69024")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProyectoFinalBuscador")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProyectoFinalBuscador")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
