@@ -13,13 +13,14 @@ namespace ProyectoFinalBuscador
         {
             OpenFileDialog ofd = new OpenFileDialog();
             ofd.Title = "Selecciona imagen";
-          
+
             if (ofd.ShowDialog() == DialogResult.OK)
             {
                 Image img = new Bitmap(ofd.FileName);
-    
+
                 picmuestra.Image = img;
             }
         }
+
     }
 }
