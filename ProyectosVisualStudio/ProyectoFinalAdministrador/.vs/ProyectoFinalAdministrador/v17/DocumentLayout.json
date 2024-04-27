@@ -1,0 +1,99 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\ProyectoFinalAdministrador\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2FD765D6-8147-4AA1-B7C1-19080B16CD16}|ProyectoFinalBuscador\\ProyectoFinalAdministrador.csproj|c:\\users\\okron\\damd\\proyectofinalsergioramos\\proyectosvisualstudio\\proyectofinaladministrador\\proyectofinalbuscador\\auxiliar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FD765D6-8147-4AA1-B7C1-19080B16CD16}|ProyectoFinalBuscador\\ProyectoFinalAdministrador.csproj|solutionrelative:proyectofinalbuscador\\auxiliar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FD765D6-8147-4AA1-B7C1-19080B16CD16}|ProyectoFinalBuscador\\ProyectoFinalAdministrador.csproj|C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\ProyectoFinalAdministrador\\proyectofinalbuscador\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2FD765D6-8147-4AA1-B7C1-19080B16CD16}|ProyectoFinalBuscador\\ProyectoFinalAdministrador.csproj|solutionrelative:proyectofinalbuscador\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FD765D6-8147-4AA1-B7C1-19080B16CD16}|ProyectoFinalBuscador\\ProyectoFinalBuscador.csproj|C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\ProyectoFinalAdministrador\\proyectofinalbuscador\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2FD765D6-8147-4AA1-B7C1-19080B16CD16}|ProyectoFinalBuscador\\ProyectoFinalBuscador.csproj|solutionrelative:proyectofinalbuscador\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FD765D6-8147-4AA1-B7C1-19080B16CD16}|ProyectoFinalBuscador\\ProyectoFinalBuscador.csproj|C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\ProyectoFinalAdministrador\\proyectofinalbuscador\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FD765D6-8147-4AA1-B7C1-19080B16CD16}|ProyectoFinalBuscador\\ProyectoFinalBuscador.csproj|solutionrelative:proyectofinalbuscador\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FD765D6-8147-4AA1-B7C1-19080B16CD16}|ProyectoFinalBuscador\\ProyectoFinalBuscador.csproj|C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\ProyectoFinalAdministrador\\proyectofinalbuscador\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FD765D6-8147-4AA1-B7C1-19080B16CD16}|ProyectoFinalBuscador\\ProyectoFinalBuscador.csproj|solutionrelative:proyectofinalbuscador\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\ProyectoFinalAdministrador\\ProyectoFinalBuscador\\Form1.cs",
+              "RelativeDocumentMoniker": "ProyectoFinalBuscador\\Form1.cs",
+              "ToolTip": "C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\ProyectoFinalAdministrador\\ProyectoFinalBuscador\\Form1.cs [Design]",
+              "RelativeToolTip": "ProyectoFinalBuscador\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-27T09:26:39.694Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\ProyectoFinalAdministrador\\ProyectoFinalBuscador\\Form1.cs",
+              "RelativeDocumentMoniker": "ProyectoFinalBuscador\\Form1.cs",
+              "ToolTip": "C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\ProyectoFinalAdministrador\\ProyectoFinalBuscador\\Form1.cs",
+              "RelativeToolTip": "ProyectoFinalBuscador\\Form1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T15:58:52.073Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\ProyectoFinalAdministrador\\ProyectoFinalBuscador\\Program.cs",
+              "RelativeDocumentMoniker": "ProyectoFinalBuscador\\Program.cs",
+              "ToolTip": "C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\ProyectoFinalAdministrador\\ProyectoFinalBuscador\\Program.cs",
+              "RelativeToolTip": "ProyectoFinalBuscador\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T15:40:07.763Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Auxiliar.cs",
+              "DocumentMoniker": "C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\ProyectoFinalAdministrador\\ProyectoFinalBuscador\\Auxiliar.cs",
+              "RelativeDocumentMoniker": "ProyectoFinalBuscador\\Auxiliar.cs",
+              "ToolTip": "C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\ProyectoFinalAdministrador\\ProyectoFinalBuscador\\Auxiliar.cs",
+              "RelativeToolTip": "ProyectoFinalBuscador\\Auxiliar.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T14:49:09.956Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\ProyectoFinalAdministrador\\ProyectoFinalBuscador\\Form1.cs",
+              "RelativeDocumentMoniker": "ProyectoFinalBuscador\\Form1.cs",
+              "ToolTip": "C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\ProyectoFinalBuscador\\ProyectoFinalBuscador\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\ProyectoFinalBuscador\\ProyectoFinalBuscador\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T14:25:43.274Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

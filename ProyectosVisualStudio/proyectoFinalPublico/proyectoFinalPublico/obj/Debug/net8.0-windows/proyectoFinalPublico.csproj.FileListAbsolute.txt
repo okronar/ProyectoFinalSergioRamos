@@ -1,0 +1,17 @@
+C:\Users\okron\DAMD\ProyectoFinalSergioRamos\ProyectosVisualStudio\proyectoFinalPublico\proyectoFinalPublico\bin\Debug\net8.0-windows\proyectoFinalPublico.exe
+C:\Users\okron\DAMD\ProyectoFinalSergioRamos\ProyectosVisualStudio\proyectoFinalPublico\proyectoFinalPublico\bin\Debug\net8.0-windows\proyectoFinalPublico.deps.json
+C:\Users\okron\DAMD\ProyectoFinalSergioRamos\ProyectosVisualStudio\proyectoFinalPublico\proyectoFinalPublico\bin\Debug\net8.0-windows\proyectoFinalPublico.runtimeconfig.json
+C:\Users\okron\DAMD\ProyectoFinalSergioRamos\ProyectosVisualStudio\proyectoFinalPublico\proyectoFinalPublico\bin\Debug\net8.0-windows\proyectoFinalPublico.dll
+C:\Users\okron\DAMD\ProyectoFinalSergioRamos\ProyectosVisualStudio\proyectoFinalPublico\proyectoFinalPublico\bin\Debug\net8.0-windows\proyectoFinalPublico.pdb
+C:\Users\okron\DAMD\ProyectoFinalSergioRamos\ProyectosVisualStudio\proyectoFinalPublico\proyectoFinalPublico\obj\Debug\net8.0-windows\proyectoFinalPublico.Form1.resources
+C:\Users\okron\DAMD\ProyectoFinalSergioRamos\ProyectosVisualStudio\proyectoFinalPublico\proyectoFinalPublico\obj\Debug\net8.0-windows\proyectoFinalPublico.csproj.GenerateResource.cache
+C:\Users\okron\DAMD\ProyectoFinalSergioRamos\ProyectosVisualStudio\proyectoFinalPublico\proyectoFinalPublico\obj\Debug\net8.0-windows\proyectoFinalPublico.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\okron\DAMD\ProyectoFinalSergioRamos\ProyectosVisualStudio\proyectoFinalPublico\proyectoFinalPublico\obj\Debug\net8.0-windows\proyectoFinalPublico.AssemblyInfoInputs.cache
+C:\Users\okron\DAMD\ProyectoFinalSergioRamos\ProyectosVisualStudio\proyectoFinalPublico\proyectoFinalPublico\obj\Debug\net8.0-windows\proyectoFinalPublico.AssemblyInfo.cs
+C:\Users\okron\DAMD\ProyectoFinalSergioRamos\ProyectosVisualStudio\proyectoFinalPublico\proyectoFinalPublico\obj\Debug\net8.0-windows\proyectoFinalPublico.csproj.CoreCompileInputs.cache
+C:\Users\okron\DAMD\ProyectoFinalSergioRamos\ProyectosVisualStudio\proyectoFinalPublico\proyectoFinalPublico\obj\Debug\net8.0-windows\proyectoFinalPublico.sourcelink.json
+C:\Users\okron\DAMD\ProyectoFinalSergioRamos\ProyectosVisualStudio\proyectoFinalPublico\proyectoFinalPublico\obj\Debug\net8.0-windows\proyectoFinalPublico.dll
+C:\Users\okron\DAMD\ProyectoFinalSergioRamos\ProyectosVisualStudio\proyectoFinalPublico\proyectoFinalPublico\obj\Debug\net8.0-windows\refint\proyectoFinalPublico.dll
+C:\Users\okron\DAMD\ProyectoFinalSergioRamos\ProyectosVisualStudio\proyectoFinalPublico\proyectoFinalPublico\obj\Debug\net8.0-windows\proyectoFinalPublico.pdb
+C:\Users\okron\DAMD\ProyectoFinalSergioRamos\ProyectosVisualStudio\proyectoFinalPublico\proyectoFinalPublico\obj\Debug\net8.0-windows\proyectoFinalPublico.genruntimeconfig.cache
+C:\Users\okron\DAMD\ProyectoFinalSergioRamos\ProyectosVisualStudio\proyectoFinalPublico\proyectoFinalPublico\obj\Debug\net8.0-windows\ref\proyectoFinalPublico.dll

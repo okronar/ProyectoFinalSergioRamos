@@ -1,0 +1,17 @@
+C:\Users\okron\DAMD\ProyectoFinalSergioRamos\ProyectosVisualStudio\ProyectoFinalMarketing\ProyectoFinalMarketing\bin\Debug\net8.0-windows\ProyectoFinalMarketing.exe
+C:\Users\okron\DAMD\ProyectoFinalSergioRamos\ProyectosVisualStudio\ProyectoFinalMarketing\ProyectoFinalMarketing\bin\Debug\net8.0-windows\ProyectoFinalMarketing.deps.json
+C:\Users\okron\DAMD\ProyectoFinalSergioRamos\ProyectosVisualStudio\ProyectoFinalMarketing\ProyectoFinalMarketing\bin\Debug\net8.0-windows\ProyectoFinalMarketing.runtimeconfig.json
+C:\Users\okron\DAMD\ProyectoFinalSergioRamos\ProyectosVisualStudio\ProyectoFinalMarketing\ProyectoFinalMarketing\bin\Debug\net8.0-windows\ProyectoFinalMarketing.dll
+C:\Users\okron\DAMD\ProyectoFinalSergioRamos\ProyectosVisualStudio\ProyectoFinalMarketing\ProyectoFinalMarketing\bin\Debug\net8.0-windows\ProyectoFinalMarketing.pdb
+C:\Users\okron\DAMD\ProyectoFinalSergioRamos\ProyectosVisualStudio\ProyectoFinalMarketing\ProyectoFinalMarketing\obj\Debug\net8.0-windows\ProyectoFinalMarketing.csproj.GenerateResource.cache
+C:\Users\okron\DAMD\ProyectoFinalSergioRamos\ProyectosVisualStudio\ProyectoFinalMarketing\ProyectoFinalMarketing\obj\Debug\net8.0-windows\ProyectoFinalMarketing.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\okron\DAMD\ProyectoFinalSergioRamos\ProyectosVisualStudio\ProyectoFinalMarketing\ProyectoFinalMarketing\obj\Debug\net8.0-windows\ProyectoFinalMarketing.AssemblyInfoInputs.cache
+C:\Users\okron\DAMD\ProyectoFinalSergioRamos\ProyectosVisualStudio\ProyectoFinalMarketing\ProyectoFinalMarketing\obj\Debug\net8.0-windows\ProyectoFinalMarketing.AssemblyInfo.cs
+C:\Users\okron\DAMD\ProyectoFinalSergioRamos\ProyectosVisualStudio\ProyectoFinalMarketing\ProyectoFinalMarketing\obj\Debug\net8.0-windows\ProyectoFinalMarketing.csproj.CoreCompileInputs.cache
+C:\Users\okron\DAMD\ProyectoFinalSergioRamos\ProyectosVisualStudio\ProyectoFinalMarketing\ProyectoFinalMarketing\obj\Debug\net8.0-windows\ProyectoFinalMarketing.sourcelink.json
+C:\Users\okron\DAMD\ProyectoFinalSergioRamos\ProyectosVisualStudio\ProyectoFinalMarketing\ProyectoFinalMarketing\obj\Debug\net8.0-windows\ProyectoFinalMarketing.dll
+C:\Users\okron\DAMD\ProyectoFinalSergioRamos\ProyectosVisualStudio\ProyectoFinalMarketing\ProyectoFinalMarketing\obj\Debug\net8.0-windows\refint\ProyectoFinalMarketing.dll
+C:\Users\okron\DAMD\ProyectoFinalSergioRamos\ProyectosVisualStudio\ProyectoFinalMarketing\ProyectoFinalMarketing\obj\Debug\net8.0-windows\ProyectoFinalMarketing.pdb
+C:\Users\okron\DAMD\ProyectoFinalSergioRamos\ProyectosVisualStudio\ProyectoFinalMarketing\ProyectoFinalMarketing\obj\Debug\net8.0-windows\ProyectoFinalMarketing.genruntimeconfig.cache
+C:\Users\okron\DAMD\ProyectoFinalSergioRamos\ProyectosVisualStudio\ProyectoFinalMarketing\ProyectoFinalMarketing\obj\Debug\net8.0-windows\ref\ProyectoFinalMarketing.dll
+C:\Users\okron\DAMD\ProyectoFinalSergioRamos\ProyectosVisualStudio\ProyectoFinalMarketing\ProyectoFinalMarketing\obj\Debug\net8.0-windows\ProyectoFinalMarketing.Marketing.resources
