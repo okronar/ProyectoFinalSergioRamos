@@ -3,7 +3,6 @@ C:\Users\okron\DAMD\ProyectoFinalSergioRamos\ProyectosVisualStudio\proyectoFinal
 C:\Users\okron\DAMD\ProyectoFinalSergioRamos\ProyectosVisualStudio\proyectoFinalPublico\proyectoFinalPublico\bin\Debug\net8.0-windows\proyectoFinalPublico.runtimeconfig.json
 C:\Users\okron\DAMD\ProyectoFinalSergioRamos\ProyectosVisualStudio\proyectoFinalPublico\proyectoFinalPublico\bin\Debug\net8.0-windows\proyectoFinalPublico.dll
 C:\Users\okron\DAMD\ProyectoFinalSergioRamos\ProyectosVisualStudio\proyectoFinalPublico\proyectoFinalPublico\bin\Debug\net8.0-windows\proyectoFinalPublico.pdb
-C:\Users\okron\DAMD\ProyectoFinalSergioRamos\ProyectosVisualStudio\proyectoFinalPublico\proyectoFinalPublico\obj\Debug\net8.0-windows\proyectoFinalPublico.Form1.resources
 C:\Users\okron\DAMD\ProyectoFinalSergioRamos\ProyectosVisualStudio\proyectoFinalPublico\proyectoFinalPublico\obj\Debug\net8.0-windows\proyectoFinalPublico.csproj.GenerateResource.cache
 C:\Users\okron\DAMD\ProyectoFinalSergioRamos\ProyectosVisualStudio\proyectoFinalPublico\proyectoFinalPublico\obj\Debug\net8.0-windows\proyectoFinalPublico.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\okron\DAMD\ProyectoFinalSergioRamos\ProyectosVisualStudio\proyectoFinalPublico\proyectoFinalPublico\obj\Debug\net8.0-windows\proyectoFinalPublico.AssemblyInfoInputs.cache
@@ -15,3 +14,7 @@ C:\Users\okron\DAMD\ProyectoFinalSergioRamos\ProyectosVisualStudio\proyectoFinal
 C:\Users\okron\DAMD\ProyectoFinalSergioRamos\ProyectosVisualStudio\proyectoFinalPublico\proyectoFinalPublico\obj\Debug\net8.0-windows\proyectoFinalPublico.pdb
 C:\Users\okron\DAMD\ProyectoFinalSergioRamos\ProyectosVisualStudio\proyectoFinalPublico\proyectoFinalPublico\obj\Debug\net8.0-windows\proyectoFinalPublico.genruntimeconfig.cache
 C:\Users\okron\DAMD\ProyectoFinalSergioRamos\ProyectosVisualStudio\proyectoFinalPublico\proyectoFinalPublico\obj\Debug\net8.0-windows\ref\proyectoFinalPublico.dll
+C:\Users\okron\DAMD\ProyectoFinalSergioRamos\ProyectosVisualStudio\proyectoFinalPublico\proyectoFinalPublico\obj\Debug\net8.0-windows\proyectoFinalPublico.Landing.resources
+C:\Users\okron\DAMD\ProyectoFinalSergioRamos\ProyectosVisualStudio\proyectoFinalPublico\proyectoFinalPublico\obj\Debug\net8.0-windows\proyectoFinalPublico.Properties.Resources.resources
+C:\Users\okron\DAMD\ProyectoFinalSergioRamos\ProyectosVisualStudio\proyectoFinalPublico\proyectoFinalPublico\obj\Debug\net8.0-windows\proyectoFinalPublico.Registro.resources
+C:\Users\okron\DAMD\ProyectoFinalSergioRamos\ProyectosVisualStudio\proyectoFinalPublico\proyectoFinalPublico\obj\Debug\net8.0-windows\proyectoFinalPublico.TérminosYCondiciones.resources

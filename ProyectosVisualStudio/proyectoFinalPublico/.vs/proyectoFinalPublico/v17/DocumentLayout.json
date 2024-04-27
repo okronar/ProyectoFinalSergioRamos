@@ -7,8 +7,12 @@
       "RelativeMoniker": "D:0:0:{40E94040-096D-43F1-85CB-EAD5D6E4AF3B}|proyectoFinalPublico\\proyectoFinalPublico.csproj|solutionrelative:proyectofinalpublico\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40E94040-096D-43F1-85CB-EAD5D6E4AF3B}|proyectoFinalPublico\\proyectoFinalPublico.csproj|C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\proyectoFinalPublico\\proyectofinalpublico\\auxiliar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40E94040-096D-43F1-85CB-EAD5D6E4AF3B}|proyectoFinalPublico\\proyectoFinalPublico.csproj|solutionrelative:proyectofinalpublico\\auxiliar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{40E94040-096D-43F1-85CB-EAD5D6E4AF3B}|proyectoFinalPublico\\proyectoFinalPublico.csproj|c:\\users\\okron\\damd\\proyectofinalsergioramos\\proyectosvisualstudio\\proyectofinalpublico\\proyectofinalpublico\\t\u00E9rminosycondiciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{40E94040-096D-43F1-85CB-EAD5D6E4AF3B}|proyectoFinalPublico\\proyectoFinalPublico.csproj|solutionrelative:proyectofinalpublico\\t\u00E9rminosycondiciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40E94040-096D-43F1-85CB-EAD5D6E4AF3B}|proyectoFinalPublico\\proyectoFinalPublico.csproj|c:\\users\\okron\\damd\\proyectofinalsergioramos\\proyectosvisualstudio\\proyectofinalpublico\\proyectofinalpublico\\registro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{40E94040-096D-43F1-85CB-EAD5D6E4AF3B}|proyectoFinalPublico\\proyectoFinalPublico.csproj|solutionrelative:proyectofinalpublico\\registro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,20 +22,31 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Auxiliar.cs",
-              "DocumentMoniker": "C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\proyectoFinalPublico\\proyectoFinalPublico\\Auxiliar.cs",
-              "RelativeDocumentMoniker": "proyectoFinalPublico\\Auxiliar.cs",
-              "ToolTip": "C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\proyectoFinalPublico\\proyectoFinalPublico\\Auxiliar.cs",
-              "RelativeToolTip": "proyectoFinalPublico\\Auxiliar.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAgwAUAAAASAAAA",
+              "Title": "T\u00E9rminosYCondiciones.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\proyectoFinalPublico\\proyectoFinalPublico\\T\u00E9rminosYCondiciones.cs",
+              "RelativeDocumentMoniker": "proyectoFinalPublico\\T\u00E9rminosYCondiciones.cs",
+              "ToolTip": "C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\proyectoFinalPublico\\proyectoFinalPublico\\T\u00E9rminosYCondiciones.cs [Dise\u00F1o]",
+              "RelativeToolTip": "proyectoFinalPublico\\T\u00E9rminosYCondiciones.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-27T10:21:46.371Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-27T17:01:26.3Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Registro.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\proyectoFinalPublico\\proyectoFinalPublico\\Registro.cs",
+              "RelativeDocumentMoniker": "proyectoFinalPublico\\Registro.cs",
+              "ToolTip": "C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\proyectoFinalPublico\\proyectoFinalPublico\\Registro.cs [Dise\u00F1o]",
+              "RelativeToolTip": "proyectoFinalPublico\\Registro.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-27T16:39:00.945Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
