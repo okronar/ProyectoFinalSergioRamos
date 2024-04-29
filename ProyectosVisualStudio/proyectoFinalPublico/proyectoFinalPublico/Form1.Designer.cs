@@ -35,6 +35,8 @@
             txbEmailInicio = new TextBox();
             txtbPassInicio = new TextBox();
             btnLogin = new Button();
+            btnReg = new Button();
+            lblregistrar = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
@@ -48,6 +50,7 @@
             linkLabel1.TabIndex = 0;
             linkLabel1.TabStop = true;
             linkLabel1.Text = "Términos y condiciones";
+            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
             // 
             // pictureBox2
             // 
@@ -97,6 +100,27 @@
             btnLogin.TabIndex = 5;
             btnLogin.Text = "Login";
             btnLogin.UseVisualStyleBackColor = true;
+            btnLogin.Click += btnLogin_Click;
+            // 
+            // btnReg
+            // 
+            btnReg.Location = new Point(440, 685);
+            btnReg.Name = "btnReg";
+            btnReg.Size = new Size(316, 23);
+            btnReg.TabIndex = 6;
+            btnReg.Text = "Crear nueva cuenta";
+            btnReg.UseVisualStyleBackColor = true;
+            btnReg.Click += btnReg_Click;
+            // 
+            // lblregistrar
+            // 
+            lblregistrar.Font = new Font("Stencil", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblregistrar.Location = new Point(394, 627);
+            lblregistrar.Name = "lblregistrar";
+            lblregistrar.Size = new Size(409, 55);
+            lblregistrar.TabIndex = 7;
+            lblregistrar.Text = "No tiene cuenta? regístrese aquí";
+            lblregistrar.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // Landing
             // 
@@ -105,6 +129,8 @@
             BackColor = Color.FromArgb(252, 248, 239);
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1183, 745);
+            Controls.Add(lblregistrar);
+            Controls.Add(btnReg);
             Controls.Add(btnLogin);
             Controls.Add(txtbPassInicio);
             Controls.Add(txbEmailInicio);
@@ -130,5 +156,7 @@
         private TextBox txbEmailInicio;
         private TextBox txtbPassInicio;
         private Button btnLogin;
+        private Button btnReg;
+        private Label lblregistrar;
     }
 }

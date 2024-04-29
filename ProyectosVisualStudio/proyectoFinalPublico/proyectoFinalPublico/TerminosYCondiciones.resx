@@ -117,4 +117,21 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="lblTerminos.Text" xml:space="preserve">
+    <value>Se informa que nuestra plataforma se rige por la Licencia Pública General de GNU
+(GPL), un marco legal que promueve la libertad de uso, estudio, modificación y distribución del
+software. Esta elección refleja nuestro compromiso con los principios del movimiento del
+software libre, facilitando un entorno de colaboración y acceso abierto. La adopción de la GPL
+permite a los usuarios beneficiarse de la transparencia y flexibilidad inherentes a esta licencia,
+promoviendo así la innovación y el intercambio de conocimientos en la comunidad.
+Localización de los términos en el Anexo 1.
+
+
+En cumplimiento con la legislación española sobre protección de datos, se informa a
+los usuarios que todos los datos personales proporcionados serán tratados conforme a lo
+establecido en la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y
+garantía de los derechos digitales, así como en el Reglamento (UE) 2016/679 del Parlamento
+Europeo y del Consejo, conocido como GDPR. Se garantiza la confidencialidad y seguridad de
+los datos personales en todo momento, respetando su privacidad y derechos.</value>
+  </data>
 </root>

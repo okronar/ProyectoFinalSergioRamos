@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace proyectoFinalPublico
 {
-    public partial class TérminosYCondiciones : Form
+    public partial class TerminosYCondiciones : Form
     {
-        public TérminosYCondiciones()
+        public TerminosYCondiciones()
         {
             InitializeComponent();
+        }
+
+        private void btnVolvTer_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

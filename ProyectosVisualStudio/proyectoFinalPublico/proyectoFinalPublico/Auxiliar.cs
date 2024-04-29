@@ -1,16 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data;
 using System.Drawing.Imaging;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.Data.SqlClient;
+
 
 namespace proyectoFinalPublico
 {
-    internal class Auxiliar
-    {
+    public partial class Auxiliar
+    {  
+        string connectionString = ConfigurationManager.ConnectionStrings["DatabaseConnectionString"].ConnectionString;
 
 
         public static string IV = "aldoej45f8r564gh"; // 16 chars = 128 bits
@@ -92,5 +97,43 @@ namespace proyectoFinalPublico
             ms.Dispose();
             return bm;
         }
+
+        //Método que comprueba si existe un usuario en la base de datos
+        public static bool VerificarUsuarioExistente(string email)
+        {
+            bool usuarioExiste = false;
+
+            try
+            {
+                
+                SqlConnection connection = new SqlConnection();
+                connection.Open();
+                SqlCommand cmd = new SqlCommand("ComprobarUserAdminExiste", connection);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@Email", email);
+
+                // Obtiene el número de clientes con ese nombre de usuario
+                int count = (int)cmd.ExecuteScalar();
+
+                //Si el resultado es mayor a 0, exite un usuario
+                if (count > 0)
+                {
+                    usuarioExiste = true;
+                }
+
+                connection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al verificar usuario existente");
+                throw;
+            }
+
+            return usuarioExiste;
+        }
+
+
+
+
     }
 }

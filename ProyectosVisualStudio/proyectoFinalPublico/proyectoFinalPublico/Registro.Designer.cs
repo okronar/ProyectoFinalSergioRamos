@@ -84,6 +84,7 @@
             btnvolreg.TabIndex = 5;
             btnvolreg.Text = "Volver";
             btnvolreg.UseVisualStyleBackColor = true;
+            btnvolreg.Click += btnvolreg_Click;
             // 
             // btnReg
             // 
@@ -108,7 +109,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.White;
+            BackColor = Color.FromArgb(252, 248, 239);
             ClientSize = new Size(1650, 814);
             Controls.Add(lblInfor);
             Controls.Add(btnReg);
