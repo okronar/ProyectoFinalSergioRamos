@@ -8,6 +8,7 @@ namespace proyectoFinalPublico
         string connectionString = ConfigurationManager.ConnectionStrings["DatabaseConnectionString"].ConnectionString;
         public Landing()
         {
+
             InitializeComponent();
 
 
@@ -17,7 +18,7 @@ namespace proyectoFinalPublico
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-
+           
         }
 
         private void btnReg_Click(object sender, EventArgs e)

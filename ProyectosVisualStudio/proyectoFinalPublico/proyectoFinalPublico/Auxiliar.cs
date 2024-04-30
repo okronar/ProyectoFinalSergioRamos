@@ -13,9 +13,9 @@ using Microsoft.Data.SqlClient;
 
 namespace proyectoFinalPublico
 {
-    public partial class Auxiliar
-    {  
-        string connectionString = ConfigurationManager.ConnectionStrings["DatabaseConnectionString"].ConnectionString;
+    public static class Auxiliar
+    {
+        static string connectionString = ConfigurationManager.ConnectionStrings["DatabaseConnectionString"].ConnectionString;
 
 
         public static string IV = "aldoej45f8r564gh"; // 16 chars = 128 bits
@@ -106,9 +106,11 @@ namespace proyectoFinalPublico
             try
             {
                 
-                SqlConnection connection = new SqlConnection();
+                SqlConnection connection = new SqlConnection(connectionString);
+                
                 connection.Open();
-                SqlCommand cmd = new SqlCommand("ComprobarUserAdminExiste", connection);
+
+                SqlCommand cmd = new SqlCommand("ComprobarUserExiste", connection);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@Email", email);
 
@@ -120,7 +122,7 @@ namespace proyectoFinalPublico
                 {
                     usuarioExiste = true;
                 }
-
+               
                 connection.Close();
             }
             catch (Exception ex)

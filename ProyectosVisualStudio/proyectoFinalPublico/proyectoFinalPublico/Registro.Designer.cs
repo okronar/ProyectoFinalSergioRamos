@@ -94,6 +94,7 @@
             btnReg.TabIndex = 5;
             btnReg.Text = "Registrar";
             btnReg.UseVisualStyleBackColor = true;
+            btnReg.Click += btnReg_Click;
             // 
             // lblInfor
             // 
