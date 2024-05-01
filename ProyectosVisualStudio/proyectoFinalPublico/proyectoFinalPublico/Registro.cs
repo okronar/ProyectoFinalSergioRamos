@@ -71,8 +71,13 @@ namespace proyectoFinalPublico
                         cmd.Parameters.Add(new SqlParameter("@Password", encpassword));
                         cmd.ExecuteNonQuery();
                         connection.Close();
-                        //Se crea un objeto cliente que será el que ahora esté dentro de la aplicación
 
+
+                        //creacion del directorio que contendra el fichero
+                        string dir = email;
+                        Directory.CreateDirectory("data\\" + dir);
+                        var sw = new StreamWriter("data\\" + dir + "\\historial.ls");
+                        var sw2 = new StreamWriter("data\\" + dir + "\\favoritos.ls");
                         //Mensaje de confirmación
                         MessageBox.Show("Usuario creado correctamente, redirigiendo al login", "Éxito");
                         

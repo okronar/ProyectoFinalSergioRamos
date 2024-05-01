@@ -32,3 +32,4 @@ C:\Users\okron\DAMD\ProyectoFinalSergioRamos\ProyectosVisualStudio\ProyectoFinal
 C:\Users\okron\DAMD\ProyectoFinalSergioRamos\ProyectosVisualStudio\ProyectoFinalAdministrador\ProyectoFinalBuscador\obj\Debug\net8.0-windows\ProyectoFinalAdministrador.pdb
 C:\Users\okron\DAMD\ProyectoFinalSergioRamos\ProyectosVisualStudio\ProyectoFinalAdministrador\ProyectoFinalBuscador\obj\Debug\net8.0-windows\ProyectoFinalAdministrador.genruntimeconfig.cache
 C:\Users\okron\DAMD\ProyectoFinalSergioRamos\ProyectosVisualStudio\ProyectoFinalAdministrador\ProyectoFinalBuscador\obj\Debug\net8.0-windows\ref\ProyectoFinalAdministrador.dll
+C:\Users\okron\DAMD\ProyectoFinalSergioRamos\ProyectosVisualStudio\ProyectoFinalAdministrador\ProyectoFinalBuscador\obj\Debug\net8.0-windows\ProyectoFinalAdministrador.csproj.AssemblyReference.cache

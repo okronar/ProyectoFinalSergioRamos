@@ -1,5 +1,8 @@
-﻿using System;
+﻿using Microsoft.Data.SqlClient;
+using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data;
 using System.Drawing.Imaging;
 using System.Linq;
 using System.Security.Cryptography;
@@ -7,10 +10,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ProyectoFinalBuscador
+
+namespace proyectoFinalAdministrador
 {
-    internal class Auxiliar
+    public static class Auxiliar
     {
+        static string connectionString = ConfigurationManager.ConnectionStrings["DatabaseConnectionString"].ConnectionString;
 
 
         public static string IV = "aldoej45f8r564gh"; // 16 chars = 128 bits
@@ -69,18 +74,19 @@ namespace ProyectoFinalBuscador
             return ASCIIEncoding.ASCII.GetString(dec);
 
         }
-    
-        public static String imgToString(Bitmap img) {
+
+        public static String imgToString(Bitmap img)
+        {
             MemoryStream ms = new MemoryStream();
             img.Save(ms, ImageFormat.Png);
 
             byte[] arr = ms.GetBuffer();
             string output = Convert.ToBase64String(arr);
             return output;
-            
+
         }
 
-        public static Bitmap stringToImg (string consultaSql)
+        public static Bitmap stringToImg(string consultaSql)
         {
             byte[] arr = Convert.FromBase64String(consultaSql);
 
@@ -91,5 +97,7 @@ namespace ProyectoFinalBuscador
             ms.Dispose();
             return bm;
         }
-     }
+
+
+    }
 }

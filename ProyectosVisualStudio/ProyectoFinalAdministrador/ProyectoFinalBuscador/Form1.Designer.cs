@@ -67,7 +67,7 @@
             tabControlElegir = new TabControl();
             ElegirGuit = new TabPage();
             ElegirUsuario = new TabPage();
-            button1 = new Button();
+            btnBorrarEmail = new Button();
             txboxUsuarioBorrar = new TextBox();
             ((System.ComponentModel.ISupportInitialize)picmuestra).BeginInit();
             tabControlGuitar.SuspendLayout();
@@ -468,7 +468,7 @@
             // 
             // ElegirUsuario
             // 
-            ElegirUsuario.Controls.Add(button1);
+            ElegirUsuario.Controls.Add(btnBorrarEmail);
             ElegirUsuario.Controls.Add(txboxUsuarioBorrar);
             ElegirUsuario.Location = new Point(4, 24);
             ElegirUsuario.Name = "ElegirUsuario";
@@ -478,20 +478,21 @@
             ElegirUsuario.Text = "Usuario";
             ElegirUsuario.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnBorrarEmail
             // 
-            button1.Location = new Point(857, 446);
-            button1.Name = "button1";
-            button1.Size = new Size(383, 108);
-            button1.TabIndex = 7;
-            button1.Text = "Borrar";
-            button1.UseVisualStyleBackColor = true;
+            btnBorrarEmail.Location = new Point(857, 446);
+            btnBorrarEmail.Name = "btnBorrarEmail";
+            btnBorrarEmail.Size = new Size(383, 108);
+            btnBorrarEmail.TabIndex = 7;
+            btnBorrarEmail.Text = "Borrar";
+            btnBorrarEmail.UseVisualStyleBackColor = true;
+            btnBorrarEmail.Click += btnBorrarEmail_Click;
             // 
             // txboxUsuarioBorrar
             // 
             txboxUsuarioBorrar.Location = new Point(877, 295);
             txboxUsuarioBorrar.Name = "txboxUsuarioBorrar";
-            txboxUsuarioBorrar.PlaceholderText = "Usuario";
+            txboxUsuarioBorrar.PlaceholderText = "Email del usuario a borrar";
             txboxUsuarioBorrar.Size = new Size(343, 23);
             txboxUsuarioBorrar.TabIndex = 6;
             txboxUsuarioBorrar.TextAlign = HorizontalAlignment.Center;
@@ -552,7 +553,7 @@
         private PictureBox picmuestraAct;
         private Button cargImgAct;
         private Button btnActualizar;
-        private Button button1;
+        private Button btnBorrarEmail;
         private TextBox txboxUsuarioBorrar;
         private TextBox txbURLActu;
         private TextBox txbPastActu;
