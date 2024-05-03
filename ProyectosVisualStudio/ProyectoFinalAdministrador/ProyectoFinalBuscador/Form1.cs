@@ -1,6 +1,7 @@
 using Microsoft.Data.SqlClient;
 using System.Configuration;
 using System.Data;
+using System.Reflection;
 using System.Windows.Forms;
 
 namespace ProyectoFinalBuscador
@@ -73,9 +74,9 @@ namespace ProyectoFinalBuscador
                 connection.Close();
 
                 //borramos directorio tambien
-                EliminarDirectorioCliente(txboxUsuarioBorrar.Text);
+                EliminarDirectorioCliente(usuarioBorrar);
 
-                MessageBox.Show("Exito borrando cliente e historial");
+                
                  
                 txboxUsuarioBorrar.Text = null;
 
@@ -85,19 +86,18 @@ namespace ProyectoFinalBuscador
                 MessageBox.Show("Fallo al borrar cliente y su historial");
                 throw;
             }
-        } 
-        
-        
-        AQUI HAY QUE REDIRIGIR A LA CARPETA DEL OTRO PROYECTO
+        }
+
         private void EliminarDirectorioCliente(string clienteId)
         {
             try
             {
-                string directorioCliente = "data\\" + clienteId;
+                string proyectoPath = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location); // Ruta del ejecutable del proyecto
+                string rutaDatosUsuarios = Path.Combine(proyectoPath, @"..\..\..\..\..\proyectoFinalPublico\proyectoFinalPublico\bin\Debug\net8.0-windows\data\", clienteId);
 
-                if (Directory.Exists(directorioCliente))
+                if (Directory.Exists(rutaDatosUsuarios))
                 {
-                    Directory.Delete(directorioCliente, true); // true para eliminar subdirectorios y archivos
+                    Directory.Delete(rutaDatosUsuarios, true); // true para eliminar subdirectorios y archivos
                     MessageBox.Show("Directorio del cliente eliminado correctamente.");
                 }
                 else
@@ -110,5 +110,7 @@ namespace ProyectoFinalBuscador
                 MessageBox.Show("Error al eliminar el directorio del cliente: " + ex.Message);
             }
         }
+
+
     }
 }
