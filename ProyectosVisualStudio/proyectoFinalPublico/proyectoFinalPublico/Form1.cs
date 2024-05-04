@@ -28,9 +28,7 @@ namespace proyectoFinalPublico
             }
             else
             {
-                    //Si es un cliente, busca el usuario en la tabla clientes
-                    if (!esAdmin)
-                    {
+                    
                         try
                         {
                             //Consulta sql 
@@ -85,7 +83,7 @@ namespace proyectoFinalPublico
                         }
                     
                                       
-                }
+                
             }
         }
 
