@@ -1,8 +1,10 @@
 using Microsoft.Data.SqlClient;
+using proyectoFinalPublico;
 using System.Configuration;
 using System.Data;
 using System.Reflection;
 using System.Windows.Forms;
+
 
 namespace ProyectoFinalBuscador
 {
@@ -26,6 +28,8 @@ namespace ProyectoFinalBuscador
                 Image img = new Bitmap(ofd.FileName);
 
                 picmuestra.Image = img;
+
+                
             }
         }
 
@@ -42,6 +46,54 @@ namespace ProyectoFinalBuscador
             }
         }
 
+        private void btnInsertar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if(picmuestra.Image != null && txtbCuerpo.Text != null && txtbModelo.Text !=null && txtbMarca.Text != null && txtBEscala.Text != null && txtbFijac.Text != null && txtbMaderaCuer.Text != null
+                    && txtbMaderaDiapa.Text != null && txtbMaderaMastil.Text != null && txtbPuente.Text != null && txtbUrl.Text != null && txtbYear.Text != null) {
+                
+               
+                SqlConnection connection = new SqlConnection(connectionString);
+                connection.Open();
+
+                SqlCommand cmd = new SqlCommand("SaveProduct", connection);
+
+                //esto es para especificar que es un procedimiento 
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                String codigoProducto = txboxCodigo.Text;
+                String nombreProducto = txboxNombre.Text;
+                String familiaProducto = txboxFamilia.Text;
+                String marcaProducto = txboxMarca.Text;
+                float precioProducto = float.Parse(txboxPrecio.Text);
+
+                cmd.Parameters.Add(new SqlParameter("@codigoProducto", codigoProducto));
+                cmd.Parameters.Add(new SqlParameter("@nombreProducto", nombreProducto));
+                cmd.Parameters.Add(new SqlParameter("@familiaProducto", familiaProducto));
+                cmd.Parameters.Add(new SqlParameter("@marcaProducto", marcaProducto));
+                cmd.Parameters.Add(new SqlParameter("@precioProducto", precioProducto));
+
+                cmd.ExecuteNonQuery();
+
+                connection.Close();
+                MessageBox.Show("Exito insertando guitarra");
+                 }
+
+                else
+                {
+                    MessageBox.Show("Rellene todos los campos");
+                }
+
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Fallo, revise si el producto ya existe");
+
+                throw;
+            }
+
+        }
 
 
 
@@ -49,7 +101,6 @@ namespace ProyectoFinalBuscador
 
 
 
-       
 
         private void btnBorrarEmail_Click(object sender, EventArgs e)
         {
@@ -76,8 +127,8 @@ namespace ProyectoFinalBuscador
                 //borramos directorio tambien
                 EliminarDirectorioCliente(usuarioBorrar);
 
-                
-                 
+
+
                 txboxUsuarioBorrar.Text = null;
 
             }
@@ -111,6 +162,6 @@ namespace ProyectoFinalBuscador
             }
         }
 
-
+        
     }
 }
