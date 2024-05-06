@@ -47,8 +47,10 @@
             btnInsertar = new Button();
             BorrarGuit = new TabPage();
             btnBorrar = new Button();
-            txboxModeloBorrar = new TextBox();
+            txboxIdBorrar = new TextBox();
             UpdateGuit = new TabPage();
+            panelDelGrid = new TableLayoutPanel();
+            GridActualizarGuitarra = new DataGridView();
             txbURLActu = new TextBox();
             txbPastActu = new TextBox();
             txbFijaActu = new TextBox();
@@ -58,6 +60,7 @@
             txbMarcaActu = new TextBox();
             txbCuerpoActu = new TextBox();
             txbYearActu = new TextBox();
+            txbIdActu = new TextBox();
             txbEscalaActu = new TextBox();
             txbMCuerActu = new TextBox();
             txbModeloAct = new TextBox();
@@ -67,17 +70,23 @@
             tabControlElegir = new TabControl();
             ElegirGuit = new TabPage();
             ElegirUsuario = new TabPage();
+            tableUsuarios = new TableLayoutPanel();
             btnBorrarEmail = new Button();
             txboxUsuarioBorrar = new TextBox();
+            gridBorrarUsuarios = new DataGridView();
             ((System.ComponentModel.ISupportInitialize)picmuestra).BeginInit();
             tabControlGuitar.SuspendLayout();
             InsertarGuit.SuspendLayout();
             BorrarGuit.SuspendLayout();
             UpdateGuit.SuspendLayout();
+            panelDelGrid.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)GridActualizarGuitarra).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picmuestraAct).BeginInit();
             tabControlElegir.SuspendLayout();
             ElegirGuit.SuspendLayout();
             ElegirUsuario.SuspendLayout();
+            tableUsuarios.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)gridBorrarUsuarios).BeginInit();
             SuspendLayout();
             // 
             // CargarIMG
@@ -257,7 +266,7 @@
             // BorrarGuit
             // 
             BorrarGuit.Controls.Add(btnBorrar);
-            BorrarGuit.Controls.Add(txboxModeloBorrar);
+            BorrarGuit.Controls.Add(txboxIdBorrar);
             BorrarGuit.Location = new Point(4, 24);
             BorrarGuit.Name = "BorrarGuit";
             BorrarGuit.Padding = new Padding(3);
@@ -268,24 +277,25 @@
             // 
             // btnBorrar
             // 
-            btnBorrar.Location = new Point(824, 356);
+            btnBorrar.Location = new Point(151, 316);
             btnBorrar.Name = "btnBorrar";
             btnBorrar.Size = new Size(383, 108);
             btnBorrar.TabIndex = 5;
             btnBorrar.Text = "Borrar";
             btnBorrar.UseVisualStyleBackColor = true;
             // 
-            // txboxModeloBorrar
+            // txboxIdBorrar
             // 
-            txboxModeloBorrar.Location = new Point(847, 240);
-            txboxModeloBorrar.Name = "txboxModeloBorrar";
-            txboxModeloBorrar.PlaceholderText = "Modelo";
-            txboxModeloBorrar.Size = new Size(343, 23);
-            txboxModeloBorrar.TabIndex = 4;
-            txboxModeloBorrar.TextAlign = HorizontalAlignment.Center;
+            txboxIdBorrar.Location = new Point(169, 198);
+            txboxIdBorrar.Name = "txboxIdBorrar";
+            txboxIdBorrar.PlaceholderText = "Id de la Guitarra ";
+            txboxIdBorrar.Size = new Size(343, 23);
+            txboxIdBorrar.TabIndex = 4;
+            txboxIdBorrar.TextAlign = HorizontalAlignment.Center;
             // 
             // UpdateGuit
             // 
+            UpdateGuit.Controls.Add(panelDelGrid);
             UpdateGuit.Controls.Add(txbURLActu);
             UpdateGuit.Controls.Add(txbPastActu);
             UpdateGuit.Controls.Add(txbFijaActu);
@@ -295,6 +305,7 @@
             UpdateGuit.Controls.Add(txbMarcaActu);
             UpdateGuit.Controls.Add(txbCuerpoActu);
             UpdateGuit.Controls.Add(txbYearActu);
+            UpdateGuit.Controls.Add(txbIdActu);
             UpdateGuit.Controls.Add(txbEscalaActu);
             UpdateGuit.Controls.Add(txbMCuerActu);
             UpdateGuit.Controls.Add(txbModeloAct);
@@ -308,6 +319,27 @@
             UpdateGuit.TabIndex = 2;
             UpdateGuit.Text = "Actualizar";
             UpdateGuit.UseVisualStyleBackColor = true;
+            // 
+            // panelDelGrid
+            // 
+            panelDelGrid.ColumnCount = 1;
+            panelDelGrid.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            panelDelGrid.Controls.Add(GridActualizarGuitarra, 0, 0);
+            panelDelGrid.Location = new Point(1255, 29);
+            panelDelGrid.Name = "panelDelGrid";
+            panelDelGrid.RowCount = 1;
+            panelDelGrid.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            panelDelGrid.Size = new Size(779, 771);
+            panelDelGrid.TabIndex = 25;
+            // 
+            // GridActualizarGuitarra
+            // 
+            GridActualizarGuitarra.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            GridActualizarGuitarra.Dock = DockStyle.Fill;
+            GridActualizarGuitarra.Location = new Point(3, 3);
+            GridActualizarGuitarra.Name = "GridActualizarGuitarra";
+            GridActualizarGuitarra.Size = new Size(773, 765);
+            GridActualizarGuitarra.TabIndex = 0;
             // 
             // txbURLActu
             // 
@@ -390,6 +422,15 @@
             txbYearActu.TabIndex = 16;
             txbYearActu.TextAlign = HorizontalAlignment.Center;
             // 
+            // txbIdActu
+            // 
+            txbIdActu.Location = new Point(484, 664);
+            txbIdActu.Name = "txbIdActu";
+            txbIdActu.PlaceholderText = "Id de la guitarra a actualizar";
+            txbIdActu.Size = new Size(343, 23);
+            txbIdActu.TabIndex = 15;
+            txbIdActu.TextAlign = HorizontalAlignment.Center;
+            // 
             // txbEscalaActu
             // 
             txbEscalaActu.Location = new Point(57, 301);
@@ -419,16 +460,17 @@
             // 
             // btnActualizar
             // 
-            btnActualizar.Location = new Point(1382, 655);
+            btnActualizar.Location = new Point(510, 703);
             btnActualizar.Name = "btnActualizar";
             btnActualizar.Size = new Size(289, 114);
             btnActualizar.TabIndex = 4;
             btnActualizar.Text = "Actualizar";
             btnActualizar.UseVisualStyleBackColor = true;
+            btnActualizar.Click += btnActualizar_Click;
             // 
             // picmuestraAct
             // 
-            picmuestraAct.Location = new Point(1432, 30);
+            picmuestraAct.Location = new Point(900, 56);
             picmuestraAct.Name = "picmuestraAct";
             picmuestraAct.Size = new Size(187, 520);
             picmuestraAct.TabIndex = 3;
@@ -437,7 +479,7 @@
             // cargImgAct
             // 
             cargImgAct.AutoSize = true;
-            cargImgAct.Location = new Point(1457, 581);
+            cargImgAct.Location = new Point(921, 596);
             cargImgAct.Name = "cargImgAct";
             cargImgAct.Size = new Size(135, 37);
             cargImgAct.TabIndex = 2;
@@ -469,6 +511,7 @@
             // 
             // ElegirUsuario
             // 
+            ElegirUsuario.Controls.Add(tableUsuarios);
             ElegirUsuario.Controls.Add(btnBorrarEmail);
             ElegirUsuario.Controls.Add(txboxUsuarioBorrar);
             ElegirUsuario.Location = new Point(4, 24);
@@ -479,9 +522,21 @@
             ElegirUsuario.Text = "Usuario";
             ElegirUsuario.UseVisualStyleBackColor = true;
             // 
+            // tableUsuarios
+            // 
+            tableUsuarios.ColumnCount = 1;
+            tableUsuarios.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableUsuarios.Controls.Add(gridBorrarUsuarios, 0, 0);
+            tableUsuarios.Location = new Point(1308, 80);
+            tableUsuarios.Name = "tableUsuarios";
+            tableUsuarios.RowCount = 1;
+            tableUsuarios.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableUsuarios.Size = new Size(460, 730);
+            tableUsuarios.TabIndex = 8;
+            // 
             // btnBorrarEmail
             // 
-            btnBorrarEmail.Location = new Point(857, 446);
+            btnBorrarEmail.Location = new Point(697, 415);
             btnBorrarEmail.Name = "btnBorrarEmail";
             btnBorrarEmail.Size = new Size(383, 108);
             btnBorrarEmail.TabIndex = 7;
@@ -491,12 +546,21 @@
             // 
             // txboxUsuarioBorrar
             // 
-            txboxUsuarioBorrar.Location = new Point(877, 295);
+            txboxUsuarioBorrar.Location = new Point(721, 306);
             txboxUsuarioBorrar.Name = "txboxUsuarioBorrar";
             txboxUsuarioBorrar.PlaceholderText = "Email del usuario a borrar";
             txboxUsuarioBorrar.Size = new Size(343, 23);
             txboxUsuarioBorrar.TabIndex = 6;
             txboxUsuarioBorrar.TextAlign = HorizontalAlignment.Center;
+            // 
+            // gridBorrarUsuarios
+            // 
+            gridBorrarUsuarios.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            gridBorrarUsuarios.Dock = DockStyle.Fill;
+            gridBorrarUsuarios.Location = new Point(3, 3);
+            gridBorrarUsuarios.Name = "gridBorrarUsuarios";
+            gridBorrarUsuarios.Size = new Size(454, 724);
+            gridBorrarUsuarios.TabIndex = 0;
             // 
             // Administrador
             // 
@@ -517,11 +581,15 @@
             BorrarGuit.PerformLayout();
             UpdateGuit.ResumeLayout(false);
             UpdateGuit.PerformLayout();
+            panelDelGrid.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)GridActualizarGuitarra).EndInit();
             ((System.ComponentModel.ISupportInitialize)picmuestraAct).EndInit();
             tabControlElegir.ResumeLayout(false);
             ElegirGuit.ResumeLayout(false);
             ElegirUsuario.ResumeLayout(false);
             ElegirUsuario.PerformLayout();
+            tableUsuarios.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)gridBorrarUsuarios).EndInit();
             ResumeLayout(false);
         }
 
@@ -549,7 +617,7 @@
         private TextBox txtbPastillas;
         private TextBox txtbFijac;
         private TextBox txtbPuente;
-        private TextBox txboxModeloBorrar;
+        private TextBox txboxIdBorrar;
         private Button btnBorrar;
         private PictureBox picmuestraAct;
         private Button cargImgAct;
@@ -568,5 +636,10 @@
         private TextBox txbEscalaActu;
         private TextBox txbMCuerActu;
         private TextBox txbModeloAct;
+        private TextBox txbIdActu;
+        private TableLayoutPanel panelDelGrid;
+        private DataGridView GridActualizarGuitarra;
+        private TableLayoutPanel tableUsuarios;
+        private DataGridView gridBorrarUsuarios;
     }
 }

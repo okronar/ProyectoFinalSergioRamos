@@ -32,15 +32,16 @@ namespace proyectoFinalPublico
                 try
                 {
                     //Consulta sql 
-                    SqlConnection con = new SqlConnection(GestionPapeleria.Auxiliar.GlobalVariables.DB_CONNECTION);
-                    string username = tb_user.Text;
-                    string encryptedPassword = AesCrypt.Encrypt(tb_password.Text);
-                    con.Open();
+                    SqlConnection connection = new SqlConnection(connectionString);
+                    connection.Open();
+                    string email = txbEmailInicio.Text;
+                    string encryptedPassword = Auxiliar.Encrypt(txbEmailInicio.Text);
+                    
 
-                    SqlCommand command = new SqlCommand("login", con);
+                    SqlCommand command = new SqlCommand("login", connection);
                     command.CommandType = CommandType.StoredProcedure;
 
-                    command.Parameters.AddWithValue("@username", username);
+                    command.Parameters.AddWithValue("@email", email);
                     command.Parameters.AddWithValue("@password", encryptedPassword);
 
                     SqlDataReader reader = command.ExecuteReader();
@@ -48,17 +49,16 @@ namespace proyectoFinalPublico
                     if (reader.Read())
                     {
                         //Coger los datos de la consulta
-                        string dbUsername = reader["username"].ToString();
-                        string dbPassword = reader["contrasenaCliente"].ToString();
+                        string dbUsername = reader["email"].ToString();
+                        string dbPassword = reader["password"].ToString();
 
                         //Comprobar si coinciden
-                        if (dbUsername == username && dbPassword == encryptedPassword)
+                        if (dbUsername == email && dbPassword == encryptedPassword)
                         {
 
                             MessageBox.Show("¡Bienvenido!", "Inicio");
 
-                            //Se guarda el cliente para poder usar sus datos en la aplicación de vista cliente
-                            guardarClienteLogeado();
+                            guardarUsuario();
 
                             this.Close();
 
@@ -74,7 +74,7 @@ namespace proyectoFinalPublico
                     }
 
                     reader.Close();
-                    con.Close(); // Cierra la conexión
+                    connection.Close(); // Cierra la conexión
                 }
                 catch (Exception ex)
                 {

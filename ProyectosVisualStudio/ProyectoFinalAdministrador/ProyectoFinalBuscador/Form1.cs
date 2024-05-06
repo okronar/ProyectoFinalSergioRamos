@@ -17,6 +17,62 @@ namespace ProyectoFinalBuscador
         public Administrador()
         {
             InitializeComponent();
+
+            visualizarGuitarras();
+            visualizarUsuarios();
+        }
+
+        private void visualizarGuitarras()
+        {
+            string sqlQuery = "SELECT * FROM Guitarras";
+
+            try
+            {
+
+                SqlDataAdapter adapter = new SqlDataAdapter(sqlQuery, connectionString);
+                SqlConnection connection = new SqlConnection(connectionString);
+
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+
+                GridActualizarGuitarra.DataSource = dt;
+
+
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Fallo");
+                throw;
+
+
+            }
+        }
+        private void visualizarUsuarios()
+        {
+            string sqlQuery = "SELECT * FROM Usuarios";
+
+            try
+            {
+
+                SqlDataAdapter adapter = new SqlDataAdapter(sqlQuery, connectionString);
+                SqlConnection connection = new SqlConnection(connectionString);
+
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+
+                gridBorrarUsuarios.DataSource = dt;
+
+
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Fallo");
+                throw;
+
+
+            }
         }
 
         private void CargarIMG_Click(object sender, EventArgs e)
@@ -30,9 +86,9 @@ namespace ProyectoFinalBuscador
 
                 picmuestra.Image = img;
 
-                
-            } 
-            
+
+            }
+
 
         }
 
@@ -96,7 +152,7 @@ namespace ProyectoFinalBuscador
                     cmd.Parameters.Add(new SqlParameter("@pastillas", pastillas));
                     cmd.Parameters.Add(new SqlParameter("@url", url));
                     cmd.Parameters.Add(new SqlParameter("@imagen", imagen));
-                    
+
 
                     cmd.ExecuteNonQuery();
 
@@ -118,15 +174,94 @@ namespace ProyectoFinalBuscador
             }
 
         }
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (picmuestraAct.Image != null && txbCuerpoActu.Text != null && txbModeloAct.Text != null && txbMarcaActu.Text != null && txbEscalaActu.Text != null && txbFijaActu.Text != null && txbMCuerActu.Text != null
+                    && txbMDiapActu.Text != null && txbMMastActu.Text != null && txbPuenteActu.Text != null && txbURLActu.Text != null && txbYearActu.Text != null)
+                {
+                    
+                    if (int.TryParse(txbIdActu.Text, out int idActu))
+                    {
+                        // El valor se ha convertido correctamente
+                    
+
+
+                    SqlConnection connection = new SqlConnection(connectionString);
+                    connection.Open();
+
+                    SqlCommand cmd = new SqlCommand("actualizarGuitarra", connection);
+
+                    //esto es para especificar que es un procedimiento 
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+
+                    String modelo = txbModeloAct.Text;
+                    String marca = txbMarcaActu.Text;
+                    String year = txbYearActu.Text;
+                    String cuerpo = txbCuerpoActu.Text;
+                    String fijacion = txbFijaActu.Text;
+                    String escala = txbEscalaActu.Text;
+                    String maderacuerpo = txbMCuerActu.Text;
+                    String maderamastil = txbMMastActu.Text;
+                    String maderadiapason = txbMDiapActu.Text;
+                    String puente = txbPuenteActu.Text;
+                    String pastillas = txbPastActu.Text;
+                    String url = txbURLActu.Text;
+                    String imagen = Auxiliar.imgToString(new Bitmap(picmuestraAct.Image));
+                    
+                    
 
 
 
+                    cmd.Parameters.Add(new SqlParameter("@id",idActu));
+                    cmd.Parameters.Add(new SqlParameter("@modelo", modelo));
+                    cmd.Parameters.Add(new SqlParameter("@marca", marca));
+                    cmd.Parameters.Add(new SqlParameter("@year", year));
+                    cmd.Parameters.Add(new SqlParameter("@cuerpo", cuerpo));
+                    cmd.Parameters.Add(new SqlParameter("@fijacion", fijacion));
+                    cmd.Parameters.Add(new SqlParameter("@escala", escala));
+                    cmd.Parameters.Add(new SqlParameter("@maderacuerpo", maderacuerpo));
+                    cmd.Parameters.Add(new SqlParameter("@maderamastil", maderamastil));
+                    cmd.Parameters.Add(new SqlParameter("@maderadiapason", maderadiapason));
+                    cmd.Parameters.Add(new SqlParameter("@puente", puente));
+                    cmd.Parameters.Add(new SqlParameter("@pastillas", pastillas));
+                    cmd.Parameters.Add(new SqlParameter("@url", url));
+                    cmd.Parameters.Add(new SqlParameter("@imagen", imagen));
+                    
+
+
+                    cmd.ExecuteNonQuery();
+
+                    connection.Close();
+                    MessageBox.Show("Exito actualizando guitarra");
+                    }
+                    else
+                    {
+                        // Manejar el caso en que el valor no se puede convertir a entero
+                        MessageBox.Show("debe introducir un numero para el identificador");
+                    }
+                }
+
+                else
+                {
+                    MessageBox.Show("Rellene todos los campos");
+                }
+
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Fallo actualizando");
+
+                throw;
+            }
+
+        }
 
 
 
-
-
-    private void btnBorrarEmail_Click(object sender, EventArgs e)
+        private void btnBorrarEmail_Click(object sender, EventArgs e)
         {
             try
             {
