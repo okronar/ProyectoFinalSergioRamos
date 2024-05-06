@@ -33,7 +33,7 @@
             tabControlGuitar = new TabControl();
             InsertarGuit = new TabPage();
             txtbUrl = new TextBox();
-            yxybPastillas = new TextBox();
+            txtbPastillas = new TextBox();
             txtbFijac = new TextBox();
             txtbPuente = new TextBox();
             txtbMaderaDiapa = new TextBox();
@@ -113,7 +113,7 @@
             // InsertarGuit
             // 
             InsertarGuit.Controls.Add(txtbUrl);
-            InsertarGuit.Controls.Add(yxybPastillas);
+            InsertarGuit.Controls.Add(txtbPastillas);
             InsertarGuit.Controls.Add(txtbFijac);
             InsertarGuit.Controls.Add(txtbPuente);
             InsertarGuit.Controls.Add(txtbMaderaDiapa);
@@ -145,14 +145,14 @@
             txtbUrl.TabIndex = 12;
             txtbUrl.TextAlign = HorizontalAlignment.Center;
             // 
-            // yxybPastillas
+            // txtbPastillas
             // 
-            yxybPastillas.Location = new Point(527, 113);
-            yxybPastillas.Name = "yxybPastillas";
-            yxybPastillas.PlaceholderText = "Pastillas";
-            yxybPastillas.Size = new Size(343, 23);
-            yxybPastillas.TabIndex = 12;
-            yxybPastillas.TextAlign = HorizontalAlignment.Center;
+            txtbPastillas.Location = new Point(527, 113);
+            txtbPastillas.Name = "txtbPastillas";
+            txtbPastillas.PlaceholderText = "Pastillas";
+            txtbPastillas.Size = new Size(343, 23);
+            txtbPastillas.TabIndex = 12;
+            txtbPastillas.TextAlign = HorizontalAlignment.Center;
             // 
             // txtbFijac
             // 
@@ -546,7 +546,7 @@
         private TextBox txtbMaderaCuer;
         private TextBox txtbModelo;
         private TextBox txtbUrl;
-        private TextBox yxybPastillas;
+        private TextBox txtbPastillas;
         private TextBox txtbFijac;
         private TextBox txtbPuente;
         private TextBox txboxModeloBorrar;

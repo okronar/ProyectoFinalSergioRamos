@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace proyectoFinalPublico
 {
-    public class busqueda
+    public class busquedaGuit
     {
        
 
@@ -20,7 +20,7 @@ namespace proyectoFinalPublico
         public int idusuario { get; set; }
         
         
-        public busqueda(int id, string modelo, string marca, int sesion, int idguitarra, int idusuario)
+        public busquedaGuit(int id, string modelo, string marca, int sesion, int idguitarra, int idusuario)
         {
             this.id = id;
             this.modelo = modelo;

@@ -62,6 +62,7 @@
             ClientSize = new Size(1424, 780);
             Controls.Add(lblTerminos);
             Controls.Add(btnVolvTer);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "TerminosYCondiciones";
             Text = "TérminosYCondiciones";
             ResumeLayout(false);

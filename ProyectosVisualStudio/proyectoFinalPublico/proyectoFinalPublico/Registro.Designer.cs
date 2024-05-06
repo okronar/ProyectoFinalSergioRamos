@@ -119,6 +119,7 @@
             Controls.Add(txbPassRepReg);
             Controls.Add(txboxPassReg);
             Controls.Add(txbEmailReg);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "Registro";
             Text = "Registro";
             ResumeLayout(false);
