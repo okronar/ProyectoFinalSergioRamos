@@ -64,9 +64,9 @@
             pictureBox2.Anchor = AnchorStyles.None;
             pictureBox2.Cursor = Cursors.Cross;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(468, 84);
+            pictureBox2.Location = new Point(397, 3);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(245, 203);
+            pictureBox2.Size = new Size(388, 366);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 2;
             pictureBox2.TabStop = false;

@@ -101,6 +101,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(252, 248, 239);
             ClientSize = new Size(1694, 912);
             Controls.Add(tableLayoutPanel1);
             Name = "BuscadorComparador";

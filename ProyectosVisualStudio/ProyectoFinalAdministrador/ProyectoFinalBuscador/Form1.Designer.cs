@@ -129,6 +129,7 @@
             // picmuestra
             // 
             picmuestra.Anchor = AnchorStyles.None;
+            picmuestra.BackColor = Color.White;
             picmuestra.Location = new Point(205, 3);
             picmuestra.Name = "picmuestra";
             picmuestra.Size = new Size(173, 519);
@@ -161,9 +162,10 @@
             // 
             // tableLayoutPanel3
             // 
+            tableLayoutPanel3.BackColor = Color.FromArgb(252, 248, 239);
             tableLayoutPanel3.ColumnCount = 3;
-            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 63.5093155F));
-            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 36.4906845F));
+            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 53.77778F));
+            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 46.22222F));
             tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 589F));
             tableLayoutPanel3.Controls.Add(tableLayoutPanel5, 0, 0);
             tableLayoutPanel3.Controls.Add(tableLayoutPanel6, 0, 1);
@@ -181,6 +183,7 @@
             // 
             // tableLayoutPanel5
             // 
+            tableLayoutPanel5.BackColor = Color.FromArgb(252, 248, 239);
             tableLayoutPanel5.ColumnCount = 1;
             tableLayoutPanel5.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
             tableLayoutPanel5.Controls.Add(txtbModelo, 0, 0);
@@ -200,7 +203,7 @@
             tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Percent, 14.2857141F));
             tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Percent, 14.2857141F));
             tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Percent, 14.2857141F));
-            tableLayoutPanel5.Size = new Size(326, 686);
+            tableLayoutPanel5.Size = new Size(478, 686);
             tableLayoutPanel5.TabIndex = 3;
             // 
             // txtbModelo
@@ -268,6 +271,7 @@
             // 
             // tableLayoutPanel6
             // 
+            tableLayoutPanel6.BackColor = Color.FromArgb(252, 248, 239);
             tableLayoutPanel6.ColumnCount = 1;
             tableLayoutPanel6.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel6.Controls.Add(txtbMaderaMastil, 0, 0);
@@ -277,7 +281,7 @@
             tableLayoutPanel6.RowCount = 2;
             tableLayoutPanel6.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel6.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel6.Size = new Size(323, 152);
+            tableLayoutPanel6.Size = new Size(478, 152);
             tableLayoutPanel6.TabIndex = 4;
             // 
             // txtbMaderaMastil
@@ -300,18 +304,19 @@
             // 
             // tableLayoutPanel7
             // 
+            tableLayoutPanel7.BackColor = Color.FromArgb(252, 248, 239);
             tableLayoutPanel7.ColumnCount = 1;
             tableLayoutPanel7.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel7.Controls.Add(txtbFijac, 0, 0);
             tableLayoutPanel7.Controls.Add(txtbUrl, 0, 2);
             tableLayoutPanel7.Controls.Add(txtbPastillas, 0, 1);
-            tableLayoutPanel7.Location = new Point(575, 3);
+            tableLayoutPanel7.Location = new Point(487, 3);
             tableLayoutPanel7.Name = "tableLayoutPanel7";
             tableLayoutPanel7.RowCount = 3;
             tableLayoutPanel7.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel7.RowStyles.Add(new RowStyle(SizeType.Absolute, 72F));
-            tableLayoutPanel7.RowStyles.Add(new RowStyle(SizeType.Absolute, 111F));
-            tableLayoutPanel7.Size = new Size(289, 257);
+            tableLayoutPanel7.RowStyles.Add(new RowStyle(SizeType.Absolute, 94F));
+            tableLayoutPanel7.RowStyles.Add(new RowStyle(SizeType.Absolute, 494F));
+            tableLayoutPanel7.Size = new Size(410, 686);
             tableLayoutPanel7.TabIndex = 5;
             // 
             // txtbFijac
@@ -325,7 +330,7 @@
             // 
             // txtbUrl
             // 
-            txtbUrl.Location = new Point(3, 149);
+            txtbUrl.Location = new Point(3, 195);
             txtbUrl.Name = "txtbUrl";
             txtbUrl.PlaceholderText = "URL Tienda ";
             txtbUrl.Size = new Size(283, 23);
@@ -334,7 +339,7 @@
             // 
             // txtbPastillas
             // 
-            txtbPastillas.Location = new Point(3, 77);
+            txtbPastillas.Location = new Point(3, 101);
             txtbPastillas.Name = "txtbPastillas";
             txtbPastillas.PlaceholderText = "Pastillas";
             txtbPastillas.Size = new Size(283, 23);
@@ -344,6 +349,7 @@
             // tableLayoutPanel8
             // 
             tableLayoutPanel8.Anchor = AnchorStyles.None;
+            tableLayoutPanel8.BackColor = Color.FromArgb(252, 248, 239);
             tableLayoutPanel8.ColumnCount = 1;
             tableLayoutPanel8.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel8.Controls.Add(CargarIMG, 0, 1);
@@ -394,11 +400,13 @@
             // 
             // tableLayoutPanel9
             // 
+            tableLayoutPanel9.BackColor = Color.FromArgb(252, 248, 239);
             tableLayoutPanel9.ColumnCount = 1;
             tableLayoutPanel9.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel9.Controls.Add(btnBorrarGuitarra, 0, 1);
             tableLayoutPanel9.Controls.Add(txboxIdBorrar, 0, 0);
             tableLayoutPanel9.Dock = DockStyle.Fill;
+            tableLayoutPanel9.ForeColor = Color.FromArgb(252, 248, 239);
             tableLayoutPanel9.Location = new Point(3, 3);
             tableLayoutPanel9.Name = "tableLayoutPanel9";
             tableLayoutPanel9.RowCount = 2;
@@ -410,6 +418,7 @@
             // btnBorrarGuitarra
             // 
             btnBorrarGuitarra.Anchor = AnchorStyles.None;
+            btnBorrarGuitarra.ForeColor = Color.Black;
             btnBorrarGuitarra.Location = new Point(178, 728);
             btnBorrarGuitarra.Name = "btnBorrarGuitarra";
             btnBorrarGuitarra.Size = new Size(383, 108);
@@ -479,6 +488,7 @@
             // 
             // tableLayoutPanel11
             // 
+            tableLayoutPanel11.BackColor = Color.FromArgb(252, 248, 239);
             tableLayoutPanel11.ColumnCount = 1;
             tableLayoutPanel11.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
             tableLayoutPanel11.Controls.Add(txbModeloAct, 0, 0);
@@ -589,6 +599,7 @@
             // 
             // tableLayoutPanel12
             // 
+            tableLayoutPanel12.BackColor = Color.FromArgb(252, 248, 239);
             tableLayoutPanel12.ColumnCount = 1;
             tableLayoutPanel12.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
             tableLayoutPanel12.Controls.Add(txbFijaActu, 0, 0);
@@ -657,6 +668,7 @@
             // 
             // tableLayoutPanel13
             // 
+            tableLayoutPanel13.BackColor = Color.FromArgb(252, 248, 239);
             tableLayoutPanel13.ColumnCount = 1;
             tableLayoutPanel13.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
             tableLayoutPanel13.Controls.Add(picmuestraAct, 0, 0);
@@ -673,6 +685,7 @@
             // picmuestraAct
             // 
             picmuestraAct.Anchor = AnchorStyles.None;
+            picmuestraAct.BackColor = Color.White;
             picmuestraAct.Location = new Point(72, 79);
             picmuestraAct.Name = "picmuestraAct";
             picmuestraAct.Size = new Size(187, 520);
@@ -726,6 +739,7 @@
             // 
             // tableLayoutPanel1
             // 
+            tableLayoutPanel1.BackColor = Color.FromArgb(252, 248, 239);
             tableLayoutPanel1.ColumnCount = 3;
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333359F));
@@ -733,6 +747,7 @@
             tableLayoutPanel1.Controls.Add(tableLayoutPanel2, 1, 0);
             tableLayoutPanel1.Controls.Add(tableUsuarios, 2, 0);
             tableLayoutPanel1.Dock = DockStyle.Fill;
+            tableLayoutPanel1.ForeColor = Color.FromArgb(252, 248, 239);
             tableLayoutPanel1.Location = new Point(3, 3);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 1;
@@ -742,6 +757,7 @@
             // 
             // tableLayoutPanel2
             // 
+            tableLayoutPanel2.BackColor = Color.FromArgb(252, 248, 239);
             tableLayoutPanel2.ColumnCount = 1;
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel2.Controls.Add(btnBorrarEmail, 0, 1);
@@ -802,6 +818,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(252, 248, 239);
             ClientSize = new Size(1518, 921);
             Controls.Add(tabControlElegir);
             FormBorderStyle = FormBorderStyle.FixedSingle;
