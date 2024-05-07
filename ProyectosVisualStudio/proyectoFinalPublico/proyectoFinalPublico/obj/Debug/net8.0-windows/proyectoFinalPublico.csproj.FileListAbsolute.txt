@@ -111,3 +111,4 @@ C:\Users\okron\DAMD\ProyectoFinalSergioRamos\ProyectosVisualStudio\proyectoFinal
 C:\Users\okron\DAMD\ProyectoFinalSergioRamos\ProyectosVisualStudio\proyectoFinalPublico\proyectoFinalPublico\bin\Debug\net8.0-windows\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
 C:\Users\okron\DAMD\ProyectoFinalSergioRamos\ProyectosVisualStudio\proyectoFinalPublico\proyectoFinalPublico\bin\Debug\net8.0-windows\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 C:\Users\okron\DAMD\ProyectoFinalSergioRamos\ProyectosVisualStudio\proyectoFinalPublico\proyectoFinalPublico\obj\Debug\net8.0-windows\proyectoFinalPublico.BuscadorComparador.resources
+D:\ProyectoFinalSergioRamos\ProyectosVisualStudio\proyectoFinalPublico\proyectoFinalPublico\obj\Debug\net8.0-windows\proyectoFinalPublico.BuscadorComparador.resources

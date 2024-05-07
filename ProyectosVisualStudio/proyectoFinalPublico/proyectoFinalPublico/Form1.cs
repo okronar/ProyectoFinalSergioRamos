@@ -36,7 +36,7 @@ namespace proyectoFinalPublico
                     connection.Open();
                     string email = txbEmailInicio.Text;
                     string encryptedPassword = Auxiliar.Encrypt(txbEmailInicio.Text);
-                    
+
 
                     SqlCommand command = new SqlCommand("login", connection);
                     command.CommandType = CommandType.StoredProcedure;
@@ -58,7 +58,7 @@ namespace proyectoFinalPublico
 
                             MessageBox.Show("¡Bienvenido!", "Inicio");
 
-                            guardarUsuario();
+                            //guardarUsuario();
 
                             this.Close();
 
@@ -101,5 +101,7 @@ namespace proyectoFinalPublico
             TerminosYCondiciones terms = new TerminosYCondiciones();
             terms.Show();
         }
+
+      
     }
 }
