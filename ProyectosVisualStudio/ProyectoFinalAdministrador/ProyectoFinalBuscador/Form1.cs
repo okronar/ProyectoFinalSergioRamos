@@ -18,7 +18,6 @@ namespace ProyectoFinalBuscador
         public Administrador()
         {
             InitializeComponent();
-
             visualizarGuitarras();
             visualizarUsuarios();
         }
@@ -89,8 +88,7 @@ namespace ProyectoFinalBuscador
 
 
             }
-
-
+           
         }
 
         private void cargImgAct_Click(object sender, EventArgs e)

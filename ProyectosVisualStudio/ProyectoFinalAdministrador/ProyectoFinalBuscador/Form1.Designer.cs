@@ -130,9 +130,9 @@
             // 
             picmuestra.Anchor = AnchorStyles.None;
             picmuestra.BackColor = Color.White;
-            picmuestra.Location = new Point(205, 3);
+            picmuestra.Location = new Point(211, 3);
             picmuestra.Name = "picmuestra";
-            picmuestra.Size = new Size(173, 519);
+            picmuestra.Size = new Size(161, 519);
             picmuestra.TabIndex = 1;
             picmuestra.TabStop = false;
             // 
@@ -686,9 +686,9 @@
             // 
             picmuestraAct.Anchor = AnchorStyles.None;
             picmuestraAct.BackColor = Color.White;
-            picmuestraAct.Location = new Point(72, 79);
+            picmuestraAct.Location = new Point(85, 79);
             picmuestraAct.Name = "picmuestraAct";
-            picmuestraAct.Size = new Size(187, 520);
+            picmuestraAct.Size = new Size(161, 520);
             picmuestraAct.TabIndex = 3;
             picmuestraAct.TabStop = false;
             // 
