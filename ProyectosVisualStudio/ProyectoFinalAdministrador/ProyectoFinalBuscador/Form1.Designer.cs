@@ -118,7 +118,7 @@
             // CargarIMG
             // 
             CargarIMG.AutoSize = true;
-            CargarIMG.Location = new Point(3, 528);
+            CargarIMG.Location = new Point(3, 550);
             CargarIMG.Name = "CargarIMG";
             CargarIMG.Size = new Size(135, 37);
             CargarIMG.TabIndex = 0;
@@ -130,9 +130,9 @@
             // 
             picmuestra.Anchor = AnchorStyles.None;
             picmuestra.BackColor = Color.White;
-            picmuestra.Location = new Point(211, 3);
+            picmuestra.Location = new Point(211, 13);
             picmuestra.Name = "picmuestra";
-            picmuestra.Size = new Size(161, 519);
+            picmuestra.Size = new Size(161, 520);
             picmuestra.TabIndex = 1;
             picmuestra.TabStop = false;
             // 
@@ -358,7 +358,7 @@
             tableLayoutPanel8.Name = "tableLayoutPanel8";
             tableLayoutPanel8.RowCount = 2;
             tableLayoutPanel8.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel8.RowStyles.Add(new RowStyle(SizeType.Absolute, 161F));
+            tableLayoutPanel8.RowStyles.Add(new RowStyle(SizeType.Absolute, 139F));
             tableLayoutPanel8.Size = new Size(584, 686);
             tableLayoutPanel8.TabIndex = 6;
             // 
