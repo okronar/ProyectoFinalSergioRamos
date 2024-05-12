@@ -8,15 +8,24 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
+
 namespace proyectoFinalPublico
 {
     public partial class BuscadorComparador : Form
     {
-        public BuscadorComparador()
+        Landing landing;
+        public BuscadorComparador(Landing landing)
         {
             InitializeComponent();
+            this.landing = landing;
+
+
+            
         }
 
+        
+        
        
     }
 }
