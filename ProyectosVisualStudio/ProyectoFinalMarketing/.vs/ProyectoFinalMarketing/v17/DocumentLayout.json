@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\ProyectoFinalMarketing\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5E9CD5FF-A68F-4C34-8094-B87373FAF9EF}|ProyectoFinalMarketing\\ProyectoFinalMarketing.csproj|C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\ProyectoFinalMarketing\\proyectofinalmarketing\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{5E9CD5FF-A68F-4C34-8094-B87373FAF9EF}|ProyectoFinalMarketing\\ProyectoFinalMarketing.csproj|c:\\users\\okron\\damd\\proyectofinalsergioramos\\proyectosvisualstudio\\proyectofinalmarketing\\proyectofinalmarketing\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5E9CD5FF-A68F-4C34-8094-B87373FAF9EF}|ProyectoFinalMarketing\\ProyectoFinalMarketing.csproj|solutionrelative:proyectofinalmarketing\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E9CD5FF-A68F-4C34-8094-B87373FAF9EF}|ProyectoFinalMarketing\\ProyectoFinalMarketing.csproj|c:\\users\\okron\\damd\\proyectofinalsergioramos\\proyectosvisualstudio\\proyectofinalmarketing\\proyectofinalmarketing\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5E9CD5FF-A68F-4C34-8094-B87373FAF9EF}|ProyectoFinalMarketing\\ProyectoFinalMarketing.csproj|C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\ProyectoFinalMarketing\\proyectofinalmarketing\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5E9CD5FF-A68F-4C34-8094-B87373FAF9EF}|ProyectoFinalMarketing\\ProyectoFinalMarketing.csproj|solutionrelative:proyectofinalmarketing\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -40,14 +40,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Form1.cs [Dise\u00F1o]",
+              "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\ProyectoFinalMarketing\\ProyectoFinalMarketing\\Form1.cs",
               "RelativeDocumentMoniker": "ProyectoFinalMarketing\\Form1.cs",
-              "ToolTip": "C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\ProyectoFinalMarketing\\ProyectoFinalMarketing\\Form1.cs [Dise\u00F1o]",
-              "RelativeToolTip": "ProyectoFinalMarketing\\Form1.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\ProyectoFinalMarketing\\ProyectoFinalMarketing\\Form1.cs [Design]",
+              "RelativeToolTip": "ProyectoFinalMarketing\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-27T09:25:23.214Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "EditorCaption": " [Design]"
             }
           ]
         }

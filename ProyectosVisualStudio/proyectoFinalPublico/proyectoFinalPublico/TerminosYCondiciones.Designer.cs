@@ -86,6 +86,7 @@
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "TerminosYCondiciones";
             Text = "TérminosYCondiciones";
+            FormClosing += TerminosYCondiciones_FormClosing;
             tableLayoutPanel1.ResumeLayout(false);
             ResumeLayout(false);
         }

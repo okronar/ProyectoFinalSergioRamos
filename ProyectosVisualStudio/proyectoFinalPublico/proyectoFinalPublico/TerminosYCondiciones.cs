@@ -23,7 +23,14 @@ namespace proyectoFinalPublico
         {
             this.Close();
             land.Show();
-            
+
+        }
+
+        private void TerminosYCondiciones_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Close();
+            land.Show();
+
         }
     }
 }

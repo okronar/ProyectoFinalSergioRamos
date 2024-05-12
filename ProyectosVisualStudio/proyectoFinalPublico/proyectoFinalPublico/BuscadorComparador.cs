@@ -35,5 +35,13 @@ namespace proyectoFinalPublico
             this.Close();
             landing.Show();
         }
+
+        private void BuscadorComparador_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Close();
+            landing.Show();
+
+
+        }
     }
 }

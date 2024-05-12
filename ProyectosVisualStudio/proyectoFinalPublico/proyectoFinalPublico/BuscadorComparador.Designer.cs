@@ -837,6 +837,7 @@
             Controls.Add(tableLayoutPanel1);
             Name = "BuscadorComparador";
             Text = "BuscadorComparador";
+            FormClosing += BuscadorComparador_FormClosing;
             tableLayoutPanel1.ResumeLayout(false);
             tableLayoutPanel3.ResumeLayout(false);
             tableLayoutPanel3.PerformLayout();
