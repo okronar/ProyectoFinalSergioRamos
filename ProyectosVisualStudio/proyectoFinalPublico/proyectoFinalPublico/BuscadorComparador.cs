@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.Data.SqlClient;
 
 
 
@@ -21,11 +22,18 @@ namespace proyectoFinalPublico
             this.landing = landing;
 
 
-            
+
         }
 
-        
-        
-       
+        private void btnCompare_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnVolver_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            landing.Show();
+        }
     }
 }

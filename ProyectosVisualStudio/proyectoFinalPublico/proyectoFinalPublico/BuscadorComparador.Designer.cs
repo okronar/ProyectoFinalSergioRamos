@@ -29,25 +29,26 @@
         private void InitializeComponent()
         {
             tableLayoutPanel1 = new TableLayoutPanel();
-            tableLayoutPanel2 = new TableLayoutPanel();
-            textboxBusqueda1 = new TextBox();
-            tableLayoutPanel4 = new TableLayoutPanel();
-            picGui1 = new PictureBox();
             tableLayoutPanel3 = new TableLayoutPanel();
-            lblModel1 = new Label();
-            lblMarca1 = new Label();
-            lblYear1 = new Label();
-            lblCuerpo1 = new Label();
+            txboxBuscar = new TextBox();
+            tableLayoutPanel4 = new TableLayoutPanel();
+            button1 = new Button();
+            tableLayoutPanel15 = new TableLayoutPanel();
+            btnBuscar = new Button();
+            tableLayoutPanel16 = new TableLayoutPanel();
+            gridBuscar = new DataGridView();
+            tableLayoutPanel13 = new TableLayoutPanel();
+            tableLayoutPanel14 = new TableLayoutPanel();
             lblFijacion1 = new Label();
             lblEscala1 = new Label();
-            lblMaderaCuerpo1 = new Label();
-            lblMaderaMastil1 = new Label();
-            lblMaderaDiapason1 = new Label();
+            lblMadeCuerpo1 = new Label();
+            lblMadeMastil1 = new Label();
+            lblMadeDiapason1 = new Label();
             lblPuente1 = new Label();
             lblPastillas1 = new Label();
-            tableLayoutPanel7 = new TableLayoutPanel();
-            tableLayoutPanel9 = new TableLayoutPanel();
-            btnShop1 = new Button();
+            labelModelo1 = new Label();
+            lblMarca1 = new Label();
+            picGuitar1 = new PictureBox();
             tableLayoutComparar = new TableLayoutPanel();
             textBoxcomparar = new TextBox();
             tableLayoutPanel6 = new TableLayoutPanel();
@@ -55,7 +56,6 @@
             tableLayoutPanel8 = new TableLayoutPanel();
             btnShop2 = new Button();
             tableLayoutPanel5 = new TableLayoutPanel();
-            picGuit2 = new PictureBox();
             tableLayoutPanel10 = new TableLayoutPanel();
             lblModelo2 = new Label();
             lblMarca2 = new Label();
@@ -68,19 +68,46 @@
             lblMaderaDiapason2 = new Label();
             lblPuente2 = new Label();
             lblPastillas2 = new Label();
+            picGuit2 = new PictureBox();
+            tableLayoutPanel11 = new TableLayoutPanel();
+            btnCompare = new Button();
+            tableLayoutPanel2 = new TableLayoutPanel();
+            gridComparar = new DataGridView();
+            tableLayoutPanel9 = new TableLayoutPanel();
+            tableLayoutPanel12 = new TableLayoutPanel();
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
+            label4 = new Label();
+            label5 = new Label();
+            label6 = new Label();
+            label7 = new Label();
+            label8 = new Label();
+            label9 = new Label();
+            label10 = new Label();
+            label11 = new Label();
+            pictureBox1 = new PictureBox();
             tableLayoutPanel1.SuspendLayout();
-            tableLayoutPanel2.SuspendLayout();
-            tableLayoutPanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)picGui1).BeginInit();
             tableLayoutPanel3.SuspendLayout();
-            tableLayoutPanel7.SuspendLayout();
-            tableLayoutPanel9.SuspendLayout();
+            tableLayoutPanel4.SuspendLayout();
+            tableLayoutPanel15.SuspendLayout();
+            tableLayoutPanel16.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)gridBuscar).BeginInit();
+            tableLayoutPanel13.SuspendLayout();
+            tableLayoutPanel14.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)picGuitar1).BeginInit();
             tableLayoutComparar.SuspendLayout();
             tableLayoutPanel6.SuspendLayout();
             tableLayoutPanel8.SuspendLayout();
             tableLayoutPanel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)picGuit2).BeginInit();
             tableLayoutPanel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)picGuit2).BeginInit();
+            tableLayoutPanel11.SuspendLayout();
+            tableLayoutPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)gridComparar).BeginInit();
+            tableLayoutPanel9.SuspendLayout();
+            tableLayoutPanel12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -88,141 +115,173 @@
             tableLayoutPanel1.ColumnCount = 2;
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tableLayoutPanel1.Controls.Add(tableLayoutPanel2, 0, 0);
+            tableLayoutPanel1.Controls.Add(tableLayoutPanel3, 0, 0);
             tableLayoutPanel1.Controls.Add(tableLayoutComparar, 1, 0);
             tableLayoutPanel1.Dock = DockStyle.Fill;
             tableLayoutPanel1.Location = new Point(0, 0);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 1;
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 99.99999F));
-            tableLayoutPanel1.Size = new Size(1447, 912);
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            tableLayoutPanel1.Size = new Size(1253, 1048);
             tableLayoutPanel1.TabIndex = 0;
-            // 
-            // tableLayoutPanel2
-            // 
-            tableLayoutPanel2.ColumnCount = 1;
-            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tableLayoutPanel2.Controls.Add(textboxBusqueda1, 0, 0);
-            tableLayoutPanel2.Controls.Add(tableLayoutPanel4, 0, 1);
-            tableLayoutPanel2.Controls.Add(tableLayoutPanel7, 0, 2);
-            tableLayoutPanel2.Dock = DockStyle.Fill;
-            tableLayoutPanel2.Location = new Point(3, 3);
-            tableLayoutPanel2.Name = "tableLayoutPanel2";
-            tableLayoutPanel2.RowCount = 3;
-            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 18.4094257F));
-            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 81.5905762F));
-            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Absolute, 226F));
-            tableLayoutPanel2.Size = new Size(717, 906);
-            tableLayoutPanel2.TabIndex = 0;
-            // 
-            // textboxBusqueda1
-            // 
-            textboxBusqueda1.Anchor = AnchorStyles.None;
-            textboxBusqueda1.Location = new Point(170, 51);
-            textboxBusqueda1.Name = "textboxBusqueda1";
-            textboxBusqueda1.PlaceholderText = "Buscar";
-            textboxBusqueda1.Size = new Size(377, 23);
-            textboxBusqueda1.TabIndex = 1;
-            textboxBusqueda1.TextAlign = HorizontalAlignment.Center;
-            // 
-            // tableLayoutPanel4
-            // 
-            tableLayoutPanel4.Anchor = AnchorStyles.None;
-            tableLayoutPanel4.ColumnCount = 2;
-            tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 45F));
-            tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 55F));
-            tableLayoutPanel4.Controls.Add(picGui1, 0, 0);
-            tableLayoutPanel4.Controls.Add(tableLayoutPanel3, 1, 0);
-            tableLayoutPanel4.Location = new Point(3, 128);
-            tableLayoutPanel4.Name = "tableLayoutPanel4";
-            tableLayoutPanel4.RowCount = 1;
-            tableLayoutPanel4.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel4.Size = new Size(711, 548);
-            tableLayoutPanel4.TabIndex = 0;
-            // 
-            // picGui1
-            // 
-            picGui1.Anchor = AnchorStyles.Left;
-            picGui1.BackColor = Color.White;
-            picGui1.Location = new Point(3, 14);
-            picGui1.Name = "picGui1";
-            picGui1.Size = new Size(161, 520);
-            picGui1.TabIndex = 0;
-            picGui1.TabStop = false;
             // 
             // tableLayoutPanel3
             // 
             tableLayoutPanel3.ColumnCount = 1;
-            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
-            tableLayoutPanel3.Controls.Add(lblModel1, 0, 0);
-            tableLayoutPanel3.Controls.Add(lblMarca1, 0, 1);
-            tableLayoutPanel3.Controls.Add(lblYear1, 0, 2);
-            tableLayoutPanel3.Controls.Add(lblCuerpo1, 0, 3);
-            tableLayoutPanel3.Controls.Add(lblFijacion1, 0, 4);
-            tableLayoutPanel3.Controls.Add(lblEscala1, 0, 5);
-            tableLayoutPanel3.Controls.Add(lblMaderaCuerpo1, 0, 6);
-            tableLayoutPanel3.Controls.Add(lblMaderaMastil1, 0, 7);
-            tableLayoutPanel3.Controls.Add(lblMaderaDiapason1, 0, 8);
-            tableLayoutPanel3.Controls.Add(lblPuente1, 0, 9);
-            tableLayoutPanel3.Controls.Add(lblPastillas1, 0, 10);
-            tableLayoutPanel3.Dock = DockStyle.Left;
-            tableLayoutPanel3.Location = new Point(322, 3);
+            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel3.Controls.Add(txboxBuscar, 0, 0);
+            tableLayoutPanel3.Controls.Add(tableLayoutPanel4, 0, 3);
+            tableLayoutPanel3.Controls.Add(tableLayoutPanel15, 0, 1);
+            tableLayoutPanel3.Controls.Add(tableLayoutPanel13, 0, 2);
+            tableLayoutPanel3.Dock = DockStyle.Fill;
+            tableLayoutPanel3.Location = new Point(3, 3);
             tableLayoutPanel3.Name = "tableLayoutPanel3";
-            tableLayoutPanel3.RowCount = 11;
-            tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
-            tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
-            tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
-            tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
-            tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
-            tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
-            tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
-            tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
-            tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
-            tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
-            tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
-            tableLayoutPanel3.Size = new Size(200, 542);
-            tableLayoutPanel3.TabIndex = 1;
+            tableLayoutPanel3.RowCount = 4;
+            tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 19.69697F));
+            tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 80.30303F));
+            tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Absolute, 612F));
+            tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Absolute, 165F));
+            tableLayoutPanel3.Size = new Size(620, 1042);
+            tableLayoutPanel3.TabIndex = 2;
             // 
-            // lblModel1
+            // txboxBuscar
             // 
-            lblModel1.AutoSize = true;
-            lblModel1.Location = new Point(3, 0);
-            lblModel1.Name = "lblModel1";
-            lblModel1.Size = new Size(48, 15);
-            lblModel1.TabIndex = 0;
-            lblModel1.Text = "Modelo";
+            txboxBuscar.Anchor = AnchorStyles.None;
+            txboxBuscar.Location = new Point(77, 14);
+            txboxBuscar.Name = "txboxBuscar";
+            txboxBuscar.PlaceholderText = "Introduce modelo";
+            txboxBuscar.Size = new Size(466, 23);
+            txboxBuscar.TabIndex = 1;
+            txboxBuscar.TextAlign = HorizontalAlignment.Center;
             // 
-            // lblMarca1
+            // tableLayoutPanel4
             // 
-            lblMarca1.AutoSize = true;
-            lblMarca1.Location = new Point(3, 49);
-            lblMarca1.Name = "lblMarca1";
-            lblMarca1.Size = new Size(40, 15);
-            lblMarca1.TabIndex = 0;
-            lblMarca1.Text = "Marca";
+            tableLayoutPanel4.ColumnCount = 2;
+            tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
+            tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 470F));
+            tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel4.Controls.Add(button1, 1, 0);
+            tableLayoutPanel4.Dock = DockStyle.Fill;
+            tableLayoutPanel4.Location = new Point(3, 879);
+            tableLayoutPanel4.Name = "tableLayoutPanel4";
+            tableLayoutPanel4.RowCount = 2;
+            tableLayoutPanel4.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            tableLayoutPanel4.RowStyles.Add(new RowStyle(SizeType.Absolute, 68F));
+            tableLayoutPanel4.Size = new Size(614, 160);
+            tableLayoutPanel4.TabIndex = 1;
+            tableLayoutPanel4.Visible = false;
             // 
-            // lblYear1
+            // button1
             // 
-            lblYear1.AutoSize = true;
-            lblYear1.Location = new Point(3, 98);
-            lblYear1.Name = "lblYear1";
-            lblYear1.Size = new Size(29, 15);
-            lblYear1.TabIndex = 0;
-            lblYear1.Text = "Año";
+            button1.Dock = DockStyle.Left;
+            button1.Location = new Point(147, 3);
+            button1.Name = "button1";
+            button1.Size = new Size(157, 86);
+            button1.TabIndex = 0;
+            button1.Text = "Tienda";
+            button1.UseVisualStyleBackColor = true;
             // 
-            // lblCuerpo1
+            // tableLayoutPanel15
             // 
-            lblCuerpo1.AutoSize = true;
-            lblCuerpo1.Location = new Point(3, 147);
-            lblCuerpo1.Name = "lblCuerpo1";
-            lblCuerpo1.Size = new Size(46, 15);
-            lblCuerpo1.TabIndex = 0;
-            lblCuerpo1.Text = "Cuerpo";
+            tableLayoutPanel15.ColumnCount = 3;
+            tableLayoutPanel15.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel15.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 461F));
+            tableLayoutPanel15.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 77F));
+            tableLayoutPanel15.Controls.Add(btnBuscar, 1, 0);
+            tableLayoutPanel15.Controls.Add(tableLayoutPanel16, 1, 1);
+            tableLayoutPanel15.Dock = DockStyle.Fill;
+            tableLayoutPanel15.Location = new Point(3, 55);
+            tableLayoutPanel15.Name = "tableLayoutPanel15";
+            tableLayoutPanel15.RowCount = 2;
+            tableLayoutPanel15.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel15.RowStyles.Add(new RowStyle(SizeType.Absolute, 173F));
+            tableLayoutPanel15.Size = new Size(614, 206);
+            tableLayoutPanel15.TabIndex = 2;
+            // 
+            // btnBuscar
+            // 
+            btnBuscar.Anchor = AnchorStyles.None;
+            btnBuscar.Location = new Point(158, 5);
+            btnBuscar.Name = "btnBuscar";
+            btnBuscar.Size = new Size(296, 23);
+            btnBuscar.TabIndex = 2;
+            btnBuscar.Text = "Buscar";
+            btnBuscar.UseVisualStyleBackColor = true;
+            // 
+            // tableLayoutPanel16
+            // 
+            tableLayoutPanel16.Anchor = AnchorStyles.Top;
+            tableLayoutPanel16.ColumnCount = 1;
+            tableLayoutPanel16.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel16.Controls.Add(gridBuscar, 0, 0);
+            tableLayoutPanel16.Location = new Point(119, 36);
+            tableLayoutPanel16.Name = "tableLayoutPanel16";
+            tableLayoutPanel16.RowCount = 1;
+            tableLayoutPanel16.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel16.Size = new Size(375, 71);
+            tableLayoutPanel16.TabIndex = 3;
+            // 
+            // gridBuscar
+            // 
+            gridBuscar.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            gridBuscar.Dock = DockStyle.Fill;
+            gridBuscar.Location = new Point(3, 3);
+            gridBuscar.Name = "gridBuscar";
+            gridBuscar.Size = new Size(369, 65);
+            gridBuscar.TabIndex = 0;
+            gridBuscar.Visible = false;
+            // 
+            // tableLayoutPanel13
+            // 
+            tableLayoutPanel13.Anchor = AnchorStyles.None;
+            tableLayoutPanel13.ColumnCount = 2;
+            tableLayoutPanel13.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50.1043854F));
+            tableLayoutPanel13.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 49.8956146F));
+            tableLayoutPanel13.Controls.Add(tableLayoutPanel14, 1, 0);
+            tableLayoutPanel13.Controls.Add(picGuitar1, 0, 0);
+            tableLayoutPanel13.Location = new Point(3, 267);
+            tableLayoutPanel13.Name = "tableLayoutPanel13";
+            tableLayoutPanel13.RowCount = 1;
+            tableLayoutPanel13.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            tableLayoutPanel13.Size = new Size(614, 606);
+            tableLayoutPanel13.TabIndex = 0;
+            tableLayoutPanel13.Visible = false;
+            // 
+            // tableLayoutPanel14
+            // 
+            tableLayoutPanel14.Anchor = AnchorStyles.Right;
+            tableLayoutPanel14.ColumnCount = 1;
+            tableLayoutPanel14.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
+            tableLayoutPanel14.Controls.Add(lblFijacion1, 0, 4);
+            tableLayoutPanel14.Controls.Add(lblEscala1, 0, 5);
+            tableLayoutPanel14.Controls.Add(lblMadeCuerpo1, 0, 6);
+            tableLayoutPanel14.Controls.Add(lblMadeMastil1, 0, 7);
+            tableLayoutPanel14.Controls.Add(lblMadeDiapason1, 0, 8);
+            tableLayoutPanel14.Controls.Add(lblPuente1, 0, 9);
+            tableLayoutPanel14.Controls.Add(lblPastillas1, 0, 10);
+            tableLayoutPanel14.Controls.Add(labelModelo1, 0, 0);
+            tableLayoutPanel14.Controls.Add(lblMarca1, 0, 1);
+            tableLayoutPanel14.Location = new Point(411, 3);
+            tableLayoutPanel14.Name = "tableLayoutPanel14";
+            tableLayoutPanel14.RowCount = 11;
+            tableLayoutPanel14.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
+            tableLayoutPanel14.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
+            tableLayoutPanel14.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
+            tableLayoutPanel14.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
+            tableLayoutPanel14.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
+            tableLayoutPanel14.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
+            tableLayoutPanel14.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
+            tableLayoutPanel14.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
+            tableLayoutPanel14.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
+            tableLayoutPanel14.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
+            tableLayoutPanel14.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
+            tableLayoutPanel14.Size = new Size(200, 600);
+            tableLayoutPanel14.TabIndex = 1;
             // 
             // lblFijacion1
             // 
             lblFijacion1.AutoSize = true;
-            lblFijacion1.Location = new Point(3, 196);
+            lblFijacion1.Location = new Point(3, 216);
             lblFijacion1.Name = "lblFijacion1";
             lblFijacion1.Size = new Size(48, 15);
             lblFijacion1.TabIndex = 0;
@@ -231,43 +290,43 @@
             // lblEscala1
             // 
             lblEscala1.AutoSize = true;
-            lblEscala1.Location = new Point(3, 245);
+            lblEscala1.Location = new Point(3, 270);
             lblEscala1.Name = "lblEscala1";
             lblEscala1.Size = new Size(39, 15);
             lblEscala1.TabIndex = 0;
             lblEscala1.Text = "Escala";
             // 
-            // lblMaderaCuerpo1
+            // lblMadeCuerpo1
             // 
-            lblMaderaCuerpo1.AutoSize = true;
-            lblMaderaCuerpo1.Location = new Point(3, 294);
-            lblMaderaCuerpo1.Name = "lblMaderaCuerpo1";
-            lblMaderaCuerpo1.Size = new Size(87, 15);
-            lblMaderaCuerpo1.TabIndex = 0;
-            lblMaderaCuerpo1.Text = "Madera cuerpo";
+            lblMadeCuerpo1.AutoSize = true;
+            lblMadeCuerpo1.Location = new Point(3, 324);
+            lblMadeCuerpo1.Name = "lblMadeCuerpo1";
+            lblMadeCuerpo1.Size = new Size(87, 15);
+            lblMadeCuerpo1.TabIndex = 0;
+            lblMadeCuerpo1.Text = "Madera cuerpo";
             // 
-            // lblMaderaMastil1
+            // lblMadeMastil1
             // 
-            lblMaderaMastil1.AutoSize = true;
-            lblMaderaMastil1.Location = new Point(3, 343);
-            lblMaderaMastil1.Name = "lblMaderaMastil1";
-            lblMaderaMastil1.Size = new Size(82, 15);
-            lblMaderaMastil1.TabIndex = 0;
-            lblMaderaMastil1.Text = "Madera Mastil";
+            lblMadeMastil1.AutoSize = true;
+            lblMadeMastil1.Location = new Point(3, 378);
+            lblMadeMastil1.Name = "lblMadeMastil1";
+            lblMadeMastil1.Size = new Size(82, 15);
+            lblMadeMastil1.TabIndex = 0;
+            lblMadeMastil1.Text = "Madera Mastil";
             // 
-            // lblMaderaDiapason1
+            // lblMadeDiapason1
             // 
-            lblMaderaDiapason1.AutoSize = true;
-            lblMaderaDiapason1.Location = new Point(3, 392);
-            lblMaderaDiapason1.Name = "lblMaderaDiapason1";
-            lblMaderaDiapason1.Size = new Size(98, 15);
-            lblMaderaDiapason1.TabIndex = 0;
-            lblMaderaDiapason1.Text = "Madera diapason";
+            lblMadeDiapason1.AutoSize = true;
+            lblMadeDiapason1.Location = new Point(3, 432);
+            lblMadeDiapason1.Name = "lblMadeDiapason1";
+            lblMadeDiapason1.Size = new Size(98, 15);
+            lblMadeDiapason1.TabIndex = 0;
+            lblMadeDiapason1.Text = "Madera diapason";
             // 
             // lblPuente1
             // 
             lblPuente1.AutoSize = true;
-            lblPuente1.Location = new Point(3, 441);
+            lblPuente1.Location = new Point(3, 486);
             lblPuente1.Name = "lblPuente1";
             lblPuente1.Size = new Size(44, 15);
             lblPuente1.TabIndex = 0;
@@ -276,118 +335,110 @@
             // lblPastillas1
             // 
             lblPastillas1.AutoSize = true;
-            lblPastillas1.Location = new Point(3, 490);
+            lblPastillas1.Location = new Point(3, 540);
             lblPastillas1.Name = "lblPastillas1";
             lblPastillas1.Size = new Size(49, 15);
             lblPastillas1.TabIndex = 0;
             lblPastillas1.Text = "Pastillas";
             // 
-            // tableLayoutPanel7
+            // labelModelo1
             // 
-            tableLayoutPanel7.ColumnCount = 2;
-            tableLayoutPanel7.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 23.0661049F));
-            tableLayoutPanel7.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 76.9339F));
-            tableLayoutPanel7.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
-            tableLayoutPanel7.Controls.Add(tableLayoutPanel9, 0, 0);
-            tableLayoutPanel7.Dock = DockStyle.Fill;
-            tableLayoutPanel7.Location = new Point(3, 682);
-            tableLayoutPanel7.Name = "tableLayoutPanel7";
-            tableLayoutPanel7.RowCount = 2;
-            tableLayoutPanel7.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel7.RowStyles.Add(new RowStyle(SizeType.Absolute, 167F));
-            tableLayoutPanel7.Size = new Size(711, 221);
-            tableLayoutPanel7.TabIndex = 1;
+            labelModelo1.AutoSize = true;
+            labelModelo1.Location = new Point(3, 0);
+            labelModelo1.Name = "labelModelo1";
+            labelModelo1.Size = new Size(48, 15);
+            labelModelo1.TabIndex = 1;
+            labelModelo1.Text = "Modelo";
             // 
-            // tableLayoutPanel9
+            // lblMarca1
             // 
-            tableLayoutPanel9.ColumnCount = 2;
-            tableLayoutPanel9.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 37.18F));
-            tableLayoutPanel9.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 62.82F));
-            tableLayoutPanel9.Controls.Add(btnShop1, 1, 0);
-            tableLayoutPanel9.Dock = DockStyle.Fill;
-            tableLayoutPanel9.Location = new Point(3, 3);
-            tableLayoutPanel9.Name = "tableLayoutPanel9";
-            tableLayoutPanel9.RowCount = 1;
-            tableLayoutPanel9.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel9.Size = new Size(158, 48);
-            tableLayoutPanel9.TabIndex = 1;
+            lblMarca1.AutoSize = true;
+            lblMarca1.Location = new Point(3, 54);
+            lblMarca1.Name = "lblMarca1";
+            lblMarca1.Size = new Size(13, 15);
+            lblMarca1.TabIndex = 2;
+            lblMarca1.Text = "  ";
             // 
-            // btnShop1
+            // picGuitar1
             // 
-            btnShop1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            btnShop1.Location = new Point(61, 3);
-            btnShop1.Name = "btnShop1";
-            btnShop1.Size = new Size(94, 42);
-            btnShop1.TabIndex = 0;
-            btnShop1.Text = "Tienda";
-            btnShop1.UseVisualStyleBackColor = true;
+            picGuitar1.Anchor = AnchorStyles.Right;
+            picGuitar1.BackColor = Color.White;
+            picGuitar1.Location = new Point(143, 43);
+            picGuitar1.Name = "picGuitar1";
+            picGuitar1.Size = new Size(161, 520);
+            picGuitar1.TabIndex = 0;
+            picGuitar1.TabStop = false;
             // 
             // tableLayoutComparar
             // 
             tableLayoutComparar.ColumnCount = 1;
             tableLayoutComparar.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutComparar.Controls.Add(textBoxcomparar, 0, 0);
-            tableLayoutComparar.Controls.Add(tableLayoutPanel6, 0, 2);
-            tableLayoutComparar.Controls.Add(tableLayoutPanel5, 0, 1);
+            tableLayoutComparar.Controls.Add(tableLayoutPanel6, 0, 3);
+            tableLayoutComparar.Controls.Add(tableLayoutPanel5, 0, 2);
+            tableLayoutComparar.Controls.Add(tableLayoutPanel11, 0, 1);
             tableLayoutComparar.Dock = DockStyle.Fill;
-            tableLayoutComparar.Location = new Point(726, 3);
+            tableLayoutComparar.Location = new Point(629, 3);
             tableLayoutComparar.Name = "tableLayoutComparar";
-            tableLayoutComparar.RowCount = 3;
-            tableLayoutComparar.RowStyles.Add(new RowStyle(SizeType.Percent, 18.4094257F));
-            tableLayoutComparar.RowStyles.Add(new RowStyle(SizeType.Percent, 81.5905762F));
-            tableLayoutComparar.RowStyles.Add(new RowStyle(SizeType.Absolute, 226F));
-            tableLayoutComparar.Size = new Size(718, 906);
-            tableLayoutComparar.TabIndex = 0;
+            tableLayoutComparar.RowCount = 4;
+            tableLayoutComparar.RowStyles.Add(new RowStyle(SizeType.Percent, 19.69697F));
+            tableLayoutComparar.RowStyles.Add(new RowStyle(SizeType.Percent, 80.30303F));
+            tableLayoutComparar.RowStyles.Add(new RowStyle(SizeType.Absolute, 612F));
+            tableLayoutComparar.RowStyles.Add(new RowStyle(SizeType.Absolute, 165F));
+            tableLayoutComparar.Size = new Size(621, 1042);
+            tableLayoutComparar.TabIndex = 1;
             // 
             // textBoxcomparar
             // 
             textBoxcomparar.Anchor = AnchorStyles.None;
-            textBoxcomparar.Location = new Point(170, 51);
+            textBoxcomparar.Location = new Point(77, 14);
             textBoxcomparar.Name = "textBoxcomparar";
-            textBoxcomparar.PlaceholderText = "Comparar";
-            textBoxcomparar.Size = new Size(377, 23);
+            textBoxcomparar.PlaceholderText = "Introduce modelo";
+            textBoxcomparar.Size = new Size(466, 23);
             textBoxcomparar.TabIndex = 1;
             textBoxcomparar.TextAlign = HorizontalAlignment.Center;
+            textBoxcomparar.Visible = false;
             // 
             // tableLayoutPanel6
             // 
             tableLayoutPanel6.ColumnCount = 2;
             tableLayoutPanel6.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
-            tableLayoutPanel6.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 166F));
+            tableLayoutPanel6.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 304F));
             tableLayoutPanel6.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
             tableLayoutPanel6.Controls.Add(btnVolver, 1, 1);
             tableLayoutPanel6.Controls.Add(tableLayoutPanel8, 1, 0);
             tableLayoutPanel6.Dock = DockStyle.Fill;
-            tableLayoutPanel6.Location = new Point(3, 682);
+            tableLayoutPanel6.Location = new Point(3, 879);
             tableLayoutPanel6.Name = "tableLayoutPanel6";
             tableLayoutPanel6.RowCount = 2;
             tableLayoutPanel6.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel6.RowStyles.Add(new RowStyle(SizeType.Absolute, 169F));
-            tableLayoutPanel6.Size = new Size(712, 221);
+            tableLayoutPanel6.RowStyles.Add(new RowStyle(SizeType.Absolute, 68F));
+            tableLayoutPanel6.Size = new Size(615, 160);
             tableLayoutPanel6.TabIndex = 1;
             // 
             // btnVolver
             // 
             btnVolver.Anchor = AnchorStyles.None;
-            btnVolver.Location = new Point(591, 125);
+            btnVolver.Location = new Point(425, 114);
             btnVolver.Name = "btnVolver";
             btnVolver.Size = new Size(75, 23);
             btnVolver.TabIndex = 0;
             btnVolver.Text = "Volver";
             btnVolver.UseVisualStyleBackColor = true;
+            btnVolver.Click += btnVolver_Click;
             // 
             // tableLayoutPanel8
             // 
             tableLayoutPanel8.ColumnCount = 2;
-            tableLayoutPanel8.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 62.1794853F));
-            tableLayoutPanel8.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 37.8205147F));
+            tableLayoutPanel8.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 53.020134F));
+            tableLayoutPanel8.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 46.979866F));
             tableLayoutPanel8.Controls.Add(btnShop2, 0, 0);
             tableLayoutPanel8.Dock = DockStyle.Fill;
-            tableLayoutPanel8.Location = new Point(549, 3);
+            tableLayoutPanel8.Location = new Point(314, 3);
             tableLayoutPanel8.Name = "tableLayoutPanel8";
             tableLayoutPanel8.RowCount = 1;
             tableLayoutPanel8.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel8.Size = new Size(160, 46);
+            tableLayoutPanel8.Size = new Size(298, 86);
             tableLayoutPanel8.TabIndex = 1;
             // 
             // btnShop2
@@ -395,38 +446,31 @@
             btnShop2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             btnShop2.Location = new Point(3, 3);
             btnShop2.Name = "btnShop2";
-            btnShop2.Size = new Size(93, 40);
+            btnShop2.Size = new Size(152, 80);
             btnShop2.TabIndex = 0;
             btnShop2.Text = "Tienda";
             btnShop2.UseVisualStyleBackColor = true;
+            btnShop2.Visible = false;
             // 
             // tableLayoutPanel5
             // 
             tableLayoutPanel5.Anchor = AnchorStyles.None;
             tableLayoutPanel5.ColumnCount = 2;
-            tableLayoutPanel5.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 55F));
-            tableLayoutPanel5.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 45F));
-            tableLayoutPanel5.Controls.Add(picGuit2, 1, 0);
+            tableLayoutPanel5.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50.5691071F));
+            tableLayoutPanel5.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 49.4308929F));
             tableLayoutPanel5.Controls.Add(tableLayoutPanel10, 0, 0);
-            tableLayoutPanel5.Location = new Point(3, 128);
+            tableLayoutPanel5.Controls.Add(picGuit2, 1, 0);
+            tableLayoutPanel5.Location = new Point(3, 267);
             tableLayoutPanel5.Name = "tableLayoutPanel5";
             tableLayoutPanel5.RowCount = 1;
             tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel5.Size = new Size(712, 548);
+            tableLayoutPanel5.Size = new Size(615, 606);
             tableLayoutPanel5.TabIndex = 0;
-            // 
-            // picGuit2
-            // 
-            picGuit2.Anchor = AnchorStyles.Right;
-            picGuit2.BackColor = Color.White;
-            picGuit2.Location = new Point(548, 14);
-            picGuit2.Name = "picGuit2";
-            picGuit2.Size = new Size(161, 520);
-            picGuit2.TabIndex = 0;
-            picGuit2.TabStop = false;
+            tableLayoutPanel5.Visible = false;
             // 
             // tableLayoutPanel10
             // 
+            tableLayoutPanel10.Anchor = AnchorStyles.Left;
             tableLayoutPanel10.ColumnCount = 1;
             tableLayoutPanel10.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
             tableLayoutPanel10.Controls.Add(lblModelo2, 0, 0);
@@ -440,8 +484,7 @@
             tableLayoutPanel10.Controls.Add(lblMaderaDiapason2, 0, 8);
             tableLayoutPanel10.Controls.Add(lblPuente2, 0, 9);
             tableLayoutPanel10.Controls.Add(lblPastillas2, 0, 10);
-            tableLayoutPanel10.Dock = DockStyle.Right;
-            tableLayoutPanel10.Location = new Point(188, 3);
+            tableLayoutPanel10.Location = new Point(3, 3);
             tableLayoutPanel10.Name = "tableLayoutPanel10";
             tableLayoutPanel10.RowCount = 11;
             tableLayoutPanel10.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
@@ -455,13 +498,14 @@
             tableLayoutPanel10.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
             tableLayoutPanel10.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
             tableLayoutPanel10.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
-            tableLayoutPanel10.Size = new Size(200, 542);
+            tableLayoutPanel10.Size = new Size(200, 600);
             tableLayoutPanel10.TabIndex = 1;
             // 
             // lblModelo2
             // 
+            lblModelo2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             lblModelo2.AutoSize = true;
-            lblModelo2.Location = new Point(3, 0);
+            lblModelo2.Location = new Point(149, 0);
             lblModelo2.Name = "lblModelo2";
             lblModelo2.Size = new Size(48, 15);
             lblModelo2.TabIndex = 0;
@@ -469,8 +513,9 @@
             // 
             // lblMarca2
             // 
+            lblMarca2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             lblMarca2.AutoSize = true;
-            lblMarca2.Location = new Point(3, 49);
+            lblMarca2.Location = new Point(157, 54);
             lblMarca2.Name = "lblMarca2";
             lblMarca2.Size = new Size(40, 15);
             lblMarca2.TabIndex = 0;
@@ -478,8 +523,9 @@
             // 
             // lblYear2
             // 
+            lblYear2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             lblYear2.AutoSize = true;
-            lblYear2.Location = new Point(3, 98);
+            lblYear2.Location = new Point(168, 108);
             lblYear2.Name = "lblYear2";
             lblYear2.Size = new Size(29, 15);
             lblYear2.TabIndex = 0;
@@ -487,8 +533,9 @@
             // 
             // lblCuerpo2
             // 
+            lblCuerpo2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             lblCuerpo2.AutoSize = true;
-            lblCuerpo2.Location = new Point(3, 147);
+            lblCuerpo2.Location = new Point(151, 162);
             lblCuerpo2.Name = "lblCuerpo2";
             lblCuerpo2.Size = new Size(46, 15);
             lblCuerpo2.TabIndex = 0;
@@ -496,8 +543,9 @@
             // 
             // lblFijacion2
             // 
+            lblFijacion2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             lblFijacion2.AutoSize = true;
-            lblFijacion2.Location = new Point(3, 196);
+            lblFijacion2.Location = new Point(149, 216);
             lblFijacion2.Name = "lblFijacion2";
             lblFijacion2.Size = new Size(48, 15);
             lblFijacion2.TabIndex = 0;
@@ -505,8 +553,9 @@
             // 
             // lblEscala2
             // 
+            lblEscala2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             lblEscala2.AutoSize = true;
-            lblEscala2.Location = new Point(3, 245);
+            lblEscala2.Location = new Point(158, 270);
             lblEscala2.Name = "lblEscala2";
             lblEscala2.Size = new Size(39, 15);
             lblEscala2.TabIndex = 0;
@@ -514,8 +563,9 @@
             // 
             // lblMaderaCuerpo2
             // 
+            lblMaderaCuerpo2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             lblMaderaCuerpo2.AutoSize = true;
-            lblMaderaCuerpo2.Location = new Point(3, 294);
+            lblMaderaCuerpo2.Location = new Point(110, 324);
             lblMaderaCuerpo2.Name = "lblMaderaCuerpo2";
             lblMaderaCuerpo2.Size = new Size(87, 15);
             lblMaderaCuerpo2.TabIndex = 0;
@@ -523,8 +573,9 @@
             // 
             // lblMaderaMastil2
             // 
+            lblMaderaMastil2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             lblMaderaMastil2.AutoSize = true;
-            lblMaderaMastil2.Location = new Point(3, 343);
+            lblMaderaMastil2.Location = new Point(115, 378);
             lblMaderaMastil2.Name = "lblMaderaMastil2";
             lblMaderaMastil2.Size = new Size(82, 15);
             lblMaderaMastil2.TabIndex = 0;
@@ -532,8 +583,9 @@
             // 
             // lblMaderaDiapason2
             // 
+            lblMaderaDiapason2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             lblMaderaDiapason2.AutoSize = true;
-            lblMaderaDiapason2.Location = new Point(3, 392);
+            lblMaderaDiapason2.Location = new Point(99, 432);
             lblMaderaDiapason2.Name = "lblMaderaDiapason2";
             lblMaderaDiapason2.Size = new Size(98, 15);
             lblMaderaDiapason2.TabIndex = 0;
@@ -541,8 +593,9 @@
             // 
             // lblPuente2
             // 
+            lblPuente2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             lblPuente2.AutoSize = true;
-            lblPuente2.Location = new Point(3, 441);
+            lblPuente2.Location = new Point(153, 486);
             lblPuente2.Name = "lblPuente2";
             lblPuente2.Size = new Size(44, 15);
             lblPuente2.TabIndex = 0;
@@ -550,72 +603,281 @@
             // 
             // lblPastillas2
             // 
+            lblPastillas2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             lblPastillas2.AutoSize = true;
-            lblPastillas2.Location = new Point(3, 490);
+            lblPastillas2.Location = new Point(148, 540);
             lblPastillas2.Name = "lblPastillas2";
             lblPastillas2.Size = new Size(49, 15);
             lblPastillas2.TabIndex = 0;
             lblPastillas2.Text = "Pastillas";
+            // 
+            // picGuit2
+            // 
+            picGuit2.Anchor = AnchorStyles.Left;
+            picGuit2.BackColor = Color.White;
+            picGuit2.Location = new Point(314, 43);
+            picGuit2.Name = "picGuit2";
+            picGuit2.Size = new Size(161, 520);
+            picGuit2.TabIndex = 0;
+            picGuit2.TabStop = false;
+            // 
+            // tableLayoutPanel11
+            // 
+            tableLayoutPanel11.ColumnCount = 3;
+            tableLayoutPanel11.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel11.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 461F));
+            tableLayoutPanel11.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 77F));
+            tableLayoutPanel11.Controls.Add(btnCompare, 1, 0);
+            tableLayoutPanel11.Controls.Add(tableLayoutPanel2, 1, 1);
+            tableLayoutPanel11.Dock = DockStyle.Fill;
+            tableLayoutPanel11.Location = new Point(3, 55);
+            tableLayoutPanel11.Name = "tableLayoutPanel11";
+            tableLayoutPanel11.RowCount = 2;
+            tableLayoutPanel11.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel11.RowStyles.Add(new RowStyle(SizeType.Absolute, 173F));
+            tableLayoutPanel11.Size = new Size(615, 206);
+            tableLayoutPanel11.TabIndex = 2;
+            tableLayoutPanel11.Visible = false;
+            // 
+            // btnCompare
+            // 
+            btnCompare.Anchor = AnchorStyles.None;
+            btnCompare.Location = new Point(159, 5);
+            btnCompare.Name = "btnCompare";
+            btnCompare.Size = new Size(296, 23);
+            btnCompare.TabIndex = 2;
+            btnCompare.Text = "Comparar";
+            btnCompare.UseVisualStyleBackColor = true;
+            btnCompare.Click += btnCompare_Click;
+            // 
+            // tableLayoutPanel2
+            // 
+            tableLayoutPanel2.Anchor = AnchorStyles.Top;
+            tableLayoutPanel2.ColumnCount = 1;
+            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel2.Controls.Add(gridComparar, 0, 0);
+            tableLayoutPanel2.Location = new Point(120, 36);
+            tableLayoutPanel2.Name = "tableLayoutPanel2";
+            tableLayoutPanel2.RowCount = 1;
+            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel2.Size = new Size(375, 71);
+            tableLayoutPanel2.TabIndex = 3;
+            // 
+            // gridComparar
+            // 
+            gridComparar.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            gridComparar.Dock = DockStyle.Fill;
+            gridComparar.Location = new Point(3, 3);
+            gridComparar.Name = "gridComparar";
+            gridComparar.Size = new Size(369, 65);
+            gridComparar.TabIndex = 0;
+            // 
+            // tableLayoutPanel9
+            // 
+            tableLayoutPanel9.Anchor = AnchorStyles.None;
+            tableLayoutPanel9.ColumnCount = 2;
+            tableLayoutPanel9.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50.1043854F));
+            tableLayoutPanel9.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 49.8956146F));
+            tableLayoutPanel9.Controls.Add(tableLayoutPanel12, 0, 0);
+            tableLayoutPanel9.Location = new Point(0, 0);
+            tableLayoutPanel9.Name = "tableLayoutPanel9";
+            tableLayoutPanel9.RowCount = 1;
+            tableLayoutPanel9.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel9.Size = new Size(200, 100);
+            tableLayoutPanel9.TabIndex = 0;
+            // 
+            // tableLayoutPanel12
+            // 
+            tableLayoutPanel12.Anchor = AnchorStyles.Left;
+            tableLayoutPanel12.ColumnCount = 1;
+            tableLayoutPanel12.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
+            tableLayoutPanel12.Controls.Add(label1, 0, 0);
+            tableLayoutPanel12.Controls.Add(label2, 0, 1);
+            tableLayoutPanel12.Controls.Add(label3, 0, 2);
+            tableLayoutPanel12.Controls.Add(label4, 0, 3);
+            tableLayoutPanel12.Controls.Add(label5, 0, 4);
+            tableLayoutPanel12.Controls.Add(label6, 0, 5);
+            tableLayoutPanel12.Controls.Add(label7, 0, 6);
+            tableLayoutPanel12.Controls.Add(label8, 0, 7);
+            tableLayoutPanel12.Controls.Add(label9, 0, 8);
+            tableLayoutPanel12.Controls.Add(label10, 0, 9);
+            tableLayoutPanel12.Controls.Add(label11, 0, 10);
+            tableLayoutPanel12.Location = new Point(3, 3);
+            tableLayoutPanel12.Name = "tableLayoutPanel12";
+            tableLayoutPanel12.RowCount = 11;
+            tableLayoutPanel12.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
+            tableLayoutPanel12.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
+            tableLayoutPanel12.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
+            tableLayoutPanel12.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
+            tableLayoutPanel12.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
+            tableLayoutPanel12.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
+            tableLayoutPanel12.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
+            tableLayoutPanel12.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
+            tableLayoutPanel12.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
+            tableLayoutPanel12.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
+            tableLayoutPanel12.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
+            tableLayoutPanel12.Size = new Size(94, 94);
+            tableLayoutPanel12.TabIndex = 1;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(3, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(48, 8);
+            label1.TabIndex = 0;
+            label1.Text = "Modelo";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(3, 8);
+            label2.Name = "label2";
+            label2.Size = new Size(40, 8);
+            label2.TabIndex = 0;
+            label2.Text = "Marca";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(3, 16);
+            label3.Name = "label3";
+            label3.Size = new Size(29, 8);
+            label3.TabIndex = 0;
+            label3.Text = "Año";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(3, 24);
+            label4.Name = "label4";
+            label4.Size = new Size(46, 8);
+            label4.TabIndex = 0;
+            label4.Text = "Cuerpo";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(3, 32);
+            label5.Name = "label5";
+            label5.Size = new Size(48, 8);
+            label5.TabIndex = 0;
+            label5.Text = "Fijación";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(3, 40);
+            label6.Name = "label6";
+            label6.Size = new Size(39, 8);
+            label6.TabIndex = 0;
+            label6.Text = "Escala";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(3, 48);
+            label7.Name = "label7";
+            label7.Size = new Size(87, 8);
+            label7.TabIndex = 0;
+            label7.Text = "Madera cuerpo";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(3, 56);
+            label8.Name = "label8";
+            label8.Size = new Size(82, 8);
+            label8.TabIndex = 0;
+            label8.Text = "Madera Mastil";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(3, 64);
+            label9.Name = "label9";
+            label9.Size = new Size(55, 8);
+            label9.TabIndex = 0;
+            label9.Text = "Madera diapason";
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Location = new Point(3, 72);
+            label10.Name = "label10";
+            label10.Size = new Size(44, 8);
+            label10.TabIndex = 0;
+            label10.Text = "Puente";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Location = new Point(3, 80);
+            label11.Name = "label11";
+            label11.Size = new Size(49, 14);
+            label11.TabIndex = 0;
+            label11.Text = "Pastillas";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Anchor = AnchorStyles.Left;
+            pictureBox1.BackColor = Color.White;
+            pictureBox1.Location = new Point(103, 43);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(94, 520);
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
             // 
             // BuscadorComparador
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(252, 248, 239);
-            ClientSize = new Size(1447, 912);
+            ClientSize = new Size(1253, 1048);
             Controls.Add(tableLayoutPanel1);
             Name = "BuscadorComparador";
             Text = "BuscadorComparador";
             tableLayoutPanel1.ResumeLayout(false);
-            tableLayoutPanel2.ResumeLayout(false);
-            tableLayoutPanel2.PerformLayout();
-            tableLayoutPanel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)picGui1).EndInit();
             tableLayoutPanel3.ResumeLayout(false);
             tableLayoutPanel3.PerformLayout();
-            tableLayoutPanel7.ResumeLayout(false);
-            tableLayoutPanel9.ResumeLayout(false);
+            tableLayoutPanel4.ResumeLayout(false);
+            tableLayoutPanel15.ResumeLayout(false);
+            tableLayoutPanel16.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)gridBuscar).EndInit();
+            tableLayoutPanel13.ResumeLayout(false);
+            tableLayoutPanel14.ResumeLayout(false);
+            tableLayoutPanel14.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)picGuitar1).EndInit();
             tableLayoutComparar.ResumeLayout(false);
             tableLayoutComparar.PerformLayout();
             tableLayoutPanel6.ResumeLayout(false);
             tableLayoutPanel8.ResumeLayout(false);
             tableLayoutPanel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)picGuit2).EndInit();
             tableLayoutPanel10.ResumeLayout(false);
             tableLayoutPanel10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)picGuit2).EndInit();
+            tableLayoutPanel11.ResumeLayout(false);
+            tableLayoutPanel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)gridComparar).EndInit();
+            tableLayoutPanel9.ResumeLayout(false);
+            tableLayoutPanel12.ResumeLayout(false);
+            tableLayoutPanel12.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
         private TableLayoutPanel tableLayoutPanel1;
-        private TableLayoutPanel tableLayoutPanel2;
-        private TableLayoutPanel tableLayoutPanel4;
+        private DataGridView dataGridcomparador;
         private TableLayoutPanel tableLayoutComparar;
-        private TableLayoutPanel tableLayoutPanel5;
-        private TableLayoutPanel tableLayoutPanel6;
-        private TextBox textboxBusqueda1;
         private TextBox textBoxcomparar;
-        private PictureBox picGui1;
-        private PictureBox picGuit2;
-        private TableLayoutPanel tableLayoutPanel7;
+        private TableLayoutPanel tableLayoutPanel6;
         private Button btnVolver;
+        private Button btnCompare;
         private TableLayoutPanel tableLayoutPanel8;
-        private TableLayoutPanel tableLayoutPanel9;
-        private Button btnShop1;
         private Button btnShop2;
-        private TableLayoutPanel tableLayoutPanel3;
-        private Label lblModel1;
-        private Label lblMarca1;
-        private Label lblYear1;
-        private Label lblCuerpo1;
-        private Label lblFijacion1;
-        private Label lblEscala1;
-        private Label lblMaderaCuerpo1;
-        private Label lblMaderaMastil1;
-        private Label lblMaderaDiapason1;
-        private Label lblPuente1;
-        private Label lblPastillas1;
+        private TableLayoutPanel tableLayoutPanel5;
         private TableLayoutPanel tableLayoutPanel10;
         private Label lblModelo2;
         private Label lblMarca2;
@@ -628,5 +890,48 @@
         private Label lblMaderaDiapason2;
         private Label lblPuente2;
         private Label lblPastillas2;
+        private PictureBox picGuit2;
+        private TableLayoutPanel tableLayoutPanel11;
+        private TableLayoutPanel tableLayoutPanel3;
+        private TextBox txboxBuscar;
+        private TableLayoutPanel tableLayoutPanel4;
+        private Button btnTienda1;
+        private TableLayoutPanel tableLayoutPanel15;
+        private Button btnBuscar;
+        private TableLayoutPanel tableLayoutPanel16;
+        private DataGridView gridBuscar;
+        private TableLayoutPanel tableLayoutPanel13;
+        private TableLayoutPanel tableLayoutPanel14;
+        private Label label12;
+        private Label label13;
+        private Label label14;
+        private Label label15;
+        private Label lblFijacion1;
+        private Label lblEscala1;
+        private Label lblMadeCuerpo1;
+        private Label lblMadeMastil1;
+        private Label lblMadeDiapason1;
+        private Label lblPuente1;
+        private Label lblPastillas1;
+        private PictureBox picGuitar1;
+        private TableLayoutPanel tableLayoutPanel2;
+        private DataGridView gridComparar;
+        private TableLayoutPanel tableLayoutPanel9;
+        private TableLayoutPanel tableLayoutPanel12;
+        private Label label1;
+        private Label label2;
+        private Label label3;
+        private Label label4;
+        private Label label5;
+        private Label label6;
+        private Label label7;
+        private Label label8;
+        private Label label9;
+        private Label label10;
+        private Label label11;
+        private PictureBox pictureBox1;
+        private Button button1;
+        private Label labelModelo1;
+        private Label lblMarca1;
     }
 }

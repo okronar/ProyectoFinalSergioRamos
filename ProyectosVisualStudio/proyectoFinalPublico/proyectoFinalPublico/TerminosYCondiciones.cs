@@ -12,14 +12,18 @@ namespace proyectoFinalPublico
 {
     public partial class TerminosYCondiciones : Form
     {
-        public TerminosYCondiciones()
+        public Landing land;
+        public TerminosYCondiciones(Landing land)
         {
             InitializeComponent();
+            this.land = land;
         }
 
         private void btnVolvTer_Click(object sender, EventArgs e)
         {
             this.Close();
+            land.Show();
+            
         }
     }
 }
