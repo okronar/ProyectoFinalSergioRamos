@@ -21,14 +21,17 @@ namespace proyectoFinalPublico
 
         private void btnVolvTer_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
             land.Show();
 
         }
 
-        private void TerminosYCondiciones_FormClosing(object sender, FormClosingEventArgs e)
+
+        private void TerminosYCondiciones_FormClosed(object sender, FormClosedEventArgs e)
         {
-            this.Close();
+
+
+            this.Hide();
             land.Show();
 
         }

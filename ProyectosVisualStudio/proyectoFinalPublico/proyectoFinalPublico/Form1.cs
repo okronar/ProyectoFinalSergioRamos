@@ -81,7 +81,8 @@ namespace proyectoFinalPublico
         {
 
             //respuesta al boton
-            Registro registro = new Registro();
+            Registro registro = new Registro(this);
+            this.Hide();
             registro.Show();
 
         }

@@ -46,8 +46,8 @@
             txtbPuente = new TextBox();
             tableLayoutPanel7 = new TableLayoutPanel();
             txtbFijac = new TextBox();
-            txtbUrl = new TextBox();
             txtbPastillas = new TextBox();
+            txtbUrl = new TextBox();
             tableLayoutPanel8 = new TableLayoutPanel();
             btnInsertar = new Button();
             BorrarGuit = new TabPage();
@@ -118,9 +118,9 @@
             // CargarIMG
             // 
             CargarIMG.AutoSize = true;
-            CargarIMG.Location = new Point(3, 550);
+            CargarIMG.Location = new Point(3, 563);
             CargarIMG.Name = "CargarIMG";
-            CargarIMG.Size = new Size(135, 37);
+            CargarIMG.Size = new Size(135, 36);
             CargarIMG.TabIndex = 0;
             CargarIMG.Text = "Cargar Imagen ";
             CargarIMG.UseVisualStyleBackColor = true;
@@ -130,9 +130,10 @@
             // 
             picmuestra.Anchor = AnchorStyles.None;
             picmuestra.BackColor = Color.White;
-            picmuestra.Location = new Point(211, 13);
+            picmuestra.Enabled = false;
+            picmuestra.Location = new Point(198, 20);
             picmuestra.Name = "picmuestra";
-            picmuestra.Size = new Size(161, 520);
+            picmuestra.Size = new Size(187, 520);
             picmuestra.TabIndex = 1;
             picmuestra.TabStop = false;
             // 
@@ -145,7 +146,7 @@
             tabControlGuitar.Location = new Point(3, 3);
             tabControlGuitar.Name = "tabControlGuitar";
             tabControlGuitar.SelectedIndex = 0;
-            tabControlGuitar.Size = new Size(1504, 887);
+            tabControlGuitar.Size = new Size(1391, 788);
             tabControlGuitar.TabIndex = 2;
             // 
             // InsertarGuit
@@ -154,7 +155,7 @@
             InsertarGuit.Location = new Point(4, 24);
             InsertarGuit.Name = "InsertarGuit";
             InsertarGuit.Padding = new Padding(3);
-            InsertarGuit.Size = new Size(1496, 859);
+            InsertarGuit.Size = new Size(1383, 760);
             InsertarGuit.TabIndex = 0;
             InsertarGuit.Text = "Insertar";
             InsertarGuit.ToolTipText = "Insertar guitarras";
@@ -178,7 +179,7 @@
             tableLayoutPanel3.RowCount = 2;
             tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 81.12544F));
             tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 18.8745613F));
-            tableLayoutPanel3.Size = new Size(1490, 853);
+            tableLayoutPanel3.Size = new Size(1377, 754);
             tableLayoutPanel3.TabIndex = 13;
             // 
             // tableLayoutPanel5
@@ -193,6 +194,7 @@
             tableLayoutPanel5.Controls.Add(txtBEscala, 0, 4);
             tableLayoutPanel5.Controls.Add(txtbMaderaDiapa, 0, 6);
             tableLayoutPanel5.Controls.Add(txtbMaderaCuer, 0, 5);
+            tableLayoutPanel5.Dock = DockStyle.Fill;
             tableLayoutPanel5.Location = new Point(3, 3);
             tableLayoutPanel5.Name = "tableLayoutPanel5";
             tableLayoutPanel5.RowCount = 7;
@@ -203,7 +205,7 @@
             tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Percent, 14.2857141F));
             tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Percent, 14.2857141F));
             tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Percent, 14.2857141F));
-            tableLayoutPanel5.Size = new Size(478, 686);
+            tableLayoutPanel5.Size = new Size(417, 605);
             tableLayoutPanel5.TabIndex = 3;
             // 
             // txtbModelo
@@ -217,7 +219,7 @@
             // 
             // txtbMarca
             // 
-            txtbMarca.Location = new Point(3, 101);
+            txtbMarca.Location = new Point(3, 89);
             txtbMarca.Name = "txtbMarca";
             txtbMarca.PlaceholderText = "Marca";
             txtbMarca.Size = new Size(320, 23);
@@ -226,7 +228,7 @@
             // 
             // txtbCuerpo
             // 
-            txtbCuerpo.Location = new Point(3, 199);
+            txtbCuerpo.Location = new Point(3, 175);
             txtbCuerpo.Name = "txtbCuerpo";
             txtbCuerpo.PlaceholderText = "Cuerpo";
             txtbCuerpo.Size = new Size(320, 23);
@@ -235,7 +237,7 @@
             // 
             // txtbYear
             // 
-            txtbYear.Location = new Point(3, 297);
+            txtbYear.Location = new Point(3, 261);
             txtbYear.Name = "txtbYear";
             txtbYear.PlaceholderText = "Año";
             txtbYear.Size = new Size(320, 23);
@@ -244,7 +246,7 @@
             // 
             // txtBEscala
             // 
-            txtBEscala.Location = new Point(3, 395);
+            txtBEscala.Location = new Point(3, 347);
             txtBEscala.Name = "txtBEscala";
             txtBEscala.PlaceholderText = "Escala";
             txtBEscala.Size = new Size(320, 23);
@@ -253,7 +255,7 @@
             // 
             // txtbMaderaDiapa
             // 
-            txtbMaderaDiapa.Location = new Point(3, 591);
+            txtbMaderaDiapa.Location = new Point(3, 519);
             txtbMaderaDiapa.Name = "txtbMaderaDiapa";
             txtbMaderaDiapa.PlaceholderText = "Madera del Diapasón";
             txtbMaderaDiapa.Size = new Size(320, 23);
@@ -262,7 +264,7 @@
             // 
             // txtbMaderaCuer
             // 
-            txtbMaderaCuer.Location = new Point(3, 493);
+            txtbMaderaCuer.Location = new Point(3, 433);
             txtbMaderaCuer.Name = "txtbMaderaCuer";
             txtbMaderaCuer.PlaceholderText = "Madera del Cuerpo";
             txtbMaderaCuer.Size = new Size(320, 23);
@@ -276,12 +278,13 @@
             tableLayoutPanel6.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel6.Controls.Add(txtbMaderaMastil, 0, 0);
             tableLayoutPanel6.Controls.Add(txtbPuente, 0, 1);
-            tableLayoutPanel6.Location = new Point(3, 695);
+            tableLayoutPanel6.Dock = DockStyle.Fill;
+            tableLayoutPanel6.Location = new Point(3, 614);
             tableLayoutPanel6.Name = "tableLayoutPanel6";
             tableLayoutPanel6.RowCount = 2;
-            tableLayoutPanel6.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel6.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel6.Size = new Size(478, 152);
+            tableLayoutPanel6.RowStyles.Add(new RowStyle(SizeType.Percent, 62.0437965F));
+            tableLayoutPanel6.RowStyles.Add(new RowStyle(SizeType.Percent, 37.9562035F));
+            tableLayoutPanel6.Size = new Size(417, 137);
             tableLayoutPanel6.TabIndex = 4;
             // 
             // txtbMaderaMastil
@@ -295,7 +298,7 @@
             // 
             // txtbPuente
             // 
-            txtbPuente.Location = new Point(3, 79);
+            txtbPuente.Location = new Point(3, 88);
             txtbPuente.Name = "txtbPuente";
             txtbPuente.PlaceholderText = "Puente";
             txtbPuente.Size = new Size(317, 23);
@@ -308,15 +311,16 @@
             tableLayoutPanel7.ColumnCount = 1;
             tableLayoutPanel7.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel7.Controls.Add(txtbFijac, 0, 0);
-            tableLayoutPanel7.Controls.Add(txtbUrl, 0, 2);
             tableLayoutPanel7.Controls.Add(txtbPastillas, 0, 1);
-            tableLayoutPanel7.Location = new Point(487, 3);
+            tableLayoutPanel7.Controls.Add(txtbUrl, 0, 2);
+            tableLayoutPanel7.Dock = DockStyle.Fill;
+            tableLayoutPanel7.Location = new Point(426, 3);
             tableLayoutPanel7.Name = "tableLayoutPanel7";
             tableLayoutPanel7.RowCount = 3;
             tableLayoutPanel7.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel7.RowStyles.Add(new RowStyle(SizeType.Absolute, 94F));
-            tableLayoutPanel7.RowStyles.Add(new RowStyle(SizeType.Absolute, 494F));
-            tableLayoutPanel7.Size = new Size(410, 686);
+            tableLayoutPanel7.RowStyles.Add(new RowStyle(SizeType.Absolute, 87F));
+            tableLayoutPanel7.RowStyles.Add(new RowStyle(SizeType.Absolute, 442F));
+            tableLayoutPanel7.Size = new Size(358, 605);
             tableLayoutPanel7.TabIndex = 5;
             // 
             // txtbFijac
@@ -328,43 +332,43 @@
             txtbFijac.TabIndex = 12;
             txtbFijac.TextAlign = HorizontalAlignment.Center;
             // 
-            // txtbUrl
-            // 
-            txtbUrl.Location = new Point(3, 195);
-            txtbUrl.Name = "txtbUrl";
-            txtbUrl.PlaceholderText = "URL Tienda ";
-            txtbUrl.Size = new Size(283, 23);
-            txtbUrl.TabIndex = 12;
-            txtbUrl.TextAlign = HorizontalAlignment.Center;
-            // 
             // txtbPastillas
             // 
-            txtbPastillas.Location = new Point(3, 101);
+            txtbPastillas.Location = new Point(3, 79);
             txtbPastillas.Name = "txtbPastillas";
             txtbPastillas.PlaceholderText = "Pastillas";
             txtbPastillas.Size = new Size(283, 23);
             txtbPastillas.TabIndex = 12;
             txtbPastillas.TextAlign = HorizontalAlignment.Center;
             // 
+            // txtbUrl
+            // 
+            txtbUrl.Location = new Point(3, 166);
+            txtbUrl.Name = "txtbUrl";
+            txtbUrl.PlaceholderText = "URL Tienda ";
+            txtbUrl.Size = new Size(283, 23);
+            txtbUrl.TabIndex = 12;
+            txtbUrl.TextAlign = HorizontalAlignment.Center;
+            // 
             // tableLayoutPanel8
             // 
-            tableLayoutPanel8.Anchor = AnchorStyles.None;
             tableLayoutPanel8.BackColor = Color.FromArgb(252, 248, 239);
             tableLayoutPanel8.ColumnCount = 1;
             tableLayoutPanel8.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel8.Controls.Add(CargarIMG, 0, 1);
             tableLayoutPanel8.Controls.Add(picmuestra, 0, 0);
-            tableLayoutPanel8.Location = new Point(903, 3);
+            tableLayoutPanel8.Dock = DockStyle.Fill;
+            tableLayoutPanel8.Location = new Point(790, 3);
             tableLayoutPanel8.Name = "tableLayoutPanel8";
             tableLayoutPanel8.RowCount = 2;
             tableLayoutPanel8.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel8.RowStyles.Add(new RowStyle(SizeType.Absolute, 139F));
-            tableLayoutPanel8.Size = new Size(584, 686);
+            tableLayoutPanel8.RowStyles.Add(new RowStyle(SizeType.Absolute, 45F));
+            tableLayoutPanel8.Size = new Size(584, 605);
             tableLayoutPanel8.TabIndex = 6;
             // 
             // btnInsertar
             // 
-            btnInsertar.Location = new Point(903, 695);
+            btnInsertar.Location = new Point(790, 614);
             btnInsertar.Name = "btnInsertar";
             btnInsertar.Size = new Size(383, 108);
             btnInsertar.TabIndex = 2;
@@ -378,7 +382,7 @@
             BorrarGuit.Location = new Point(4, 24);
             BorrarGuit.Name = "BorrarGuit";
             BorrarGuit.Padding = new Padding(3);
-            BorrarGuit.Size = new Size(1496, 859);
+            BorrarGuit.Size = new Size(1383, 760);
             BorrarGuit.TabIndex = 1;
             BorrarGuit.Text = "Borrar";
             BorrarGuit.UseVisualStyleBackColor = true;
@@ -395,7 +399,7 @@
             tableLayoutPanel4.Name = "tableLayoutPanel4";
             tableLayoutPanel4.RowCount = 1;
             tableLayoutPanel4.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel4.Size = new Size(1490, 853);
+            tableLayoutPanel4.Size = new Size(1377, 754);
             tableLayoutPanel4.TabIndex = 6;
             // 
             // tableLayoutPanel9
@@ -412,14 +416,14 @@
             tableLayoutPanel9.RowCount = 2;
             tableLayoutPanel9.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel9.RowStyles.Add(new RowStyle(SizeType.Absolute, 129F));
-            tableLayoutPanel9.Size = new Size(739, 847);
+            tableLayoutPanel9.Size = new Size(682, 748);
             tableLayoutPanel9.TabIndex = 0;
             // 
             // btnBorrarGuitarra
             // 
             btnBorrarGuitarra.Anchor = AnchorStyles.None;
             btnBorrarGuitarra.ForeColor = Color.Black;
-            btnBorrarGuitarra.Location = new Point(178, 728);
+            btnBorrarGuitarra.Location = new Point(149, 629);
             btnBorrarGuitarra.Name = "btnBorrarGuitarra";
             btnBorrarGuitarra.Size = new Size(383, 108);
             btnBorrarGuitarra.TabIndex = 5;
@@ -430,7 +434,7 @@
             // txboxIdBorrar
             // 
             txboxIdBorrar.Anchor = AnchorStyles.None;
-            txboxIdBorrar.Location = new Point(188, 347);
+            txboxIdBorrar.Location = new Point(159, 298);
             txboxIdBorrar.Name = "txboxIdBorrar";
             txboxIdBorrar.PlaceholderText = "Id de la Guitarra ";
             txboxIdBorrar.Size = new Size(363, 23);
@@ -441,10 +445,11 @@
             // 
             dataGridguitborrar.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridguitborrar.Dock = DockStyle.Fill;
-            dataGridguitborrar.Location = new Point(748, 3);
+            dataGridguitborrar.Location = new Point(691, 3);
             dataGridguitborrar.Name = "dataGridguitborrar";
-            dataGridguitborrar.Size = new Size(739, 847);
+            dataGridguitborrar.Size = new Size(683, 748);
             dataGridguitborrar.TabIndex = 1;
+            dataGridguitborrar.CellClick += dataGridguitborrar_CellClick;
             // 
             // UpdateGuit
             // 
@@ -452,7 +457,7 @@
             UpdateGuit.Location = new Point(4, 24);
             UpdateGuit.Name = "UpdateGuit";
             UpdateGuit.Padding = new Padding(3);
-            UpdateGuit.Size = new Size(1496, 859);
+            UpdateGuit.Size = new Size(1383, 760);
             UpdateGuit.TabIndex = 2;
             UpdateGuit.Text = "Actualizar";
             UpdateGuit.UseVisualStyleBackColor = true;
@@ -473,16 +478,19 @@
             tableLayoutPanel10.Name = "tableLayoutPanel10";
             tableLayoutPanel10.RowCount = 1;
             tableLayoutPanel10.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel10.Size = new Size(1490, 853);
+            tableLayoutPanel10.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel10.Size = new Size(1377, 754);
             tableLayoutPanel10.TabIndex = 26;
             // 
             // GridActualizarGuitarra
             // 
-            GridActualizarGuitarra.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            GridActualizarGuitarra.AllowDrop = true;
+            GridActualizarGuitarra.AllowUserToOrderColumns = true;
             GridActualizarGuitarra.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            GridActualizarGuitarra.Location = new Point(1014, 3);
+            GridActualizarGuitarra.Dock = DockStyle.Fill;
+            GridActualizarGuitarra.Location = new Point(939, 3);
             GridActualizarGuitarra.Name = "GridActualizarGuitarra";
-            GridActualizarGuitarra.Size = new Size(473, 847);
+            GridActualizarGuitarra.Size = new Size(435, 748);
             GridActualizarGuitarra.TabIndex = 0;
             GridActualizarGuitarra.CellClick += GridActualizarGuitarra_CellClick;
             // 
@@ -513,7 +521,7 @@
             tableLayoutPanel11.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
             tableLayoutPanel11.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
             tableLayoutPanel11.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
-            tableLayoutPanel11.Size = new Size(331, 847);
+            tableLayoutPanel11.Size = new Size(306, 748);
             tableLayoutPanel11.TabIndex = 0;
             // 
             // txbModeloAct
@@ -521,79 +529,79 @@
             txbModeloAct.Location = new Point(3, 3);
             txbModeloAct.Name = "txbModeloAct";
             txbModeloAct.PlaceholderText = "Modelo";
-            txbModeloAct.Size = new Size(325, 23);
+            txbModeloAct.Size = new Size(281, 23);
             txbModeloAct.TabIndex = 13;
             txbModeloAct.TextAlign = HorizontalAlignment.Center;
             // 
             // txbMarcaActu
             // 
-            txbMarcaActu.Location = new Point(3, 97);
+            txbMarcaActu.Location = new Point(3, 86);
             txbMarcaActu.Name = "txbMarcaActu";
             txbMarcaActu.PlaceholderText = "Marca";
-            txbMarcaActu.Size = new Size(325, 23);
+            txbMarcaActu.Size = new Size(281, 23);
             txbMarcaActu.TabIndex = 18;
             txbMarcaActu.TextAlign = HorizontalAlignment.Center;
             // 
             // txbCuerpoActu
             // 
-            txbCuerpoActu.Location = new Point(3, 191);
+            txbCuerpoActu.Location = new Point(3, 169);
             txbCuerpoActu.Name = "txbCuerpoActu";
             txbCuerpoActu.PlaceholderText = "Cuerpo";
-            txbCuerpoActu.Size = new Size(325, 23);
+            txbCuerpoActu.Size = new Size(281, 23);
             txbCuerpoActu.TabIndex = 17;
             txbCuerpoActu.TextAlign = HorizontalAlignment.Center;
             // 
             // txbYearActu
             // 
-            txbYearActu.Location = new Point(3, 285);
+            txbYearActu.Location = new Point(3, 252);
             txbYearActu.Name = "txbYearActu";
             txbYearActu.PlaceholderText = "Año";
-            txbYearActu.Size = new Size(325, 23);
+            txbYearActu.Size = new Size(281, 23);
             txbYearActu.TabIndex = 16;
             txbYearActu.TextAlign = HorizontalAlignment.Center;
             // 
             // txbEscalaActu
             // 
-            txbEscalaActu.Location = new Point(3, 379);
+            txbEscalaActu.Location = new Point(3, 335);
             txbEscalaActu.Name = "txbEscalaActu";
             txbEscalaActu.PlaceholderText = "Escala";
-            txbEscalaActu.Size = new Size(325, 23);
+            txbEscalaActu.Size = new Size(281, 23);
             txbEscalaActu.TabIndex = 15;
             txbEscalaActu.TextAlign = HorizontalAlignment.Center;
             // 
             // txbPuenteActu
             // 
-            txbPuenteActu.Location = new Point(3, 755);
+            txbPuenteActu.Location = new Point(3, 667);
             txbPuenteActu.Name = "txbPuenteActu";
             txbPuenteActu.PlaceholderText = "Puente";
-            txbPuenteActu.Size = new Size(325, 23);
+            txbPuenteActu.Size = new Size(281, 23);
             txbPuenteActu.TabIndex = 21;
             txbPuenteActu.TextAlign = HorizontalAlignment.Center;
             // 
             // txbMCuerActu
             // 
-            txbMCuerActu.Location = new Point(3, 473);
+            txbMCuerActu.Location = new Point(3, 418);
             txbMCuerActu.Name = "txbMCuerActu";
             txbMCuerActu.PlaceholderText = "Madera del Cuerpo";
-            txbMCuerActu.Size = new Size(325, 23);
+            txbMCuerActu.Size = new Size(281, 23);
             txbMCuerActu.TabIndex = 14;
             txbMCuerActu.TextAlign = HorizontalAlignment.Center;
             // 
             // txbMMastActu
             // 
-            txbMMastActu.Location = new Point(3, 661);
+            txbMMastActu.Location = new Point(3, 584);
             txbMMastActu.Name = "txbMMastActu";
             txbMMastActu.PlaceholderText = "Madera del Mástil";
-            txbMMastActu.Size = new Size(325, 23);
+            txbMMastActu.Size = new Size(281, 23);
             txbMMastActu.TabIndex = 19;
             txbMMastActu.TextAlign = HorizontalAlignment.Center;
             // 
             // txbMDiapActu
             // 
-            txbMDiapActu.Location = new Point(3, 567);
+            txbMDiapActu.Location = new Point(3, 501);
             txbMDiapActu.Name = "txbMDiapActu";
             txbMDiapActu.PlaceholderText = "Madera del Diapasón";
-            txbMDiapActu.Size = new Size(325, 23);
+            txbMDiapActu.Size = new Size(281, 23);
             txbMDiapActu.TabIndex = 20;
             txbMDiapActu.TextAlign = HorizontalAlignment.Center;
             // 
@@ -608,15 +616,15 @@
             tableLayoutPanel12.Controls.Add(txbURLActu, 0, 2);
             tableLayoutPanel12.Controls.Add(btnActualizar, 0, 4);
             tableLayoutPanel12.Dock = DockStyle.Fill;
-            tableLayoutPanel12.Location = new Point(340, 3);
+            tableLayoutPanel12.Location = new Point(315, 3);
             tableLayoutPanel12.Name = "tableLayoutPanel12";
             tableLayoutPanel12.RowCount = 5;
+            tableLayoutPanel12.RowStyles.Add(new RowStyle(SizeType.Percent, 10.9625664F));
+            tableLayoutPanel12.RowStyles.Add(new RowStyle(SizeType.Percent, 10.9625664F));
+            tableLayoutPanel12.RowStyles.Add(new RowStyle(SizeType.Percent, 11.363636F));
+            tableLayoutPanel12.RowStyles.Add(new RowStyle(SizeType.Percent, 46.5240631F));
             tableLayoutPanel12.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
-            tableLayoutPanel12.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
-            tableLayoutPanel12.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
-            tableLayoutPanel12.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
-            tableLayoutPanel12.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
-            tableLayoutPanel12.Size = new Size(331, 847);
+            tableLayoutPanel12.Size = new Size(306, 748);
             tableLayoutPanel12.TabIndex = 1;
             // 
             // txbFijaActu
@@ -624,43 +632,43 @@
             txbFijaActu.Location = new Point(3, 3);
             txbFijaActu.Name = "txbFijaActu";
             txbFijaActu.PlaceholderText = "Fijación";
-            txbFijaActu.Size = new Size(325, 23);
+            txbFijaActu.Size = new Size(281, 23);
             txbFijaActu.TabIndex = 24;
             txbFijaActu.TextAlign = HorizontalAlignment.Center;
             // 
             // txbPastActu
             // 
-            txbPastActu.Location = new Point(3, 172);
+            txbPastActu.Location = new Point(3, 85);
             txbPastActu.Name = "txbPastActu";
             txbPastActu.PlaceholderText = "Pastillas";
-            txbPastActu.Size = new Size(325, 23);
+            txbPastActu.Size = new Size(281, 23);
             txbPastActu.TabIndex = 23;
             txbPastActu.TextAlign = HorizontalAlignment.Center;
             // 
             // txbIdActu
             // 
-            txbIdActu.Location = new Point(3, 510);
+            txbIdActu.Location = new Point(3, 252);
             txbIdActu.Name = "txbIdActu";
             txbIdActu.PlaceholderText = "Id de la guitarra a actualizar";
-            txbIdActu.Size = new Size(325, 23);
+            txbIdActu.Size = new Size(281, 23);
             txbIdActu.TabIndex = 15;
             txbIdActu.TextAlign = HorizontalAlignment.Center;
             // 
             // txbURLActu
             // 
-            txbURLActu.Location = new Point(3, 341);
+            txbURLActu.Location = new Point(3, 167);
             txbURLActu.Name = "txbURLActu";
             txbURLActu.PlaceholderText = "URL Tienda ";
-            txbURLActu.Size = new Size(325, 23);
+            txbURLActu.Size = new Size(281, 23);
             txbURLActu.TabIndex = 22;
             txbURLActu.TextAlign = HorizontalAlignment.Center;
             // 
             // btnActualizar
             // 
             btnActualizar.Anchor = AnchorStyles.None;
-            btnActualizar.Location = new Point(3, 735);
+            btnActualizar.Location = new Point(12, 646);
             btnActualizar.Name = "btnActualizar";
-            btnActualizar.Size = new Size(324, 53);
+            btnActualizar.Size = new Size(281, 53);
             btnActualizar.TabIndex = 4;
             btnActualizar.Text = "Actualizar";
             btnActualizar.UseVisualStyleBackColor = true;
@@ -674,21 +682,21 @@
             tableLayoutPanel13.Controls.Add(picmuestraAct, 0, 0);
             tableLayoutPanel13.Controls.Add(cargImgAct, 0, 1);
             tableLayoutPanel13.Dock = DockStyle.Fill;
-            tableLayoutPanel13.Location = new Point(677, 3);
+            tableLayoutPanel13.Location = new Point(627, 3);
             tableLayoutPanel13.Name = "tableLayoutPanel13";
             tableLayoutPanel13.RowCount = 2;
-            tableLayoutPanel13.RowStyles.Add(new RowStyle(SizeType.Absolute, 678F));
-            tableLayoutPanel13.RowStyles.Add(new RowStyle(SizeType.Absolute, 103F));
-            tableLayoutPanel13.Size = new Size(331, 847);
+            tableLayoutPanel13.RowStyles.Add(new RowStyle(SizeType.Absolute, 565F));
+            tableLayoutPanel13.RowStyles.Add(new RowStyle(SizeType.Absolute, 216F));
+            tableLayoutPanel13.Size = new Size(306, 748);
             tableLayoutPanel13.TabIndex = 2;
             // 
             // picmuestraAct
             // 
             picmuestraAct.Anchor = AnchorStyles.None;
             picmuestraAct.BackColor = Color.White;
-            picmuestraAct.Location = new Point(85, 79);
+            picmuestraAct.Location = new Point(59, 22);
             picmuestraAct.Name = "picmuestraAct";
-            picmuestraAct.Size = new Size(161, 520);
+            picmuestraAct.Size = new Size(187, 520);
             picmuestraAct.TabIndex = 3;
             picmuestraAct.TabStop = false;
             // 
@@ -696,9 +704,9 @@
             // 
             cargImgAct.Anchor = AnchorStyles.None;
             cargImgAct.AutoSize = true;
-            cargImgAct.Location = new Point(20, 737);
+            cargImgAct.Location = new Point(12, 648);
             cargImgAct.Name = "cargImgAct";
-            cargImgAct.Size = new Size(290, 50);
+            cargImgAct.Size = new Size(281, 50);
             cargImgAct.TabIndex = 2;
             cargImgAct.Text = "Cargar Imagen ";
             cargImgAct.UseVisualStyleBackColor = true;
@@ -712,7 +720,7 @@
             tabControlElegir.Location = new Point(0, 0);
             tabControlElegir.Name = "tabControlElegir";
             tabControlElegir.SelectedIndex = 0;
-            tabControlElegir.Size = new Size(1518, 921);
+            tabControlElegir.Size = new Size(1405, 822);
             tabControlElegir.TabIndex = 3;
             // 
             // ElegirGuit
@@ -721,7 +729,7 @@
             ElegirGuit.Location = new Point(4, 24);
             ElegirGuit.Name = "ElegirGuit";
             ElegirGuit.Padding = new Padding(3);
-            ElegirGuit.Size = new Size(1510, 893);
+            ElegirGuit.Size = new Size(1397, 794);
             ElegirGuit.TabIndex = 0;
             ElegirGuit.Text = "Guitarras";
             ElegirGuit.UseVisualStyleBackColor = true;
@@ -732,7 +740,7 @@
             ElegirUsuario.Location = new Point(4, 24);
             ElegirUsuario.Name = "ElegirUsuario";
             ElegirUsuario.Padding = new Padding(3);
-            ElegirUsuario.Size = new Size(1510, 893);
+            ElegirUsuario.Size = new Size(1397, 794);
             ElegirUsuario.TabIndex = 1;
             ElegirUsuario.Text = "Usuario";
             ElegirUsuario.UseVisualStyleBackColor = true;
@@ -741,9 +749,9 @@
             // 
             tableLayoutPanel1.BackColor = Color.FromArgb(252, 248, 239);
             tableLayoutPanel1.ColumnCount = 3;
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333359F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333359F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 1.36592376F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 41.69662F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 56.8807335F));
             tableLayoutPanel1.Controls.Add(tableLayoutPanel2, 1, 0);
             tableLayoutPanel1.Controls.Add(tableUsuarios, 2, 0);
             tableLayoutPanel1.Dock = DockStyle.Fill;
@@ -752,7 +760,7 @@
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 1;
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel1.Size = new Size(1504, 887);
+            tableLayoutPanel1.Size = new Size(1391, 788);
             tableLayoutPanel1.TabIndex = 9;
             // 
             // tableLayoutPanel2
@@ -763,18 +771,19 @@
             tableLayoutPanel2.Controls.Add(btnBorrarEmail, 0, 1);
             tableLayoutPanel2.Controls.Add(txboxUsuarioBorrar, 0, 0);
             tableLayoutPanel2.Dock = DockStyle.Fill;
-            tableLayoutPanel2.Location = new Point(504, 3);
+            tableLayoutPanel2.Location = new Point(22, 3);
             tableLayoutPanel2.Name = "tableLayoutPanel2";
             tableLayoutPanel2.RowCount = 2;
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel2.Size = new Size(495, 881);
+            tableLayoutPanel2.Size = new Size(574, 782);
             tableLayoutPanel2.TabIndex = 0;
             // 
             // btnBorrarEmail
             // 
             btnBorrarEmail.Anchor = AnchorStyles.None;
-            btnBorrarEmail.Location = new Point(56, 606);
+            btnBorrarEmail.ForeColor = Color.Black;
+            btnBorrarEmail.Location = new Point(95, 532);
             btnBorrarEmail.Name = "btnBorrarEmail";
             btnBorrarEmail.Size = new Size(383, 108);
             btnBorrarEmail.TabIndex = 7;
@@ -785,7 +794,7 @@
             // txboxUsuarioBorrar
             // 
             txboxUsuarioBorrar.Anchor = AnchorStyles.None;
-            txboxUsuarioBorrar.Location = new Point(76, 208);
+            txboxUsuarioBorrar.Location = new Point(115, 184);
             txboxUsuarioBorrar.Name = "txboxUsuarioBorrar";
             txboxUsuarioBorrar.PlaceholderText = "Email del usuario a borrar";
             txboxUsuarioBorrar.Size = new Size(343, 23);
@@ -798,7 +807,7 @@
             tableUsuarios.ColumnCount = 1;
             tableUsuarios.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableUsuarios.Controls.Add(gridBorrarUsuarios, 0, 0);
-            tableUsuarios.Location = new Point(1020, 78);
+            tableUsuarios.Location = new Point(762, 29);
             tableUsuarios.Name = "tableUsuarios";
             tableUsuarios.RowCount = 1;
             tableUsuarios.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
@@ -807,6 +816,7 @@
             // 
             // gridBorrarUsuarios
             // 
+            gridBorrarUsuarios.BackgroundColor = SystemColors.ActiveCaption;
             gridBorrarUsuarios.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             gridBorrarUsuarios.Dock = DockStyle.Fill;
             gridBorrarUsuarios.Location = new Point(3, 3);
@@ -819,7 +829,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(252, 248, 239);
-            ClientSize = new Size(1518, 921);
+            ClientSize = new Size(1405, 822);
             Controls.Add(tabControlElegir);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "Administrador";

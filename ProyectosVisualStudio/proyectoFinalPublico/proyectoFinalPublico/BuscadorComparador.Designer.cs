@@ -38,16 +38,18 @@
             tableLayoutPanel16 = new TableLayoutPanel();
             gridBuscar = new DataGridView();
             tableLayoutPanel13 = new TableLayoutPanel();
-            tableLayoutPanel14 = new TableLayoutPanel();
-            lblFijacion1 = new Label();
-            lblEscala1 = new Label();
-            lblMadeCuerpo1 = new Label();
-            lblMadeMastil1 = new Label();
-            lblMadeDiapason1 = new Label();
-            lblPuente1 = new Label();
-            lblPastillas1 = new Label();
-            labelModelo1 = new Label();
-            lblMarca1 = new Label();
+            tableLayoutPanel7 = new TableLayoutPanel();
+            labelmodelo1 = new Label();
+            labelyear1 = new Label();
+            labelcuerpo1 = new Label();
+            labelfijacion1 = new Label();
+            labelescala1 = new Label();
+            labelMcuerpo1 = new Label();
+            labelMmastil1 = new Label();
+            labelMdiapason1 = new Label();
+            labelPuente1 = new Label();
+            labelPastilla1 = new Label();
+            labelmarca1 = new Label();
             picGuitar1 = new PictureBox();
             tableLayoutComparar = new TableLayoutPanel();
             textBoxcomparar = new TextBox();
@@ -58,7 +60,6 @@
             tableLayoutPanel5 = new TableLayoutPanel();
             tableLayoutPanel10 = new TableLayoutPanel();
             lblModelo2 = new Label();
-            lblMarca2 = new Label();
             lblYear2 = new Label();
             lblCuerpo2 = new Label();
             lblFijacion2 = new Label();
@@ -68,6 +69,7 @@
             lblMaderaDiapason2 = new Label();
             lblPuente2 = new Label();
             lblPastillas2 = new Label();
+            lblMarca2 = new Label();
             picGuit2 = new PictureBox();
             tableLayoutPanel11 = new TableLayoutPanel();
             btnCompare = new Button();
@@ -94,7 +96,7 @@
             tableLayoutPanel16.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)gridBuscar).BeginInit();
             tableLayoutPanel13.SuspendLayout();
-            tableLayoutPanel14.SuspendLayout();
+            tableLayoutPanel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)picGuitar1).BeginInit();
             tableLayoutComparar.SuspendLayout();
             tableLayoutPanel6.SuspendLayout();
@@ -237,7 +239,7 @@
             tableLayoutPanel13.ColumnCount = 2;
             tableLayoutPanel13.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50.1043854F));
             tableLayoutPanel13.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 49.8956146F));
-            tableLayoutPanel13.Controls.Add(tableLayoutPanel14, 1, 0);
+            tableLayoutPanel13.Controls.Add(tableLayoutPanel7, 1, 0);
             tableLayoutPanel13.Controls.Add(picGuitar1, 0, 0);
             tableLayoutPanel13.Location = new Point(3, 267);
             tableLayoutPanel13.Name = "tableLayoutPanel13";
@@ -247,125 +249,145 @@
             tableLayoutPanel13.TabIndex = 0;
             tableLayoutPanel13.Visible = false;
             // 
-            // tableLayoutPanel14
+            // tableLayoutPanel7
             // 
-            tableLayoutPanel14.Anchor = AnchorStyles.Right;
-            tableLayoutPanel14.ColumnCount = 1;
-            tableLayoutPanel14.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
-            tableLayoutPanel14.Controls.Add(lblFijacion1, 0, 4);
-            tableLayoutPanel14.Controls.Add(lblEscala1, 0, 5);
-            tableLayoutPanel14.Controls.Add(lblMadeCuerpo1, 0, 6);
-            tableLayoutPanel14.Controls.Add(lblMadeMastil1, 0, 7);
-            tableLayoutPanel14.Controls.Add(lblMadeDiapason1, 0, 8);
-            tableLayoutPanel14.Controls.Add(lblPuente1, 0, 9);
-            tableLayoutPanel14.Controls.Add(lblPastillas1, 0, 10);
-            tableLayoutPanel14.Controls.Add(labelModelo1, 0, 0);
-            tableLayoutPanel14.Controls.Add(lblMarca1, 0, 1);
-            tableLayoutPanel14.Location = new Point(411, 3);
-            tableLayoutPanel14.Name = "tableLayoutPanel14";
-            tableLayoutPanel14.RowCount = 11;
-            tableLayoutPanel14.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
-            tableLayoutPanel14.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
-            tableLayoutPanel14.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
-            tableLayoutPanel14.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
-            tableLayoutPanel14.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
-            tableLayoutPanel14.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
-            tableLayoutPanel14.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
-            tableLayoutPanel14.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
-            tableLayoutPanel14.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
-            tableLayoutPanel14.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
-            tableLayoutPanel14.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
-            tableLayoutPanel14.Size = new Size(200, 600);
-            tableLayoutPanel14.TabIndex = 1;
+            tableLayoutPanel7.Anchor = AnchorStyles.Right;
+            tableLayoutPanel7.ColumnCount = 1;
+            tableLayoutPanel7.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
+            tableLayoutPanel7.Controls.Add(labelmodelo1, 0, 0);
+            tableLayoutPanel7.Controls.Add(labelyear1, 0, 2);
+            tableLayoutPanel7.Controls.Add(labelcuerpo1, 0, 3);
+            tableLayoutPanel7.Controls.Add(labelfijacion1, 0, 4);
+            tableLayoutPanel7.Controls.Add(labelescala1, 0, 5);
+            tableLayoutPanel7.Controls.Add(labelMcuerpo1, 0, 6);
+            tableLayoutPanel7.Controls.Add(labelMmastil1, 0, 7);
+            tableLayoutPanel7.Controls.Add(labelMdiapason1, 0, 8);
+            tableLayoutPanel7.Controls.Add(labelPuente1, 0, 9);
+            tableLayoutPanel7.Controls.Add(labelPastilla1, 0, 10);
+            tableLayoutPanel7.Controls.Add(labelmarca1, 0, 1);
+            tableLayoutPanel7.Location = new Point(411, 3);
+            tableLayoutPanel7.Name = "tableLayoutPanel7";
+            tableLayoutPanel7.RowCount = 11;
+            tableLayoutPanel7.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
+            tableLayoutPanel7.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
+            tableLayoutPanel7.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
+            tableLayoutPanel7.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
+            tableLayoutPanel7.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
+            tableLayoutPanel7.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
+            tableLayoutPanel7.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
+            tableLayoutPanel7.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
+            tableLayoutPanel7.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
+            tableLayoutPanel7.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
+            tableLayoutPanel7.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
+            tableLayoutPanel7.Size = new Size(200, 600);
+            tableLayoutPanel7.TabIndex = 1;
             // 
-            // lblFijacion1
+            // labelmodelo1
             // 
-            lblFijacion1.AutoSize = true;
-            lblFijacion1.Location = new Point(3, 216);
-            lblFijacion1.Name = "lblFijacion1";
-            lblFijacion1.Size = new Size(48, 15);
-            lblFijacion1.TabIndex = 0;
-            lblFijacion1.Text = "Fijación";
+            labelmodelo1.AutoSize = true;
+            labelmodelo1.Location = new Point(3, 0);
+            labelmodelo1.Name = "labelmodelo1";
+            labelmodelo1.Size = new Size(48, 15);
+            labelmodelo1.TabIndex = 0;
+            labelmodelo1.Text = "Modelo";
             // 
-            // lblEscala1
+            // labelyear1
             // 
-            lblEscala1.AutoSize = true;
-            lblEscala1.Location = new Point(3, 270);
-            lblEscala1.Name = "lblEscala1";
-            lblEscala1.Size = new Size(39, 15);
-            lblEscala1.TabIndex = 0;
-            lblEscala1.Text = "Escala";
+            labelyear1.AutoSize = true;
+            labelyear1.Location = new Point(3, 108);
+            labelyear1.Name = "labelyear1";
+            labelyear1.Size = new Size(29, 15);
+            labelyear1.TabIndex = 0;
+            labelyear1.Text = "Año";
             // 
-            // lblMadeCuerpo1
+            // labelcuerpo1
             // 
-            lblMadeCuerpo1.AutoSize = true;
-            lblMadeCuerpo1.Location = new Point(3, 324);
-            lblMadeCuerpo1.Name = "lblMadeCuerpo1";
-            lblMadeCuerpo1.Size = new Size(87, 15);
-            lblMadeCuerpo1.TabIndex = 0;
-            lblMadeCuerpo1.Text = "Madera cuerpo";
+            labelcuerpo1.AutoSize = true;
+            labelcuerpo1.Location = new Point(3, 162);
+            labelcuerpo1.Name = "labelcuerpo1";
+            labelcuerpo1.Size = new Size(46, 15);
+            labelcuerpo1.TabIndex = 0;
+            labelcuerpo1.Text = "Cuerpo";
             // 
-            // lblMadeMastil1
+            // labelfijacion1
             // 
-            lblMadeMastil1.AutoSize = true;
-            lblMadeMastil1.Location = new Point(3, 378);
-            lblMadeMastil1.Name = "lblMadeMastil1";
-            lblMadeMastil1.Size = new Size(82, 15);
-            lblMadeMastil1.TabIndex = 0;
-            lblMadeMastil1.Text = "Madera Mastil";
+            labelfijacion1.AutoSize = true;
+            labelfijacion1.Location = new Point(3, 216);
+            labelfijacion1.Name = "labelfijacion1";
+            labelfijacion1.Size = new Size(48, 15);
+            labelfijacion1.TabIndex = 0;
+            labelfijacion1.Text = "Fijación";
             // 
-            // lblMadeDiapason1
+            // labelescala1
             // 
-            lblMadeDiapason1.AutoSize = true;
-            lblMadeDiapason1.Location = new Point(3, 432);
-            lblMadeDiapason1.Name = "lblMadeDiapason1";
-            lblMadeDiapason1.Size = new Size(98, 15);
-            lblMadeDiapason1.TabIndex = 0;
-            lblMadeDiapason1.Text = "Madera diapason";
+            labelescala1.AutoSize = true;
+            labelescala1.Location = new Point(3, 270);
+            labelescala1.Name = "labelescala1";
+            labelescala1.Size = new Size(39, 15);
+            labelescala1.TabIndex = 0;
+            labelescala1.Text = "Escala";
             // 
-            // lblPuente1
+            // labelMcuerpo1
             // 
-            lblPuente1.AutoSize = true;
-            lblPuente1.Location = new Point(3, 486);
-            lblPuente1.Name = "lblPuente1";
-            lblPuente1.Size = new Size(44, 15);
-            lblPuente1.TabIndex = 0;
-            lblPuente1.Text = "Puente";
+            labelMcuerpo1.AutoSize = true;
+            labelMcuerpo1.Location = new Point(3, 324);
+            labelMcuerpo1.Name = "labelMcuerpo1";
+            labelMcuerpo1.Size = new Size(87, 15);
+            labelMcuerpo1.TabIndex = 0;
+            labelMcuerpo1.Text = "Madera cuerpo";
             // 
-            // lblPastillas1
+            // labelMmastil1
             // 
-            lblPastillas1.AutoSize = true;
-            lblPastillas1.Location = new Point(3, 540);
-            lblPastillas1.Name = "lblPastillas1";
-            lblPastillas1.Size = new Size(49, 15);
-            lblPastillas1.TabIndex = 0;
-            lblPastillas1.Text = "Pastillas";
+            labelMmastil1.AutoSize = true;
+            labelMmastil1.Location = new Point(3, 378);
+            labelMmastil1.Name = "labelMmastil1";
+            labelMmastil1.Size = new Size(82, 15);
+            labelMmastil1.TabIndex = 0;
+            labelMmastil1.Text = "Madera Mastil";
             // 
-            // labelModelo1
+            // labelMdiapason1
             // 
-            labelModelo1.AutoSize = true;
-            labelModelo1.Location = new Point(3, 0);
-            labelModelo1.Name = "labelModelo1";
-            labelModelo1.Size = new Size(48, 15);
-            labelModelo1.TabIndex = 1;
-            labelModelo1.Text = "Modelo";
+            labelMdiapason1.AutoSize = true;
+            labelMdiapason1.Location = new Point(3, 432);
+            labelMdiapason1.Name = "labelMdiapason1";
+            labelMdiapason1.Size = new Size(98, 15);
+            labelMdiapason1.TabIndex = 0;
+            labelMdiapason1.Text = "Madera diapason";
             // 
-            // lblMarca1
+            // labelPuente1
             // 
-            lblMarca1.AutoSize = true;
-            lblMarca1.Location = new Point(3, 54);
-            lblMarca1.Name = "lblMarca1";
-            lblMarca1.Size = new Size(13, 15);
-            lblMarca1.TabIndex = 2;
-            lblMarca1.Text = "  ";
+            labelPuente1.AutoSize = true;
+            labelPuente1.Location = new Point(3, 486);
+            labelPuente1.Name = "labelPuente1";
+            labelPuente1.Size = new Size(44, 15);
+            labelPuente1.TabIndex = 0;
+            labelPuente1.Text = "Puente";
+            // 
+            // labelPastilla1
+            // 
+            labelPastilla1.AutoSize = true;
+            labelPastilla1.Location = new Point(3, 540);
+            labelPastilla1.Name = "labelPastilla1";
+            labelPastilla1.Size = new Size(49, 15);
+            labelPastilla1.TabIndex = 0;
+            labelPastilla1.Text = "Pastillas";
+            // 
+            // labelmarca1
+            // 
+            labelmarca1.AutoSize = true;
+            labelmarca1.Location = new Point(3, 54);
+            labelmarca1.Name = "labelmarca1";
+            labelmarca1.Size = new Size(40, 15);
+            labelmarca1.TabIndex = 0;
+            labelmarca1.Text = "Marca";
             // 
             // picGuitar1
             // 
             picGuitar1.Anchor = AnchorStyles.Right;
             picGuitar1.BackColor = Color.White;
-            picGuitar1.Location = new Point(143, 43);
+            picGuitar1.Location = new Point(117, 43);
             picGuitar1.Name = "picGuitar1";
-            picGuitar1.Size = new Size(161, 520);
+            picGuitar1.Size = new Size(187, 520);
             picGuitar1.TabIndex = 0;
             picGuitar1.TabStop = false;
             // 
@@ -397,7 +419,6 @@
             textBoxcomparar.Size = new Size(466, 23);
             textBoxcomparar.TabIndex = 1;
             textBoxcomparar.TextAlign = HorizontalAlignment.Center;
-            textBoxcomparar.Visible = false;
             // 
             // tableLayoutPanel6
             // 
@@ -474,7 +495,6 @@
             tableLayoutPanel10.ColumnCount = 1;
             tableLayoutPanel10.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
             tableLayoutPanel10.Controls.Add(lblModelo2, 0, 0);
-            tableLayoutPanel10.Controls.Add(lblMarca2, 0, 1);
             tableLayoutPanel10.Controls.Add(lblYear2, 0, 2);
             tableLayoutPanel10.Controls.Add(lblCuerpo2, 0, 3);
             tableLayoutPanel10.Controls.Add(lblFijacion2, 0, 4);
@@ -484,6 +504,7 @@
             tableLayoutPanel10.Controls.Add(lblMaderaDiapason2, 0, 8);
             tableLayoutPanel10.Controls.Add(lblPuente2, 0, 9);
             tableLayoutPanel10.Controls.Add(lblPastillas2, 0, 10);
+            tableLayoutPanel10.Controls.Add(lblMarca2, 0, 1);
             tableLayoutPanel10.Location = new Point(3, 3);
             tableLayoutPanel10.Name = "tableLayoutPanel10";
             tableLayoutPanel10.RowCount = 11;
@@ -510,16 +531,6 @@
             lblModelo2.Size = new Size(48, 15);
             lblModelo2.TabIndex = 0;
             lblModelo2.Text = "Modelo";
-            // 
-            // lblMarca2
-            // 
-            lblMarca2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            lblMarca2.AutoSize = true;
-            lblMarca2.Location = new Point(157, 54);
-            lblMarca2.Name = "lblMarca2";
-            lblMarca2.Size = new Size(40, 15);
-            lblMarca2.TabIndex = 0;
-            lblMarca2.Text = "Marca";
             // 
             // lblYear2
             // 
@@ -611,13 +622,23 @@
             lblPastillas2.TabIndex = 0;
             lblPastillas2.Text = "Pastillas";
             // 
+            // lblMarca2
+            // 
+            lblMarca2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            lblMarca2.AutoSize = true;
+            lblMarca2.Location = new Point(157, 54);
+            lblMarca2.Name = "lblMarca2";
+            lblMarca2.Size = new Size(40, 15);
+            lblMarca2.TabIndex = 0;
+            lblMarca2.Text = "Marca";
+            // 
             // picGuit2
             // 
             picGuit2.Anchor = AnchorStyles.Left;
             picGuit2.BackColor = Color.White;
             picGuit2.Location = new Point(314, 43);
             picGuit2.Name = "picGuit2";
-            picGuit2.Size = new Size(161, 520);
+            picGuit2.Size = new Size(187, 520);
             picGuit2.TabIndex = 0;
             picGuit2.TabStop = false;
             // 
@@ -671,6 +692,7 @@
             gridComparar.Name = "gridComparar";
             gridComparar.Size = new Size(369, 65);
             gridComparar.TabIndex = 0;
+            gridComparar.Visible = false;
             // 
             // tableLayoutPanel9
             // 
@@ -846,8 +868,8 @@
             tableLayoutPanel16.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)gridBuscar).EndInit();
             tableLayoutPanel13.ResumeLayout(false);
-            tableLayoutPanel14.ResumeLayout(false);
-            tableLayoutPanel14.PerformLayout();
+            tableLayoutPanel7.ResumeLayout(false);
+            tableLayoutPanel7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)picGuitar1).EndInit();
             tableLayoutComparar.ResumeLayout(false);
             tableLayoutComparar.PerformLayout();
@@ -902,18 +924,9 @@
         private TableLayoutPanel tableLayoutPanel16;
         private DataGridView gridBuscar;
         private TableLayoutPanel tableLayoutPanel13;
-        private TableLayoutPanel tableLayoutPanel14;
-        private Label label12;
         private Label label13;
         private Label label14;
         private Label label15;
-        private Label lblFijacion1;
-        private Label lblEscala1;
-        private Label lblMadeCuerpo1;
-        private Label lblMadeMastil1;
-        private Label lblMadeDiapason1;
-        private Label lblPuente1;
-        private Label lblPastillas1;
         private PictureBox picGuitar1;
         private TableLayoutPanel tableLayoutPanel2;
         private DataGridView gridComparar;
@@ -932,7 +945,17 @@
         private Label label11;
         private PictureBox pictureBox1;
         private Button button1;
-        private Label labelModelo1;
-        private Label lblMarca1;
+        private TableLayoutPanel tableLayoutPanel7;
+        private Label labelmodelo1;
+        private Label labelyear1;
+        private Label labelcuerpo1;
+        private Label labelfijacion1;
+        private Label labelescala1;
+        private Label labelMcuerpo1;
+        private Label labelMmastil1;
+        private Label labelMdiapason1;
+        private Label labelPuente1;
+        private Label labelPastilla1;
+        private Label labelmarca1;
     }
 }

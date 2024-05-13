@@ -181,6 +181,7 @@
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "Registro";
             Text = "Registro";
+            FormClosing += Registro_FormClosing;
             tableLayoutPanel2.ResumeLayout(false);
             tableLayoutPanel2.PerformLayout();
             tableLayoutPanel1.ResumeLayout(false);

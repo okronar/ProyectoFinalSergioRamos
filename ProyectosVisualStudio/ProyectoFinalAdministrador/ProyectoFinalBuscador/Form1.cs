@@ -88,7 +88,7 @@ namespace ProyectoFinalBuscador
 
 
             }
-           
+
         }
 
         private void cargImgAct_Click(object sender, EventArgs e)
@@ -248,7 +248,7 @@ namespace ProyectoFinalBuscador
 
 
                         connection.Close();
-                       
+
                     }
                     else
                     {
@@ -271,8 +271,6 @@ namespace ProyectoFinalBuscador
             }
 
         }
-
-
 
         private void btnBorrarEmail_Click(object sender, EventArgs e)
         {
@@ -335,47 +333,53 @@ namespace ProyectoFinalBuscador
             }
         }
 
-    
+
 
         private void GridActualizarGuitarra_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+
+
             var rN = e.RowIndex;
             int col = -1;
+            int rowCount = GridActualizarGuitarra.Rows.Count;
 
-            txbModeloAct.Text = (string)GridActualizarGuitarra.Rows[rN].Cells[0].FormattedValue;
-            txbMarcaActu.Text = (string)GridActualizarGuitarra.Rows[rN].Cells[1].FormattedValue;
-            txbIdActu.Text = (string)GridActualizarGuitarra.Rows[rN].Cells[2].FormattedValue;
-            txbYearActu.Text = (string)GridActualizarGuitarra.Rows[rN].Cells[3].FormattedValue;
-            txbCuerpoActu.Text = (string)GridActualizarGuitarra.Rows[rN].Cells[4].FormattedValue;
-            txbFijaActu.Text = (string)GridActualizarGuitarra.Rows[rN].Cells[5].FormattedValue;
-            txbEscalaActu.Text = (string)GridActualizarGuitarra.Rows[rN].Cells[6].FormattedValue;
-            txbMCuerActu.Text = (string)GridActualizarGuitarra.Rows[rN].Cells[7].FormattedValue;
-            txbMMastActu.Text = (string)GridActualizarGuitarra.Rows[rN].Cells[8].FormattedValue;
-            txbMDiapActu.Text = (string)GridActualizarGuitarra.Rows[rN].Cells[9].FormattedValue;
-            txbPuenteActu.Text = (string)GridActualizarGuitarra.Rows[rN].Cells[10].FormattedValue;
-            txbPastActu.Text = (string)GridActualizarGuitarra.Rows[rN].Cells[11].FormattedValue;
-            txbURLActu.Text = (string)GridActualizarGuitarra.Rows[rN].Cells[12].FormattedValue;
-
-          
-            try
+            if (rN >= 0 && rN < rowCount - 1)
             {
-                String imgstr = (string)GridActualizarGuitarra.Rows[rN].Cells[13].FormattedValue;
-                Image img = new Bitmap(Auxiliar.stringToImg(imgstr));
-                picmuestraAct.Image = img;
+
+                txbModeloAct.Text = (string)GridActualizarGuitarra.Rows[rN].Cells[0].FormattedValue;
+                txbMarcaActu.Text = (string)GridActualizarGuitarra.Rows[rN].Cells[1].FormattedValue;
+                txbIdActu.Text = (string)GridActualizarGuitarra.Rows[rN].Cells[2].FormattedValue;
+                txbYearActu.Text = (string)GridActualizarGuitarra.Rows[rN].Cells[3].FormattedValue;
+                txbCuerpoActu.Text = (string)GridActualizarGuitarra.Rows[rN].Cells[4].FormattedValue;
+                txbFijaActu.Text = (string)GridActualizarGuitarra.Rows[rN].Cells[5].FormattedValue;
+                txbEscalaActu.Text = (string)GridActualizarGuitarra.Rows[rN].Cells[6].FormattedValue;
+                txbMCuerActu.Text = (string)GridActualizarGuitarra.Rows[rN].Cells[7].FormattedValue;
+                txbMMastActu.Text = (string)GridActualizarGuitarra.Rows[rN].Cells[8].FormattedValue;
+                txbMDiapActu.Text = (string)GridActualizarGuitarra.Rows[rN].Cells[9].FormattedValue;
+                txbPuenteActu.Text = (string)GridActualizarGuitarra.Rows[rN].Cells[10].FormattedValue;
+                txbPastActu.Text = (string)GridActualizarGuitarra.Rows[rN].Cells[11].FormattedValue;
+                txbURLActu.Text = (string)GridActualizarGuitarra.Rows[rN].Cells[12].FormattedValue;
+
+
+                try
+                {
+                    String imgstr = (string)GridActualizarGuitarra.Rows[rN].Cells[13].FormattedValue;
+                    Image img = new Bitmap(Auxiliar.stringToImg(imgstr));
+                    picmuestraAct.Image = img;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error al convertir la cadena de texto en imagen: " + ex.Message);
+                }
             }
-            catch (Exception ex)
+
+            else
             {
-                MessageBox.Show("Error al convertir la cadena de texto en imagen: " + ex.Message);
+                MessageBox.Show("Error, clica dentro de los valores");
             }
 
 
 
-            /*for (int i = 0; i < GridActualizarGuitarra.Columns.Count; i++) {
-
-                
-
-               /* if (GridActualizarGuitarra.Rows[rN].Cells[i].Selected)
-                    col =*/
 
         }
 
@@ -408,20 +412,27 @@ namespace ProyectoFinalBuscador
                     MessageBox.Show("La guitarra con el ID especificado no existe");
                 }
 
-               
+
 
                 connection.Close();
 
                 txboxIdBorrar.Text = null;
-                
-                
+
+
 
             }
             catch (Exception)
             {
                 MessageBox.Show("Fallo al borrar guitarra");
-                
+
             }
         }
+
+        private void dataGridguitborrar_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            MessageBox.Show("Para borrar, introduzca manualmente el id");
+        }
+
+       
     }
 }

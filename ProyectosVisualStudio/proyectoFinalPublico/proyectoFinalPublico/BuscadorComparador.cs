@@ -32,16 +32,18 @@ namespace proyectoFinalPublico
 
         private void btnVolver_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
             landing.Show();
         }
 
         private void BuscadorComparador_FormClosing(object sender, FormClosingEventArgs e)
         {
-            this.Close();
-            landing.Show();
+
+            landing.Close();
 
 
         }
+
+       
     }
 }

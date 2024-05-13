@@ -16,15 +16,17 @@ namespace proyectoFinalPublico
     public partial class Registro : Form
     {
         string connectionString = ConfigurationManager.ConnectionStrings["DatabaseConnectionString"].ConnectionString;
-        public Registro()
+        Landing land = new Landing();
+        public Registro(Landing land)
         {
+            this.land = land;
             InitializeComponent();
-
         }
 
         private void btnvolreg_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
+            land.Show();
         }
 
         private void btnReg_Click(object sender, EventArgs e)
@@ -37,8 +39,9 @@ namespace proyectoFinalPublico
             if (email.Length < 3 || pass.Length < 4)
 
                 MessageBox.Show("Username o password no válido");
-            else if (!pass.Equals( reppass)) { 
-                 MessageBox.Show("Las contraseñas han de coincidir");
+            else if (!pass.Equals(reppass))
+            {
+                MessageBox.Show("Las contraseñas han de coincidir");
             }
             else
             {
@@ -46,7 +49,7 @@ namespace proyectoFinalPublico
 
                 //Hacer una consulta connection el userName al la tabla Clientes
 
-                bool emailExiste = Auxiliar.VerificarUsuarioExistente(email);   
+                bool emailExiste = Auxiliar.VerificarUsuarioExistente(email);
                 if (emailExiste)
                 {
                     MessageBox.Show("Email ya registrado", "Error");
@@ -80,9 +83,10 @@ namespace proyectoFinalPublico
                         var sw2 = new StreamWriter("data\\" + dir + "\\favoritos.ls");
                         //Mensaje de confirmación
                         MessageBox.Show("Usuario creado correctamente, redirigiendo al login", "Éxito");
-                        
-                        
-                        this.Close();
+
+                        limpito();
+                        this.Hide();
+                        land.Show();
                     }
                     catch (Exception ex)
                     {
@@ -94,6 +98,17 @@ namespace proyectoFinalPublico
 
         }
 
+        private void Registro_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            land.Close();
+        }
+        private void limpito()
+        {
+            txbEmailReg.Text = null;
+            txboxPassReg.Text = null;
+            txbPassRepReg.Text = null;
+        }
+
     }
- }
+}
 
