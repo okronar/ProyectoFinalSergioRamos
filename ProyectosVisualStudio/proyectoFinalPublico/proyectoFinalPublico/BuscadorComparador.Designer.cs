@@ -419,6 +419,7 @@
             textBoxcomparar.Size = new Size(466, 23);
             textBoxcomparar.TabIndex = 1;
             textBoxcomparar.TextAlign = HorizontalAlignment.Center;
+            textBoxcomparar.Visible = false;
             // 
             // tableLayoutPanel6
             // 

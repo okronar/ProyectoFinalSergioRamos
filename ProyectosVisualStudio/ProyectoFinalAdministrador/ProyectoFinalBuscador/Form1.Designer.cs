@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             CargarIMG = new Button();
             picmuestra = new PictureBox();
             tabControlGuitar = new TabControl();
@@ -87,6 +90,7 @@
             txboxUsuarioBorrar = new TextBox();
             tableUsuarios = new TableLayoutPanel();
             gridBorrarUsuarios = new DataGridView();
+            labelwarning = new Label();
             ((System.ComponentModel.ISupportInitialize)picmuestra).BeginInit();
             tabControlGuitar.SuspendLayout();
             InsertarGuit.SuspendLayout();
@@ -328,7 +332,7 @@
             txtbFijac.Location = new Point(3, 3);
             txtbFijac.Name = "txtbFijac";
             txtbFijac.PlaceholderText = "Fijación";
-            txtbFijac.Size = new Size(283, 23);
+            txtbFijac.Size = new Size(320, 23);
             txtbFijac.TabIndex = 12;
             txtbFijac.TextAlign = HorizontalAlignment.Center;
             // 
@@ -337,7 +341,7 @@
             txtbPastillas.Location = new Point(3, 79);
             txtbPastillas.Name = "txtbPastillas";
             txtbPastillas.PlaceholderText = "Pastillas";
-            txtbPastillas.Size = new Size(283, 23);
+            txtbPastillas.Size = new Size(320, 23);
             txtbPastillas.TabIndex = 12;
             txtbPastillas.TextAlign = HorizontalAlignment.Center;
             // 
@@ -346,7 +350,7 @@
             txtbUrl.Location = new Point(3, 166);
             txtbUrl.Name = "txtbUrl";
             txtbUrl.PlaceholderText = "URL Tienda ";
-            txtbUrl.Size = new Size(283, 23);
+            txtbUrl.Size = new Size(320, 23);
             txtbUrl.TabIndex = 12;
             txtbUrl.TextAlign = HorizontalAlignment.Center;
             // 
@@ -749,11 +753,12 @@
             // 
             tableLayoutPanel1.BackColor = Color.FromArgb(252, 248, 239);
             tableLayoutPanel1.ColumnCount = 3;
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 1.36592376F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 41.69662F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 10.8554993F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 32.2070465F));
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 56.8807335F));
             tableLayoutPanel1.Controls.Add(tableLayoutPanel2, 1, 0);
             tableLayoutPanel1.Controls.Add(tableUsuarios, 2, 0);
+            tableLayoutPanel1.Controls.Add(labelwarning, 0, 0);
             tableLayoutPanel1.Dock = DockStyle.Fill;
             tableLayoutPanel1.ForeColor = Color.FromArgb(252, 248, 239);
             tableLayoutPanel1.Location = new Point(3, 3);
@@ -771,19 +776,19 @@
             tableLayoutPanel2.Controls.Add(btnBorrarEmail, 0, 1);
             tableLayoutPanel2.Controls.Add(txboxUsuarioBorrar, 0, 0);
             tableLayoutPanel2.Dock = DockStyle.Fill;
-            tableLayoutPanel2.Location = new Point(22, 3);
+            tableLayoutPanel2.Location = new Point(154, 3);
             tableLayoutPanel2.Name = "tableLayoutPanel2";
             tableLayoutPanel2.RowCount = 2;
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel2.Size = new Size(574, 782);
+            tableLayoutPanel2.Size = new Size(442, 782);
             tableLayoutPanel2.TabIndex = 0;
             // 
             // btnBorrarEmail
             // 
             btnBorrarEmail.Anchor = AnchorStyles.None;
             btnBorrarEmail.ForeColor = Color.Black;
-            btnBorrarEmail.Location = new Point(95, 532);
+            btnBorrarEmail.Location = new Point(29, 532);
             btnBorrarEmail.Name = "btnBorrarEmail";
             btnBorrarEmail.Size = new Size(383, 108);
             btnBorrarEmail.TabIndex = 7;
@@ -794,7 +799,7 @@
             // txboxUsuarioBorrar
             // 
             txboxUsuarioBorrar.Anchor = AnchorStyles.None;
-            txboxUsuarioBorrar.Location = new Point(115, 184);
+            txboxUsuarioBorrar.Location = new Point(49, 184);
             txboxUsuarioBorrar.Name = "txboxUsuarioBorrar";
             txboxUsuarioBorrar.PlaceholderText = "Email del usuario a borrar";
             txboxUsuarioBorrar.Size = new Size(343, 23);
@@ -816,13 +821,48 @@
             // 
             // gridBorrarUsuarios
             // 
+            dataGridViewCellStyle1.BackColor = Color.White;
+            dataGridViewCellStyle1.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle1.ForeColor = Color.Black;
+            gridBorrarUsuarios.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             gridBorrarUsuarios.BackgroundColor = SystemColors.ActiveCaption;
+            gridBorrarUsuarios.BorderStyle = BorderStyle.Fixed3D;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = SystemColors.ActiveCaption;
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle2.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
+            gridBorrarUsuarios.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             gridBorrarUsuarios.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = SystemColors.Window;
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle3.ForeColor = Color.FromArgb(252, 248, 239);
+            dataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
+            gridBorrarUsuarios.DefaultCellStyle = dataGridViewCellStyle3;
             gridBorrarUsuarios.Dock = DockStyle.Fill;
+            gridBorrarUsuarios.GridColor = SystemColors.InactiveCaptionText;
             gridBorrarUsuarios.Location = new Point(3, 3);
             gridBorrarUsuarios.Name = "gridBorrarUsuarios";
+            gridBorrarUsuarios.RightToLeft = RightToLeft.No;
             gridBorrarUsuarios.Size = new Size(460, 724);
             gridBorrarUsuarios.TabIndex = 0;
+            // 
+            // labelwarning
+            // 
+            labelwarning.Anchor = AnchorStyles.None;
+            labelwarning.AutoSize = true;
+            labelwarning.ForeColor = Color.Black;
+            labelwarning.Location = new Point(9, 356);
+            labelwarning.Name = "labelwarning";
+            labelwarning.Size = new Size(133, 75);
+            labelwarning.TabIndex = 9;
+            labelwarning.Text = "El email del usuario será borrado pero los datos pertenecientes a las búsquedas realizadas serán guardados.";
+            labelwarning.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // Administrador
             // 
@@ -866,6 +906,7 @@
             ElegirGuit.ResumeLayout(false);
             ElegirUsuario.ResumeLayout(false);
             tableLayoutPanel1.ResumeLayout(false);
+            tableLayoutPanel1.PerformLayout();
             tableLayoutPanel2.ResumeLayout(false);
             tableLayoutPanel2.PerformLayout();
             tableUsuarios.ResumeLayout(false);
@@ -934,5 +975,6 @@
         private TableLayoutPanel tableLayoutPanel11;
         private TableLayoutPanel tableLayoutPanel12;
         private TableLayoutPanel tableLayoutPanel13;
+        public Label labelwarning;
     }
 }

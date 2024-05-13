@@ -103,7 +103,6 @@ namespace ProyectoFinalBuscador
                 picmuestraAct.Image = img;
             }
         }
-
         private void btnInsertar_Click(object sender, EventArgs e)
         {
             try
@@ -111,69 +110,149 @@ namespace ProyectoFinalBuscador
                 if (txtbCuerpo.Text != null && txtbModelo.Text != null && txtbMarca.Text != null && txtBEscala.Text != null && txtbFijac.Text != null && txtbMaderaCuer.Text != null
                     && txtbMaderaDiapa.Text != null && txtbMaderaMastil.Text != null && txtbPuente.Text != null && txtbUrl.Text != null && txtbYear.Text != null && picmuestra.Image != null)
                 {
-
-
+                    // Verificar si el modelo ya existe
                     SqlConnection connection = new SqlConnection(connectionString);
                     connection.Open();
 
-                    SqlCommand cmd = new SqlCommand("insertarGuitarra", connection);
-
-                    //esto es para especificar que es un procedimiento 
-                    cmd.CommandType = CommandType.StoredProcedure;
-
-
-                    String modelo = txtbModelo.Text;
-                    String marca = txtbMarca.Text;
-                    String year = txtbMarca.Text;
-                    String cuerpo = txtbCuerpo.Text;
-                    String fijacion = txtbFijac.Text;
-                    String escala = txtBEscala.Text;
-                    String maderacuerpo = txtbMaderaCuer.Text;
-                    String maderamastil = txtbMaderaMastil.Text;
-                    String maderadiapason = txtbMaderaDiapa.Text;
-                    String puente = txtbPuente.Text;
-                    String pastillas = txtbPastillas.Text;
-                    String url = txtbUrl.Text;
-                    String imagen = Auxiliar.imgToString(new Bitmap(picmuestra.Image));
-
-
-
-                    cmd.Parameters.Add(new SqlParameter("@modelo", modelo));
-                    cmd.Parameters.Add(new SqlParameter("@marca", marca));
-                    cmd.Parameters.Add(new SqlParameter("@year", year));
-                    cmd.Parameters.Add(new SqlParameter("@cuerpo", cuerpo));
-                    cmd.Parameters.Add(new SqlParameter("@fijacion", fijacion));
-                    cmd.Parameters.Add(new SqlParameter("@escala", escala));
-                    cmd.Parameters.Add(new SqlParameter("@maderacuerpo", maderacuerpo));
-                    cmd.Parameters.Add(new SqlParameter("@maderamastil", maderamastil));
-                    cmd.Parameters.Add(new SqlParameter("@maderadiapason", maderadiapason));
-                    cmd.Parameters.Add(new SqlParameter("@puente", puente));
-                    cmd.Parameters.Add(new SqlParameter("@pastillas", pastillas));
-                    cmd.Parameters.Add(new SqlParameter("@url", url));
-                    cmd.Parameters.Add(new SqlParameter("@imagen", imagen));
-
-
-                    cmd.ExecuteNonQuery();
-
+                    SqlCommand checkCmd = new SqlCommand("SELECT COUNT(*) FROM Guitarras WHERE Modelo = @modelo", connection);
+                    checkCmd.Parameters.AddWithValue("@modelo", txtbModelo.Text);
+                    int count = (int)checkCmd.ExecuteScalar();
                     connection.Close();
-                    MessageBox.Show("Exito insertando guitarra");
-                    visualizarGuitarras();
-                }
 
+                    if (count > 0)
+                    {
+                        // El modelo ya existe, mostrar mensaje de error
+                        MessageBox.Show("El modelo de guitarra ya existe en la base de datos.");
+                    }
+                    else
+                    {
+                        // El modelo no existe, proceder con la inserción
+                        connection.Open();
+                        SqlCommand cmd = new SqlCommand("insertarGuitarra", connection);
+                        cmd.CommandType = CommandType.StoredProcedure;
+
+                        // Configurar los parámetros para la inserción
+                        String modelo = txtbModelo.Text;
+                        String marca = txtbMarca.Text;
+                        String year = txtbMarca.Text; // Corregir el valor a txtbYear.Text
+                        String cuerpo = txtbCuerpo.Text;
+                        String fijacion = txtbFijac.Text;
+                        String escala = txtBEscala.Text;
+                        String maderacuerpo = txtbMaderaCuer.Text;
+                        String maderamastil = txtbMaderaMastil.Text;
+                        String maderadiapason = txtbMaderaDiapa.Text;
+                        String puente = txtbPuente.Text;
+                        String pastillas = txtbPastillas.Text;
+                        String url = txtbUrl.Text;
+                        String imagen = Auxiliar.imgToString(new Bitmap(picmuestra.Image));
+
+                        // Agregar los parámetros al comando SQL
+                        cmd.Parameters.Add(new SqlParameter("@modelo", modelo));
+                        cmd.Parameters.Add(new SqlParameter("@marca", marca));
+                        cmd.Parameters.Add(new SqlParameter("@year", year));
+                        cmd.Parameters.Add(new SqlParameter("@cuerpo", cuerpo));
+                        cmd.Parameters.Add(new SqlParameter("@fijacion", fijacion));
+                        cmd.Parameters.Add(new SqlParameter("@escala", escala));
+                        cmd.Parameters.Add(new SqlParameter("@maderacuerpo", maderacuerpo));
+                        cmd.Parameters.Add(new SqlParameter("@maderamastil", maderamastil));
+                        cmd.Parameters.Add(new SqlParameter("@maderadiapason", maderadiapason));
+                        cmd.Parameters.Add(new SqlParameter("@puente", puente));
+                        cmd.Parameters.Add(new SqlParameter("@pastillas", pastillas));
+                        cmd.Parameters.Add(new SqlParameter("@url", url));
+                        cmd.Parameters.Add(new SqlParameter("@imagen", imagen));
+
+                        // Ejecutar la inserción
+                        cmd.ExecuteNonQuery();
+
+                        connection.Close();
+                        MessageBox.Show("Exito insertando guitarra");
+                        visualizarGuitarras();
+                        
+                    }
+                }
                 else
                 {
                     MessageBox.Show("Rellene todos los campos");
                 }
-
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                MessageBox.Show("Fallo, revise si el producto ya existe");
-
-                throw;
+                MessageBox.Show("Fallo, revise si el producto ya existe: " + ex.Message);
             }
-
         }
+
+     
+
+        //private void btnInsertar_Click(object sender, EventArgs e)
+        //{
+        //    try
+        //    {
+        //        if (txtbCuerpo.Text != null && txtbModelo.Text != null && txtbMarca.Text != null && txtBEscala.Text != null && txtbFijac.Text != null && txtbMaderaCuer.Text != null
+        //            && txtbMaderaDiapa.Text != null && txtbMaderaMastil.Text != null && txtbPuente.Text != null && txtbUrl.Text != null && txtbYear.Text != null && picmuestra.Image != null)
+        //        {
+
+
+        //            SqlConnection connection = new SqlConnection(connectionString);
+        //            connection.Open();
+
+        //            SqlCommand cmd = new SqlCommand("insertarGuitarra", connection);
+
+        //            //esto es para especificar que es un procedimiento 
+        //            cmd.CommandType = CommandType.StoredProcedure;
+
+
+        //            String modelo = txtbModelo.Text;
+        //            String marca = txtbMarca.Text;
+        //            String year = txtbMarca.Text;
+        //            String cuerpo = txtbCuerpo.Text;
+        //            String fijacion = txtbFijac.Text;
+        //            String escala = txtBEscala.Text;
+        //            String maderacuerpo = txtbMaderaCuer.Text;
+        //            String maderamastil = txtbMaderaMastil.Text;
+        //            String maderadiapason = txtbMaderaDiapa.Text;
+        //            String puente = txtbPuente.Text;
+        //            String pastillas = txtbPastillas.Text;
+        //            String url = txtbUrl.Text;
+        //            String imagen = Auxiliar.imgToString(new Bitmap(picmuestra.Image));
+
+
+
+        //            cmd.Parameters.Add(new SqlParameter("@modelo", modelo));
+        //            cmd.Parameters.Add(new SqlParameter("@marca", marca));
+        //            cmd.Parameters.Add(new SqlParameter("@year", year));
+        //            cmd.Parameters.Add(new SqlParameter("@cuerpo", cuerpo));
+        //            cmd.Parameters.Add(new SqlParameter("@fijacion", fijacion));
+        //            cmd.Parameters.Add(new SqlParameter("@escala", escala));
+        //            cmd.Parameters.Add(new SqlParameter("@maderacuerpo", maderacuerpo));
+        //            cmd.Parameters.Add(new SqlParameter("@maderamastil", maderamastil));
+        //            cmd.Parameters.Add(new SqlParameter("@maderadiapason", maderadiapason));
+        //            cmd.Parameters.Add(new SqlParameter("@puente", puente));
+        //            cmd.Parameters.Add(new SqlParameter("@pastillas", pastillas));
+        //            cmd.Parameters.Add(new SqlParameter("@url", url));
+        //            cmd.Parameters.Add(new SqlParameter("@imagen", imagen));
+
+
+        //            cmd.ExecuteNonQuery();
+
+        //            connection.Close();
+        //            MessageBox.Show("Exito insertando guitarra");
+        //            visualizarGuitarras();
+        //        }
+
+        //        else
+        //        {
+        //            MessageBox.Show("Rellene todos los campos");
+        //        }
+
+        //    }
+        //    catch (Exception)
+        //    {
+        //        MessageBox.Show("Fallo, revise si el producto ya existe");
+
+        //        throw;
+        //    }
+
+        //}
         private void btnActualizar_Click(object sender, EventArgs e)
         {
             try
@@ -280,7 +359,7 @@ namespace ProyectoFinalBuscador
                 SqlConnection connection = new SqlConnection(connectionString);
                 connection.Open();
 
-                SqlCommand cmd = new SqlCommand("deleteUsuario", connection);
+                SqlCommand cmd = new SqlCommand("deleteUsuarioFreeBusqueda", connection);
 
                 //esto es para especificar que es un procedimiento 
                 cmd.CommandType = CommandType.StoredProcedure;
