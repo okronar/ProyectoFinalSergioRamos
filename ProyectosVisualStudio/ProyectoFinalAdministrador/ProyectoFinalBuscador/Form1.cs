@@ -167,7 +167,7 @@ namespace ProyectoFinalBuscador
                         connection.Close();
                         MessageBox.Show("Exito insertando guitarra");
                         visualizarGuitarras();
-                        
+
                     }
                 }
                 else
@@ -181,7 +181,7 @@ namespace ProyectoFinalBuscador
             }
         }
 
-     
+
 
         //private void btnInsertar_Click(object sender, EventArgs e)
         //{
@@ -422,7 +422,7 @@ namespace ProyectoFinalBuscador
             int col = -1;
             int rowCount = GridActualizarGuitarra.Rows.Count;
 
-            if (rN >= 0 && rN < rowCount - 1)
+            if (rN >= 0 && rN < rowCount )
             {
 
                 txbModeloAct.Text = (string)GridActualizarGuitarra.Rows[rN].Cells[0].FormattedValue;
@@ -512,6 +512,9 @@ namespace ProyectoFinalBuscador
             MessageBox.Show("Para borrar, introduzca manualmente el id");
         }
 
-       
+        private void gridBorrarUsuarios_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            MessageBox.Show("Para borrar, introduzca manualmente el email");
+        }
     }
 }

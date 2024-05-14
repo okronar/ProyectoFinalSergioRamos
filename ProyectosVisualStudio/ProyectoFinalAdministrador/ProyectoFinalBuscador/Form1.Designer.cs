@@ -322,8 +322,8 @@
             tableLayoutPanel7.Name = "tableLayoutPanel7";
             tableLayoutPanel7.RowCount = 3;
             tableLayoutPanel7.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel7.RowStyles.Add(new RowStyle(SizeType.Absolute, 87F));
-            tableLayoutPanel7.RowStyles.Add(new RowStyle(SizeType.Absolute, 442F));
+            tableLayoutPanel7.RowStyles.Add(new RowStyle(SizeType.Absolute, 83F));
+            tableLayoutPanel7.RowStyles.Add(new RowStyle(SizeType.Absolute, 435F));
             tableLayoutPanel7.Size = new Size(358, 605);
             tableLayoutPanel7.TabIndex = 5;
             // 
@@ -338,7 +338,7 @@
             // 
             // txtbPastillas
             // 
-            txtbPastillas.Location = new Point(3, 79);
+            txtbPastillas.Location = new Point(3, 90);
             txtbPastillas.Name = "txtbPastillas";
             txtbPastillas.PlaceholderText = "Pastillas";
             txtbPastillas.Size = new Size(320, 23);
@@ -347,7 +347,7 @@
             // 
             // txtbUrl
             // 
-            txtbUrl.Location = new Point(3, 166);
+            txtbUrl.Location = new Point(3, 173);
             txtbUrl.Name = "txtbUrl";
             txtbUrl.PlaceholderText = "URL Tienda ";
             txtbUrl.Size = new Size(320, 23);
@@ -447,6 +447,7 @@
             // 
             // dataGridguitborrar
             // 
+            dataGridguitborrar.AllowUserToAddRows = false;
             dataGridguitborrar.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridguitborrar.Dock = DockStyle.Fill;
             dataGridguitborrar.Location = new Point(691, 3);
@@ -489,6 +490,7 @@
             // GridActualizarGuitarra
             // 
             GridActualizarGuitarra.AllowDrop = true;
+            GridActualizarGuitarra.AllowUserToAddRows = false;
             GridActualizarGuitarra.AllowUserToOrderColumns = true;
             GridActualizarGuitarra.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             GridActualizarGuitarra.Dock = DockStyle.Fill;
@@ -821,6 +823,7 @@
             // 
             // gridBorrarUsuarios
             // 
+            gridBorrarUsuarios.AllowUserToAddRows = false;
             dataGridViewCellStyle1.BackColor = Color.White;
             dataGridViewCellStyle1.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             dataGridViewCellStyle1.ForeColor = Color.Black;
@@ -851,6 +854,7 @@
             gridBorrarUsuarios.RightToLeft = RightToLeft.No;
             gridBorrarUsuarios.Size = new Size(460, 724);
             gridBorrarUsuarios.TabIndex = 0;
+            gridBorrarUsuarios.CellClick += gridBorrarUsuarios_CellClick;
             // 
             // labelwarning
             // 
