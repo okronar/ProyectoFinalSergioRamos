@@ -52,6 +52,7 @@
             picGuitar1 = new PictureBox();
             tableLayoutPanel14 = new TableLayoutPanel();
             txboxBuscar = new TextBox();
+            btnMostrarHistorial = new Button();
             tableLayoutComparar = new TableLayoutPanel();
             tableLayoutPanel6 = new TableLayoutPanel();
             btnVolver = new Button();
@@ -91,7 +92,8 @@
             label10 = new Label();
             label11 = new Label();
             pictureBox1 = new PictureBox();
-            btnHist = new Button();
+            picFav1 = new PictureBox();
+            picFav2 = new PictureBox();
             tableLayoutPanel1.SuspendLayout();
             tableLayoutPanel3.SuspendLayout();
             tableLayoutPanel4.SuspendLayout();
@@ -115,6 +117,8 @@
             tableLayoutPanel9.SuspendLayout();
             tableLayoutPanel12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)picFav1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)picFav2).BeginInit();
             SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -157,6 +161,7 @@
             tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 404F));
             tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
             tableLayoutPanel4.Controls.Add(linkTienda1, 1, 0);
+            tableLayoutPanel4.Controls.Add(picFav1, 0, 0);
             tableLayoutPanel4.Dock = DockStyle.Fill;
             tableLayoutPanel4.Location = new Point(3, 732);
             tableLayoutPanel4.Name = "tableLayoutPanel4";
@@ -177,6 +182,7 @@
             linkTienda1.TabIndex = 0;
             linkTienda1.TabStop = true;
             linkTienda1.Text = "Comprar Guitarra";
+            linkTienda1.LinkClicked += linkTienda1_LinkClicked;
             // 
             // tableLayoutPanel15
             // 
@@ -383,9 +389,9 @@
             // 
             picGuitar1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             picGuitar1.BackColor = Color.White;
-            picGuitar1.Location = new Point(117, 3);
+            picGuitar1.Location = new Point(99, 3);
             picGuitar1.Name = "picGuitar1";
-            picGuitar1.Size = new Size(187, 520);
+            picGuitar1.Size = new Size(205, 520);
             picGuitar1.TabIndex = 0;
             picGuitar1.TabStop = false;
             // 
@@ -396,7 +402,7 @@
             tableLayoutPanel14.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 85.6074753F));
             tableLayoutPanel14.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 76F));
             tableLayoutPanel14.Controls.Add(txboxBuscar, 1, 0);
-            tableLayoutPanel14.Controls.Add(btnHist, 0, 0);
+            tableLayoutPanel14.Controls.Add(btnMostrarHistorial, 0, 0);
             tableLayoutPanel14.Dock = DockStyle.Fill;
             tableLayoutPanel14.Location = new Point(3, 3);
             tableLayoutPanel14.Name = "tableLayoutPanel14";
@@ -414,6 +420,16 @@
             txboxBuscar.Size = new Size(454, 23);
             txboxBuscar.TabIndex = 2;
             txboxBuscar.TextAlign = HorizontalAlignment.Center;
+            // 
+            // btnMostrarHistorial
+            // 
+            btnMostrarHistorial.Location = new Point(3, 3);
+            btnMostrarHistorial.Name = "btnMostrarHistorial";
+            btnMostrarHistorial.Size = new Size(71, 23);
+            btnMostrarHistorial.TabIndex = 3;
+            btnMostrarHistorial.Text = "Historial";
+            btnMostrarHistorial.UseVisualStyleBackColor = true;
+            btnMostrarHistorial.Click += btnMostrarHistorial_Click;
             // 
             // tableLayoutComparar
             // 
@@ -468,6 +484,7 @@
             tableLayoutPanel8.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 42.953022F));
             tableLayoutPanel8.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 57.046978F));
             tableLayoutPanel8.Controls.Add(linkTienda2, 0, 0);
+            tableLayoutPanel8.Controls.Add(picFav2, 1, 0);
             tableLayoutPanel8.Dock = DockStyle.Fill;
             tableLayoutPanel8.Location = new Point(314, 3);
             tableLayoutPanel8.Name = "tableLayoutPanel8";
@@ -487,6 +504,7 @@
             linkTienda2.TabIndex = 0;
             linkTienda2.TabStop = true;
             linkTienda2.Text = "Comprar Guitarra";
+            linkTienda2.LinkClicked += linkTienda2_LinkClicked;
             // 
             // tableLayoutPanel5
             // 
@@ -509,7 +527,7 @@
             picGuit2.BackColor = Color.White;
             picGuit2.Location = new Point(314, 3);
             picGuit2.Name = "picGuit2";
-            picGuit2.Size = new Size(187, 520);
+            picGuit2.Size = new Size(205, 520);
             picGuit2.TabIndex = 0;
             picGuit2.TabStop = false;
             // 
@@ -891,14 +909,22 @@
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
-            // btnHist
+            // picFav1
             // 
-            btnHist.Location = new Point(3, 3);
-            btnHist.Name = "btnHist";
-            btnHist.Size = new Size(71, 23);
-            btnHist.TabIndex = 3;
-            btnHist.Text = "Historial";
-            btnHist.UseVisualStyleBackColor = true;
+            picFav1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            picFav1.Location = new Point(107, 3);
+            picFav1.Name = "picFav1";
+            picFav1.Size = new Size(100, 50);
+            picFav1.TabIndex = 1;
+            picFav1.TabStop = false;
+            // 
+            // picFav2
+            // 
+            picFav2.Location = new Point(131, 3);
+            picFav2.Name = "picFav2";
+            picFav2.Size = new Size(100, 48);
+            picFav2.TabIndex = 1;
+            picFav2.TabStop = false;
             // 
             // BuscadorComparador
             // 
@@ -940,6 +966,8 @@
             tableLayoutPanel12.ResumeLayout(false);
             tableLayoutPanel12.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)picFav1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)picFav2).EndInit();
             ResumeLayout(false);
         }
 
@@ -1013,6 +1041,8 @@
         private TextBox textBoxcomparar;
         private LinkLabel linkTienda1;
         private LinkLabel linkTienda2;
-        private Button btnHist;
+        private Button btnMostrarHistorial;
+        private PictureBox picFav1;
+        private PictureBox picFav2;
     }
 }

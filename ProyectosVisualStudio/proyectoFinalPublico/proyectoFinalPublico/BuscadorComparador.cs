@@ -1,6 +1,8 @@
 ﻿using Microsoft.Data.SqlClient;
+using System;
 using System.Configuration;
 using System.Data;
+using System.Windows.Forms;
 
 
 
@@ -10,45 +12,47 @@ namespace proyectoFinalPublico
     {
         static string connectionString = ConfigurationManager.ConnectionStrings["DatabaseConnectionString"].ConnectionString;
         Landing landing;
-       static  int ObtenerUltimaSesion()
+        private String url;
+        private String url2;
+        static int ObtenerUltimaSesion()
+        {
+            int ultimaSesion = 0;
+
+            string sqlQuery = "SELECT TOP 1 Sesion FROM Busquedas ORDER BY Sesion DESC";
+
+            try
             {
-                int ultimaSesion = 0;
-
-                string sqlQuery = "SELECT TOP 1 Sesion FROM Busquedas ORDER BY Sesion DESC";
-
-                try
+                using (SqlConnection connection = new SqlConnection(connectionString))
                 {
-                    using (SqlConnection connection = new SqlConnection(connectionString))
-                    {
-                        SqlCommand cmd = new SqlCommand(sqlQuery, connection);
-                        connection.Open();
+                    SqlCommand cmd = new SqlCommand(sqlQuery, connection);
+                    connection.Open();
 
-                        object result = cmd.ExecuteScalar();
-                        if (result != null)
-                        {
-                            ultimaSesion = Convert.ToInt32(result);
-                        }
+                    object result = cmd.ExecuteScalar();
+                    if (result != null)
+                    {
+                        ultimaSesion = Convert.ToInt32(result);
                     }
                 }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error al obtener la última sesión: " + ex.Message);
-                }
-
-                return ultimaSesion;
             }
-       int sesionActual = ObtenerUltimaSesion() + 1;
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al obtener la última sesión: " + ex.Message);
+            }
+
+            return ultimaSesion;
+        }
+        int sesionActual = ObtenerUltimaSesion() + 1;
         public BuscadorComparador(Landing landing)
         {
             InitializeComponent();
             this.landing = landing;
-           
+
 
 
 
         }
 
-      
+
 
 
         private void btnVolver_Click(object sender, EventArgs e)
@@ -94,29 +98,40 @@ namespace proyectoFinalPublico
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-
-            if (visualizarGuitarrasBusqueda())
-            {
-                gridBuscar.Visible = true;
-
-
+            if (txboxBuscar.Text == "")
+            {      MessageBox.Show("Escribe algo anda");
+               
             }
-            else
-            {
-                MessageBox.Show("No se han encontrado resultados");
+            else { 
+                 if (visualizarGuitarrasBusqueda(txboxBuscar.Text))
+                {
+                    gridBuscar.Visible = true;
 
+
+                }
+                else
+                {
+                    MessageBox.Show("No se han encontrado resultados");
+
+                }
             }
+
         }
 
 
-        private bool visualizarGuitarrasBusqueda()
+        private bool visualizarGuitarrasBusqueda(string nombreGuitarra)
         {
-            string sqlQuery = "SELECT * FROM Guitarras";
+            string sqlQuery = "SELECT * FROM Guitarras WHERE Modelo LIKE '%' + @nombreGuitarra + '%' OR Marca LIKE '%' + @nombreGuitarra + '%';";
 
             try
             {
-                SqlDataAdapter adapter = new SqlDataAdapter(sqlQuery, connectionString);
                 SqlConnection connection = new SqlConnection(connectionString);
+                connection.Open();
+
+                SqlCommand cmd = new SqlCommand(sqlQuery, connection);
+                cmd.Parameters.AddWithValue("@nombreGuitarra", nombreGuitarra);
+
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
 
                 DataTable dt = new DataTable();
                 adapter.Fill(dt);
@@ -126,20 +141,26 @@ namespace proyectoFinalPublico
                 // Retornar true si hay filas en el DataTable, false si no hay filas
                 return dt.Rows.Count > 0;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                MessageBox.Show("Fallo");
-                throw;
+                MessageBox.Show("Fallo: " + ex.Message);
+                return false;
             }
         }
-        private bool visualizarGuitarrasBusqueda2()
+
+        private bool visualizarGuitarrasBusqueda2(string nombreGuitarra2)
         {
-            string sqlQuery = "SELECT * FROM Guitarras";
+            string sqlQuery = "SELECT * FROM Guitarras WHERE Modelo LIKE '%' + @nombreGuitarra + '%' OR Marca LIKE '%' + @nombreGuitarra + '%';";
 
             try
             {
-                SqlDataAdapter adapter = new SqlDataAdapter(sqlQuery, connectionString);
                 SqlConnection connection = new SqlConnection(connectionString);
+                connection.Open();
+
+                SqlCommand cmd = new SqlCommand(sqlQuery, connection);
+                cmd.Parameters.AddWithValue("@nombreGuitarra", nombreGuitarra2);
+
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
 
                 DataTable dt = new DataTable();
                 adapter.Fill(dt);
@@ -149,10 +170,10 @@ namespace proyectoFinalPublico
                 // Retornar true si hay filas en el DataTable, false si no hay filas
                 return dt.Rows.Count > 0;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                MessageBox.Show("Fallo");
-                throw;
+                MessageBox.Show("Fallo: " + ex.Message);
+                return false;
             }
         }
 
@@ -186,12 +207,14 @@ namespace proyectoFinalPublico
                 labelPuente1.Text = (string)gridBuscar.Rows[rN].Cells[10].FormattedValue;
                 labelPastilla1.Text = (string)gridBuscar.Rows[rN].Cells[11].FormattedValue;
 
-                // txbURLActu.Text = (string)gridBuscar.Rows[rN].Cells[12].FormattedValue;
+                url = (string)gridBuscar.Rows[rN].Cells[12].FormattedValue;
+
                 int idGuit = int.Parse(gridBuscar.Rows[rN].Cells[2].FormattedValue.ToString());
 
-                Guitarra guit1 = new Guitarra(labelmodelo1.Text,labelmarca1.Text, idGuit);
+                Guitarra guit1 = new Guitarra(labelmodelo1.Text, labelmarca1.Text, idGuit);
 
                 InsertarBusqueda(guit1.modelo, guit1.marca, sesionActual, landing.usuario.id, guit1.id);
+                EscribirEnHistorial(landing.usuario.email, guit1.modelo);
 
                 try
                 {
@@ -215,19 +238,44 @@ namespace proyectoFinalPublico
 
 
         }
+        private void linkTienda1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            if (!string.IsNullOrEmpty(url))
+            {
+                // Abrir la URL en el navegador predeterminado
+                System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
+                {
+                    FileName = url,
+                    UseShellExecute = true
+                });
+            }
+            else
+            {
+                MessageBox.Show("No se ha seleccionado ninguna URL.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
         private void btnCompare_Click(object sender, EventArgs e)
         {
 
-            if (visualizarGuitarrasBusqueda2())
+            if (textBoxcomparar.Text == "")
             {
-                gridComparar.Visible = true;
-
+                MessageBox.Show("Escribe algo aqui también anda");
 
             }
             else
             {
-                MessageBox.Show("No se han encontrado resultados");
+                if (visualizarGuitarrasBusqueda2(textBoxcomparar.Text))
+                {
+                    gridComparar.Visible = true;
 
+
+                }
+                else
+                {
+                    MessageBox.Show("No se han encontrado resultados");
+
+                }
             }
         }
 
@@ -236,14 +284,14 @@ namespace proyectoFinalPublico
 
             tableLayoutPanel5.Visible = true;
             tableLayoutPanel8.Visible = true;
-           
+
 
 
 
 
             var rN = e.RowIndex;
             int col = -1;
-            int rowCount = gridBuscar.Rows.Count;
+            int rowCount = gridComparar.Rows.Count;
 
             if (rN >= 0 && rN < rowCount)
             {
@@ -261,12 +309,12 @@ namespace proyectoFinalPublico
                 lblPuente2.Text = (string)gridComparar.Rows[rN].Cells[10].FormattedValue;
                 lblPastillas2.Text = (string)gridComparar.Rows[rN].Cells[11].FormattedValue;
 
-                // txbURLActu.Text = (string)gridBuscar.Rows[rN].Cells[12].FormattedValue;
-                int idGuit = int.Parse(gridBuscar.Rows[rN].Cells[2].FormattedValue.ToString());
-                Guitarra guit2 = new Guitarra(labelmodelo1.Text, labelmarca1.Text, idGuit);
 
+                int idGuit = int.Parse(gridComparar.Rows[rN].Cells[2].FormattedValue.ToString());
+                Guitarra guit2 = new Guitarra(lblModelo2.Text, lblMarca2.Text, idGuit);
+                url2 = (string)gridComparar.Rows[rN].Cells[12].FormattedValue;
                 InsertarBusqueda(guit2.modelo, guit2.marca, sesionActual, landing.usuario.id, guit2.id);
-                EscribirEnHistorial(landing.usuario.email,guit2.modelo);
+                EscribirEnHistorial(landing.usuario.email, guit2.modelo);
 
                 try
                 {
@@ -292,6 +340,22 @@ namespace proyectoFinalPublico
 
 
         }
+        private void linkTienda2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            if (!string.IsNullOrEmpty(url2))
+            {
+                // Abrir la URL en el navegador predeterminado
+                System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
+                {
+                    FileName = url2,
+                    UseShellExecute = true
+                });
+            }
+            else
+            {
+                MessageBox.Show("No se ha seleccionado ninguna URL.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
         private void InsertarBusqueda(string modelo, string marca, int sesion, int idEmail, int idGuitarra)
         {
             try
@@ -311,7 +375,7 @@ namespace proyectoFinalPublico
                     cmd.ExecuteNonQuery();
                 }
 
-                
+
             }
             catch (Exception ex)
             {
@@ -342,13 +406,107 @@ namespace proyectoFinalPublico
                     writer.WriteLine(modeloGuitarra);
                 }
 
-               
+
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error al escribir en el historial: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+
+        private void btnMostrarHistorial_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Ruta del archivo de historial
+                string email = landing.usuario.email; // Reemplazar con el email del usuario actual
+                string filePath = $"data\\{email}\\historial.ls";
+
+                // Verificar si el archivo existe
+                if (File.Exists(filePath))
+                {
+                    // Leer el contenido del archivo
+                    string historial = File.ReadAllText(filePath);
+
+                    // Mostrar el contenido en un MessageBox
+                    MessageBox.Show(historial, "Historial");
+                }
+                else
+                {
+                    MessageBox.Show("El archivo de historial no existe.", "Error");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al leer el archivo de historial: {ex.Message}", "Error");
+            }
+        }
+
+        private void RealizarBusqueda(string nombreGuitarra)
+        {
+            try
+            {
+                SqlConnection connection = new SqlConnection(connectionString);
+                connection.Open();
+
+                // Consulta SQL para buscar guitarras por nombre
+                string query = "SELECT * FROM Guitarras WHERE Modelo LIKE @nombreGuitarra";
+
+                // Crear el comando SQL con la consulta y la conexión
+                SqlCommand cmd = new SqlCommand(query, connection);
+
+                // Parametrizar la consulta para buscar coincidencias parciales del nombre de la guitarra
+                cmd.Parameters.AddWithValue("@nombreGuitarra", "%" + nombreGuitarra + "%");
+
+                // Ejecutar la consulta y obtener los resultados
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+
+                // Mostrar los resultados en el DataGridView
+                gridBuscar.DataSource = dt;
+
+                connection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al realizar la búsqueda: " + ex.Message);
+            }
+        }
+        private void RealizarComparacion(string nombreGuitarra)
+        {
+            try
+            {
+                SqlConnection connection = new SqlConnection(connectionString);
+                connection.Open();
+
+                // Consulta SQL para buscar guitarras por nombre
+                string query = "SELECT * FROM Guitarras WHERE Modelo LIKE @nombreGuitarra";
+
+                // Crear el comando SQL con la consulta y la conexión
+                SqlCommand cmd = new SqlCommand(query, connection);
+
+                // Parametrizar la consulta para buscar coincidencias parciales del nombre de la guitarra
+                cmd.Parameters.AddWithValue("@nombreGuitarra", "%" + nombreGuitarra + "%");
+
+                // Ejecutar la consulta y obtener los resultados
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+
+                // Mostrar los resultados en el DataGridView
+                gridComparar.DataSource = dt;
+
+                connection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al realizar la búsqueda: " + ex.Message);
+            }
+        }
+
+
 
     }
 
