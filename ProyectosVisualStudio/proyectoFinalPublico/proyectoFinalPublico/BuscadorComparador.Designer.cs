@@ -58,6 +58,7 @@
             tableLayoutPanel8 = new TableLayoutPanel();
             linkTienda2 = new LinkLabel();
             tableLayoutPanel5 = new TableLayoutPanel();
+            picGuit2 = new PictureBox();
             tableLayoutPanel10 = new TableLayoutPanel();
             lblModelo2 = new Label();
             lblYear2 = new Label();
@@ -70,7 +71,6 @@
             lblPuente2 = new Label();
             lblPastillas2 = new Label();
             lblMarca2 = new Label();
-            picGuit2 = new PictureBox();
             tableLayoutPanel11 = new TableLayoutPanel();
             btnCompare = new Button();
             tableLayoutPanel2 = new TableLayoutPanel();
@@ -91,6 +91,7 @@
             label10 = new Label();
             label11 = new Label();
             pictureBox1 = new PictureBox();
+            btnHist = new Button();
             tableLayoutPanel1.SuspendLayout();
             tableLayoutPanel3.SuspendLayout();
             tableLayoutPanel4.SuspendLayout();
@@ -105,8 +106,8 @@
             tableLayoutPanel6.SuspendLayout();
             tableLayoutPanel8.SuspendLayout();
             tableLayoutPanel5.SuspendLayout();
-            tableLayoutPanel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)picGuit2).BeginInit();
+            tableLayoutPanel10.SuspendLayout();
             tableLayoutPanel11.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)gridComparar).BeginInit();
@@ -153,7 +154,7 @@
             // 
             tableLayoutPanel4.ColumnCount = 2;
             tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
-            tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 470F));
+            tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 404F));
             tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
             tableLayoutPanel4.Controls.Add(linkTienda1, 1, 0);
             tableLayoutPanel4.Dock = DockStyle.Fill;
@@ -170,7 +171,7 @@
             // 
             linkTienda1.Anchor = AnchorStyles.Left;
             linkTienda1.AutoSize = true;
-            linkTienda1.Location = new Point(147, 22);
+            linkTienda1.Location = new Point(213, 22);
             linkTienda1.Name = "linkTienda1";
             linkTienda1.Size = new Size(99, 15);
             linkTienda1.TabIndex = 0;
@@ -395,6 +396,7 @@
             tableLayoutPanel14.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 85.6074753F));
             tableLayoutPanel14.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 76F));
             tableLayoutPanel14.Controls.Add(txboxBuscar, 1, 0);
+            tableLayoutPanel14.Controls.Add(btnHist, 0, 0);
             tableLayoutPanel14.Dock = DockStyle.Fill;
             tableLayoutPanel14.Location = new Point(3, 3);
             tableLayoutPanel14.Name = "tableLayoutPanel14";
@@ -451,8 +453,8 @@
             // 
             // btnVolver
             // 
-            btnVolver.Anchor = AnchorStyles.None;
-            btnVolver.Location = new Point(425, 171);
+            btnVolver.Anchor = AnchorStyles.Top;
+            btnVolver.Location = new Point(425, 63);
             btnVolver.Name = "btnVolver";
             btnVolver.Size = new Size(75, 23);
             btnVolver.TabIndex = 0;
@@ -463,8 +465,8 @@
             // tableLayoutPanel8
             // 
             tableLayoutPanel8.ColumnCount = 2;
-            tableLayoutPanel8.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 53.020134F));
-            tableLayoutPanel8.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 46.979866F));
+            tableLayoutPanel8.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 42.953022F));
+            tableLayoutPanel8.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 57.046978F));
             tableLayoutPanel8.Controls.Add(linkTienda2, 0, 0);
             tableLayoutPanel8.Dock = DockStyle.Fill;
             tableLayoutPanel8.Location = new Point(314, 3);
@@ -477,9 +479,9 @@
             // 
             // linkTienda2
             // 
-            linkTienda2.Anchor = AnchorStyles.Right;
+            linkTienda2.Anchor = AnchorStyles.Left;
             linkTienda2.AutoSize = true;
-            linkTienda2.Location = new Point(56, 19);
+            linkTienda2.Location = new Point(3, 19);
             linkTienda2.Name = "linkTienda2";
             linkTienda2.Size = new Size(99, 15);
             linkTienda2.TabIndex = 0;
@@ -501,6 +503,15 @@
             tableLayoutPanel5.Size = new Size(615, 543);
             tableLayoutPanel5.TabIndex = 0;
             tableLayoutPanel5.Visible = false;
+            // 
+            // picGuit2
+            // 
+            picGuit2.BackColor = Color.White;
+            picGuit2.Location = new Point(314, 3);
+            picGuit2.Name = "picGuit2";
+            picGuit2.Size = new Size(187, 520);
+            picGuit2.TabIndex = 0;
+            picGuit2.TabStop = false;
             // 
             // tableLayoutPanel10
             // 
@@ -644,15 +655,6 @@
             lblMarca2.TabIndex = 0;
             lblMarca2.Text = "Marca";
             // 
-            // picGuit2
-            // 
-            picGuit2.BackColor = Color.White;
-            picGuit2.Location = new Point(314, 3);
-            picGuit2.Name = "picGuit2";
-            picGuit2.Size = new Size(187, 520);
-            picGuit2.TabIndex = 0;
-            picGuit2.TabStop = false;
-            // 
             // tableLayoutPanel11
             // 
             tableLayoutPanel11.ColumnCount = 3;
@@ -726,7 +728,7 @@
             // textBoxcomparar
             // 
             textBoxcomparar.Anchor = AnchorStyles.None;
-            textBoxcomparar.Location = new Point(80, 3);
+            textBoxcomparar.Location = new Point(80, 4);
             textBoxcomparar.Name = "textBoxcomparar";
             textBoxcomparar.PlaceholderText = "Introduce modelo";
             textBoxcomparar.Size = new Size(455, 23);
@@ -889,6 +891,15 @@
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
+            // btnHist
+            // 
+            btnHist.Location = new Point(3, 3);
+            btnHist.Name = "btnHist";
+            btnHist.Size = new Size(71, 23);
+            btnHist.TabIndex = 3;
+            btnHist.Text = "Historial";
+            btnHist.UseVisualStyleBackColor = true;
+            // 
             // BuscadorComparador
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -917,9 +928,9 @@
             tableLayoutPanel8.ResumeLayout(false);
             tableLayoutPanel8.PerformLayout();
             tableLayoutPanel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)picGuit2).EndInit();
             tableLayoutPanel10.ResumeLayout(false);
             tableLayoutPanel10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)picGuit2).EndInit();
             tableLayoutPanel11.ResumeLayout(false);
             tableLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)gridComparar).EndInit();
@@ -1002,5 +1013,6 @@
         private TextBox textBoxcomparar;
         private LinkLabel linkTienda1;
         private LinkLabel linkTienda2;
+        private Button btnHist;
     }
 }

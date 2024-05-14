@@ -43,6 +43,12 @@ namespace proyectoFinalPublico
             this.imagen = imagen;
         }
 
+        public Guitarra(String modelo, String marca, int id) { 
+        this.modelo = modelo;
+        this.marca = marca;
+        this.id = id;
+        }
+
 
 
     }

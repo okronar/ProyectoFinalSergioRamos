@@ -3,21 +3,28 @@
   "WorkspaceRootPath": "D:\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\proyectoFinalPublico\\",
   "Documents": [
     {
-<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{40E94040-096D-43F1-85CB-EAD5D6E4AF3B}|proyectoFinalPublico\\proyectoFinalPublico.csproj|d:\\proyectofinalsergioramos\\proyectosvisualstudio\\proyectofinalpublico\\proyectofinalpublico\\buscadorcomparador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{40E94040-096D-43F1-85CB-EAD5D6E4AF3B}|proyectoFinalPublico\\proyectoFinalPublico.csproj|solutionrelative:proyectofinalpublico\\buscadorcomparador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40E94040-096D-43F1-85CB-EAD5D6E4AF3B}|proyectoFinalPublico\\proyectoFinalPublico.csproj|d:\\proyectofinalsergioramos\\proyectosvisualstudio\\proyectofinalpublico\\proyectofinalpublico\\buscadorcomparador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{40E94040-096D-43F1-85CB-EAD5D6E4AF3B}|proyectoFinalPublico\\proyectoFinalPublico.csproj|solutionrelative:proyectofinalpublico\\buscadorcomparador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-=======
-      "AbsoluteMoniker": "D:0:0:{40E94040-096D-43F1-85CB-EAD5D6E4AF3B}|proyectoFinalPublico\\proyectoFinalPublico.csproj|d:\\proyectofinalsergioramos\\proyectosvisualstudio\\proyectofinalpublico\\proyectofinalpublico\\buscadorcomparador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{40E94040-096D-43F1-85CB-EAD5D6E4AF3B}|proyectoFinalPublico\\proyectoFinalPublico.csproj|D:\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\proyectoFinalPublico\\proyectofinalpublico\\registro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40E94040-096D-43F1-85CB-EAD5D6E4AF3B}|proyectoFinalPublico\\proyectoFinalPublico.csproj|solutionrelative:proyectofinalpublico\\registro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40E94040-096D-43F1-85CB-EAD5D6E4AF3B}|proyectoFinalPublico\\proyectoFinalPublico.csproj|D:\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\proyectoFinalPublico\\proyectofinalpublico\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40E94040-096D-43F1-85CB-EAD5D6E4AF3B}|proyectoFinalPublico\\proyectoFinalPublico.csproj|solutionrelative:proyectofinalpublico\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40E94040-096D-43F1-85CB-EAD5D6E4AF3B}|proyectoFinalPublico\\proyectoFinalPublico.csproj|D:\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\proyectoFinalPublico\\proyectofinalpublico\\buscadorcomparador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{40E94040-096D-43F1-85CB-EAD5D6E4AF3B}|proyectoFinalPublico\\proyectoFinalPublico.csproj|solutionrelative:proyectofinalpublico\\buscadorcomparador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40E94040-096D-43F1-85CB-EAD5D6E4AF3B}|proyectoFinalPublico\\proyectoFinalPublico.csproj|d:\\proyectofinalsergioramos\\proyectosvisualstudio\\proyectofinalpublico\\proyectofinalpublico\\buscadorcomparador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40E94040-096D-43F1-85CB-EAD5D6E4AF3B}|proyectoFinalPublico\\proyectoFinalPublico.csproj|solutionrelative:proyectofinalpublico\\buscadorcomparador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
->>>>>>> Stashed changes
+      "AbsoluteMoniker": "D:0:0:{40E94040-096D-43F1-85CB-EAD5D6E4AF3B}|proyectoFinalPublico\\proyectoFinalPublico.csproj|d:\\proyectofinalsergioramos\\proyectosvisualstudio\\proyectofinalpublico\\proyectofinalpublico\\guitarra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40E94040-096D-43F1-85CB-EAD5D6E4AF3B}|proyectoFinalPublico\\proyectoFinalPublico.csproj|solutionrelative:proyectofinalpublico\\guitarra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40E94040-096D-43F1-85CB-EAD5D6E4AF3B}|proyectoFinalPublico\\proyectoFinalPublico.csproj|D:\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\proyectoFinalPublico\\proyectofinalpublico\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40E94040-096D-43F1-85CB-EAD5D6E4AF3B}|proyectoFinalPublico\\proyectoFinalPublico.csproj|solutionrelative:proyectofinalpublico\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{40E94040-096D-43F1-85CB-EAD5D6E4AF3B}|proyectoFinalPublico\\proyectoFinalPublico.csproj|D:\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\proyectoFinalPublico\\proyectofinalpublico\\registro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -32,24 +39,12 @@
       "RelativeMoniker": "D:0:0:{40E94040-096D-43F1-85CB-EAD5D6E4AF3B}|proyectoFinalPublico\\proyectoFinalPublico.csproj|solutionrelative:proyectofinalpublico\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40E94040-096D-43F1-85CB-EAD5D6E4AF3B}|proyectoFinalPublico\\proyectoFinalPublico.csproj|D:\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\proyectoFinalPublico\\proyectofinalpublico\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40E94040-096D-43F1-85CB-EAD5D6E4AF3B}|proyectoFinalPublico\\proyectoFinalPublico.csproj|solutionrelative:proyectofinalpublico\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{40E94040-096D-43F1-85CB-EAD5D6E4AF3B}|proyectoFinalPublico\\proyectoFinalPublico.csproj|D:\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\proyectoFinalPublico\\proyectofinalpublico\\auxiliar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{40E94040-096D-43F1-85CB-EAD5D6E4AF3B}|proyectoFinalPublico\\proyectoFinalPublico.csproj|solutionrelative:proyectofinalpublico\\auxiliar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40E94040-096D-43F1-85CB-EAD5D6E4AF3B}|proyectoFinalPublico\\proyectoFinalPublico.csproj|D:\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\proyectoFinalPublico\\proyectofinalpublico\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40E94040-096D-43F1-85CB-EAD5D6E4AF3B}|proyectoFinalPublico\\proyectoFinalPublico.csproj|solutionrelative:proyectofinalpublico\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{40E94040-096D-43F1-85CB-EAD5D6E4AF3B}|proyectoFinalPublico\\proyectoFinalPublico.csproj|D:\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\proyectoFinalPublico\\proyectofinalpublico\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{40E94040-096D-43F1-85CB-EAD5D6E4AF3B}|proyectoFinalPublico\\proyectoFinalPublico.csproj|solutionrelative:proyectofinalpublico\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40E94040-096D-43F1-85CB-EAD5D6E4AF3B}|proyectoFinalPublico\\proyectoFinalPublico.csproj|D:\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\proyectoFinalPublico\\proyectofinalpublico\\registro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40E94040-096D-43F1-85CB-EAD5D6E4AF3B}|proyectoFinalPublico\\proyectoFinalPublico.csproj|solutionrelative:proyectofinalpublico\\registro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{40E94040-096D-43F1-85CB-EAD5D6E4AF3B}|proyectoFinalPublico\\proyectoFinalPublico.csproj|D:\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\proyectoFinalPublico\\proyectofinalpublico\\busqueda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -67,11 +62,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-<<<<<<< Updated upstream
-          "SelectedChildIndex": 1,
-=======
-          "SelectedChildIndex": 4,
->>>>>>> Stashed changes
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -79,37 +70,41 @@
             },
             {
               "$type": "Document",
-<<<<<<< Updated upstream
+              "DocumentIndex": 4,
+              "Title": "Guitarra.cs",
+              "DocumentMoniker": "D:\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\proyectoFinalPublico\\proyectoFinalPublico\\Guitarra.cs",
+              "RelativeDocumentMoniker": "proyectoFinalPublico\\Guitarra.cs",
+              "ToolTip": "D:\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\proyectoFinalPublico\\proyectoFinalPublico\\Guitarra.cs",
+              "RelativeToolTip": "proyectoFinalPublico\\Guitarra.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAIwCEAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T16:05:31.051Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-=======
-              "DocumentIndex": 1,
->>>>>>> Stashed changes
               "Title": "BuscadorComparador.cs",
               "DocumentMoniker": "D:\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\proyectoFinalPublico\\proyectoFinalPublico\\BuscadorComparador.cs",
               "RelativeDocumentMoniker": "proyectoFinalPublico\\BuscadorComparador.cs",
               "ToolTip": "D:\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\proyectoFinalPublico\\proyectoFinalPublico\\BuscadorComparador.cs",
               "RelativeToolTip": "proyectoFinalPublico\\BuscadorComparador.cs",
-<<<<<<< Updated upstream
-              "ViewState": "AQIAABMAAAAAAAAAAAAowC4AAAAHAAAA",
-=======
-              "ViewState": "AQIAAL8AAAAAAAAAAAAQwNIAAAAcAAAA",
->>>>>>> Stashed changes
+              "ViewState": "AQIAAPUAAAAAAAAAAAAxwOoAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-14T14:16:41.941Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "TerminosYCondiciones.cs",
               "DocumentMoniker": "D:\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\proyectoFinalPublico\\proyectoFinalPublico\\TerminosYCondiciones.cs",
               "RelativeDocumentMoniker": "proyectoFinalPublico\\TerminosYCondiciones.cs",
               "ToolTip": "D:\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\proyectoFinalPublico\\proyectoFinalPublico\\TerminosYCondiciones.cs",
               "RelativeToolTip": "proyectoFinalPublico\\TerminosYCondiciones.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAYwBcAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-11T22:11:22.114Z",
-              "EditorCaption": ""
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-05-11T22:11:22.114Z"
             },
             {
               "$type": "Document",
@@ -119,18 +114,14 @@
               "RelativeDocumentMoniker": "proyectoFinalPublico\\Form1.cs",
               "ToolTip": "D:\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\proyectoFinalPublico\\proyectoFinalPublico\\Form1.cs",
               "RelativeToolTip": "proyectoFinalPublico\\Form1.cs",
-              "ViewState": "AQIAAEsAAAAAAAAAAAAywAgAAAAnAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-29T16:32:20.477Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-<<<<<<< Updated upstream
-              "DocumentIndex": 1,
-=======
-              "DocumentIndex": 0,
->>>>>>> Stashed changes
+              "DocumentIndex": 3,
               "Title": "BuscadorComparador.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\proyectoFinalPublico\\proyectoFinalPublico\\BuscadorComparador.cs",
               "RelativeDocumentMoniker": "proyectoFinalPublico\\BuscadorComparador.cs",
@@ -142,7 +133,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Registro.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\proyectoFinalPublico\\proyectoFinalPublico\\Registro.cs",
               "RelativeDocumentMoniker": "proyectoFinalPublico\\Registro.cs",
@@ -154,7 +145,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "Auxiliar.cs",
               "DocumentMoniker": "D:\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\proyectoFinalPublico\\proyectoFinalPublico\\Auxiliar.cs",
               "RelativeDocumentMoniker": "proyectoFinalPublico\\Auxiliar.cs",
@@ -162,12 +153,11 @@
               "RelativeToolTip": "proyectoFinalPublico\\Auxiliar.cs",
               "ViewState": "AQIAAH4AAAAAAAAAAAAnwIQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T16:24:41.126Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-29T16:24:41.126Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "Usuario.cs",
               "DocumentMoniker": "D:\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\proyectoFinalPublico\\proyectoFinalPublico\\Usuario.cs",
               "RelativeDocumentMoniker": "proyectoFinalPublico\\Usuario.cs",
@@ -180,7 +170,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
+              "Title": "Registro.cs",
+              "DocumentMoniker": "D:\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\proyectoFinalPublico\\proyectoFinalPublico\\Registro.cs",
+              "RelativeDocumentMoniker": "proyectoFinalPublico\\Registro.cs",
+              "ToolTip": "D:\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\proyectoFinalPublico\\proyectoFinalPublico\\Registro.cs",
+              "RelativeToolTip": "proyectoFinalPublico\\Registro.cs",
+              "ViewState": "AQIAAEoAAAAAAAAAAAAwwF4AAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T16:32:39.985Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Form1.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\proyectoFinalPublico\\proyectoFinalPublico\\Form1.cs",
               "RelativeDocumentMoniker": "proyectoFinalPublico\\Form1.cs",
@@ -192,20 +195,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Registro.cs",
-              "DocumentMoniker": "D:\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\proyectoFinalPublico\\proyectoFinalPublico\\Registro.cs",
-              "RelativeDocumentMoniker": "proyectoFinalPublico\\Registro.cs",
-              "ToolTip": "D:\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\proyectoFinalPublico\\proyectoFinalPublico\\Registro.cs",
-              "RelativeToolTip": "proyectoFinalPublico\\Registro.cs",
-              "ViewState": "AQIAACYAAAAAAAAAAAAwwFAAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T16:32:39.985Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "App.config",
               "DocumentMoniker": "D:\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\proyectoFinalPublico\\proyectoFinalPublico\\App.config",
               "RelativeDocumentMoniker": "proyectoFinalPublico\\App.config",
@@ -213,12 +203,11 @@
               "RelativeToolTip": "proyectoFinalPublico\\App.config",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-05-13T19:40:43.984Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-13T19:40:43.984Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "busqueda.cs",
               "DocumentMoniker": "D:\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\proyectoFinalPublico\\proyectoFinalPublico\\busqueda.cs",
               "RelativeDocumentMoniker": "proyectoFinalPublico\\busqueda.cs",
@@ -230,7 +219,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "D:\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\proyectoFinalPublico\\proyectoFinalPublico\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "proyectoFinalPublico\\Form1.Designer.cs",

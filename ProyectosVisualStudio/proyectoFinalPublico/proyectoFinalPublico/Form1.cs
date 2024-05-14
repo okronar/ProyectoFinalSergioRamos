@@ -10,10 +10,16 @@ namespace proyectoFinalPublico
     {
         string connectionString = ConfigurationManager.ConnectionStrings["DatabaseConnectionString"].ConnectionString;
         public Usuario usuario = new Usuario();
+        
+
         public Landing()
         {
             InitializeComponent();
+            
         }
+        
+
+        
         private void btnLogin_Click(object sender, EventArgs e)
         {
             // Comprobar que está todo relleno
