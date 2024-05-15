@@ -32,6 +32,7 @@
             tableLayoutPanel3 = new TableLayoutPanel();
             tableLayoutPanel4 = new TableLayoutPanel();
             linkTienda1 = new LinkLabel();
+            picFav1 = new PictureBox();
             tableLayoutPanel15 = new TableLayoutPanel();
             btnBuscar = new Button();
             tableLayoutPanel16 = new TableLayoutPanel();
@@ -58,6 +59,7 @@
             btnVolver = new Button();
             tableLayoutPanel8 = new TableLayoutPanel();
             linkTienda2 = new LinkLabel();
+            picFav2 = new PictureBox();
             tableLayoutPanel5 = new TableLayoutPanel();
             picGuit2 = new PictureBox();
             tableLayoutPanel10 = new TableLayoutPanel();
@@ -92,11 +94,10 @@
             label10 = new Label();
             label11 = new Label();
             pictureBox1 = new PictureBox();
-            picFav1 = new PictureBox();
-            picFav2 = new PictureBox();
             tableLayoutPanel1.SuspendLayout();
             tableLayoutPanel3.SuspendLayout();
             tableLayoutPanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)picFav1).BeginInit();
             tableLayoutPanel15.SuspendLayout();
             tableLayoutPanel16.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)gridBuscar).BeginInit();
@@ -107,6 +108,7 @@
             tableLayoutComparar.SuspendLayout();
             tableLayoutPanel6.SuspendLayout();
             tableLayoutPanel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)picFav2).BeginInit();
             tableLayoutPanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)picGuit2).BeginInit();
             tableLayoutPanel10.SuspendLayout();
@@ -117,18 +119,17 @@
             tableLayoutPanel9.SuspendLayout();
             tableLayoutPanel12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)picFav1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)picFav2).BeginInit();
             SuspendLayout();
             // 
             // tableLayoutPanel1
             // 
+            tableLayoutPanel1.Anchor = AnchorStyles.None;
             tableLayoutPanel1.ColumnCount = 2;
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel1.Controls.Add(tableLayoutPanel3, 0, 0);
             tableLayoutPanel1.Controls.Add(tableLayoutComparar, 1, 0);
-            tableLayoutPanel1.Location = new Point(0, 0);
+            tableLayoutPanel1.Location = new Point(3, -5);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 1;
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
@@ -183,6 +184,15 @@
             linkTienda1.TabStop = true;
             linkTienda1.Text = "Comprar Guitarra";
             linkTienda1.LinkClicked += linkTienda1_LinkClicked;
+            // 
+            // picFav1
+            // 
+            picFav1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            picFav1.Location = new Point(107, 3);
+            picFav1.Name = "picFav1";
+            picFav1.Size = new Size(100, 50);
+            picFav1.TabIndex = 1;
+            picFav1.TabStop = false;
             // 
             // tableLayoutPanel15
             // 
@@ -289,6 +299,7 @@
             // labelmodelo1
             // 
             labelmodelo1.AutoSize = true;
+            labelmodelo1.BackColor = Color.Azure;
             labelmodelo1.Location = new Point(3, 0);
             labelmodelo1.Name = "labelmodelo1";
             labelmodelo1.Size = new Size(48, 15);
@@ -298,6 +309,7 @@
             // labelyear1
             // 
             labelyear1.AutoSize = true;
+            labelyear1.BackColor = Color.Azure;
             labelyear1.Location = new Point(3, 96);
             labelyear1.Name = "labelyear1";
             labelyear1.Size = new Size(29, 15);
@@ -307,6 +319,7 @@
             // labelcuerpo1
             // 
             labelcuerpo1.AutoSize = true;
+            labelcuerpo1.BackColor = Color.Azure;
             labelcuerpo1.Location = new Point(3, 144);
             labelcuerpo1.Name = "labelcuerpo1";
             labelcuerpo1.Size = new Size(46, 15);
@@ -316,6 +329,7 @@
             // labelfijacion1
             // 
             labelfijacion1.AutoSize = true;
+            labelfijacion1.BackColor = Color.Azure;
             labelfijacion1.Location = new Point(3, 192);
             labelfijacion1.Name = "labelfijacion1";
             labelfijacion1.Size = new Size(48, 15);
@@ -325,6 +339,7 @@
             // labelescala1
             // 
             labelescala1.AutoSize = true;
+            labelescala1.BackColor = Color.Azure;
             labelescala1.Location = new Point(3, 240);
             labelescala1.Name = "labelescala1";
             labelescala1.Size = new Size(39, 15);
@@ -334,6 +349,7 @@
             // labelMcuerpo1
             // 
             labelMcuerpo1.AutoSize = true;
+            labelMcuerpo1.BackColor = Color.Azure;
             labelMcuerpo1.Location = new Point(3, 288);
             labelMcuerpo1.Name = "labelMcuerpo1";
             labelMcuerpo1.Size = new Size(87, 15);
@@ -343,6 +359,7 @@
             // labelMmastil1
             // 
             labelMmastil1.AutoSize = true;
+            labelMmastil1.BackColor = Color.Azure;
             labelMmastil1.Location = new Point(3, 336);
             labelMmastil1.Name = "labelMmastil1";
             labelMmastil1.Size = new Size(82, 15);
@@ -352,6 +369,7 @@
             // labelMdiapason1
             // 
             labelMdiapason1.AutoSize = true;
+            labelMdiapason1.BackColor = Color.Azure;
             labelMdiapason1.Location = new Point(3, 384);
             labelMdiapason1.Name = "labelMdiapason1";
             labelMdiapason1.Size = new Size(98, 15);
@@ -361,6 +379,7 @@
             // labelPuente1
             // 
             labelPuente1.AutoSize = true;
+            labelPuente1.BackColor = Color.Azure;
             labelPuente1.Location = new Point(3, 432);
             labelPuente1.Name = "labelPuente1";
             labelPuente1.Size = new Size(44, 15);
@@ -370,6 +389,7 @@
             // labelPastilla1
             // 
             labelPastilla1.AutoSize = true;
+            labelPastilla1.BackColor = Color.Azure;
             labelPastilla1.Location = new Point(3, 480);
             labelPastilla1.Name = "labelPastilla1";
             labelPastilla1.Size = new Size(49, 15);
@@ -379,6 +399,7 @@
             // labelmarca1
             // 
             labelmarca1.AutoSize = true;
+            labelmarca1.BackColor = Color.Azure;
             labelmarca1.Location = new Point(3, 48);
             labelmarca1.Name = "labelmarca1";
             labelmarca1.Size = new Size(40, 15);
@@ -506,6 +527,14 @@
             linkTienda2.Text = "Comprar Guitarra";
             linkTienda2.LinkClicked += linkTienda2_LinkClicked;
             // 
+            // picFav2
+            // 
+            picFav2.Location = new Point(131, 3);
+            picFav2.Name = "picFav2";
+            picFav2.Size = new Size(100, 48);
+            picFav2.TabIndex = 1;
+            picFav2.TabStop = false;
+            // 
             // tableLayoutPanel5
             // 
             tableLayoutPanel5.Anchor = AnchorStyles.None;
@@ -567,6 +596,7 @@
             // 
             lblModelo2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             lblModelo2.AutoSize = true;
+            lblModelo2.BackColor = Color.Azure;
             lblModelo2.Location = new Point(149, 0);
             lblModelo2.Name = "lblModelo2";
             lblModelo2.Size = new Size(48, 15);
@@ -577,6 +607,7 @@
             // 
             lblYear2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             lblYear2.AutoSize = true;
+            lblYear2.BackColor = Color.Azure;
             lblYear2.Location = new Point(168, 96);
             lblYear2.Name = "lblYear2";
             lblYear2.Size = new Size(29, 15);
@@ -587,6 +618,7 @@
             // 
             lblCuerpo2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             lblCuerpo2.AutoSize = true;
+            lblCuerpo2.BackColor = Color.Azure;
             lblCuerpo2.Location = new Point(151, 144);
             lblCuerpo2.Name = "lblCuerpo2";
             lblCuerpo2.Size = new Size(46, 15);
@@ -597,6 +629,7 @@
             // 
             lblFijacion2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             lblFijacion2.AutoSize = true;
+            lblFijacion2.BackColor = Color.Azure;
             lblFijacion2.Location = new Point(149, 192);
             lblFijacion2.Name = "lblFijacion2";
             lblFijacion2.Size = new Size(48, 15);
@@ -607,6 +640,7 @@
             // 
             lblEscala2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             lblEscala2.AutoSize = true;
+            lblEscala2.BackColor = Color.Azure;
             lblEscala2.Location = new Point(158, 240);
             lblEscala2.Name = "lblEscala2";
             lblEscala2.Size = new Size(39, 15);
@@ -617,6 +651,7 @@
             // 
             lblMaderaCuerpo2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             lblMaderaCuerpo2.AutoSize = true;
+            lblMaderaCuerpo2.BackColor = Color.Azure;
             lblMaderaCuerpo2.Location = new Point(110, 288);
             lblMaderaCuerpo2.Name = "lblMaderaCuerpo2";
             lblMaderaCuerpo2.Size = new Size(87, 15);
@@ -627,6 +662,7 @@
             // 
             lblMaderaMastil2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             lblMaderaMastil2.AutoSize = true;
+            lblMaderaMastil2.BackColor = Color.Azure;
             lblMaderaMastil2.Location = new Point(115, 336);
             lblMaderaMastil2.Name = "lblMaderaMastil2";
             lblMaderaMastil2.Size = new Size(82, 15);
@@ -637,6 +673,7 @@
             // 
             lblMaderaDiapason2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             lblMaderaDiapason2.AutoSize = true;
+            lblMaderaDiapason2.BackColor = Color.Azure;
             lblMaderaDiapason2.Location = new Point(99, 384);
             lblMaderaDiapason2.Name = "lblMaderaDiapason2";
             lblMaderaDiapason2.Size = new Size(98, 15);
@@ -647,6 +684,7 @@
             // 
             lblPuente2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             lblPuente2.AutoSize = true;
+            lblPuente2.BackColor = Color.Azure;
             lblPuente2.Location = new Point(153, 432);
             lblPuente2.Name = "lblPuente2";
             lblPuente2.Size = new Size(44, 15);
@@ -657,6 +695,7 @@
             // 
             lblPastillas2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             lblPastillas2.AutoSize = true;
+            lblPastillas2.BackColor = Color.Azure;
             lblPastillas2.Location = new Point(148, 480);
             lblPastillas2.Name = "lblPastillas2";
             lblPastillas2.Size = new Size(49, 15);
@@ -667,6 +706,7 @@
             // 
             lblMarca2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             lblMarca2.AutoSize = true;
+            lblMarca2.BackColor = Color.Azure;
             lblMarca2.Location = new Point(157, 48);
             lblMarca2.Name = "lblMarca2";
             lblMarca2.Size = new Size(40, 15);
@@ -909,23 +949,6 @@
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
-            // picFav1
-            // 
-            picFav1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            picFav1.Location = new Point(107, 3);
-            picFav1.Name = "picFav1";
-            picFav1.Size = new Size(100, 50);
-            picFav1.TabIndex = 1;
-            picFav1.TabStop = false;
-            // 
-            // picFav2
-            // 
-            picFav2.Location = new Point(131, 3);
-            picFav2.Name = "picFav2";
-            picFav2.Size = new Size(100, 48);
-            picFav2.TabIndex = 1;
-            picFav2.TabStop = false;
-            // 
             // BuscadorComparador
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -940,6 +963,7 @@
             tableLayoutPanel3.ResumeLayout(false);
             tableLayoutPanel4.ResumeLayout(false);
             tableLayoutPanel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)picFav1).EndInit();
             tableLayoutPanel15.ResumeLayout(false);
             tableLayoutPanel16.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)gridBuscar).EndInit();
@@ -953,6 +977,7 @@
             tableLayoutPanel6.ResumeLayout(false);
             tableLayoutPanel8.ResumeLayout(false);
             tableLayoutPanel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)picFav2).EndInit();
             tableLayoutPanel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)picGuit2).EndInit();
             tableLayoutPanel10.ResumeLayout(false);
@@ -966,8 +991,6 @@
             tableLayoutPanel12.ResumeLayout(false);
             tableLayoutPanel12.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)picFav1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)picFav2).EndInit();
             ResumeLayout(false);
         }
 

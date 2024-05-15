@@ -56,9 +56,10 @@ namespace proyectoFinalPublico
 
 
         private void btnVolver_Click(object sender, EventArgs e)
-        {
+        {   landing.Show();
             this.Hide();
-            landing.Show();
+            landing.usuario = null;
+            
         }
 
         private void BuscadorComparador_FormClosing(object sender, FormClosingEventArgs e)
