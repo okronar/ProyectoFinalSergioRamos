@@ -1,4 +1,5 @@
 ﻿using Microsoft.Data.SqlClient;
+using proyectoFinalPublico;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -97,6 +98,82 @@ namespace proyectoFinalAdministrador
             ms.Dispose();
             return bm;
         }
+        //Método que comprueba si existe un usuario en la base de datos
+        public static bool VerificarUsuarioExistente(string email)
+        {
+            bool usuarioExiste = false;
+
+            try
+            {
+
+                SqlConnection connection = new SqlConnection(connectionString);
+
+                connection.Open();
+
+                SqlCommand cmd = new SqlCommand("ComprobarUserExiste", connection);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@Email", email);
+
+                // Obtiene el número de clientes con ese nombre de usuario
+                int count = (int)cmd.ExecuteScalar();
+
+                //Si el resultado es mayor a 0, exite un usuario
+                if (count > 0)
+                {
+                    usuarioExiste = true;
+                }
+
+                connection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al verificar usuario existente");
+                throw;
+            }
+
+            return usuarioExiste;
+        }
+        public static Usuario ObtenerUsuario(string email, string password)
+        {
+            Usuario usuario = null;
+
+            try
+            {
+                string query = "SELECT id, email, password FROM Usuarios WHERE email = @Email AND password = @Password";
+
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@Email", email);
+                        command.Parameters.AddWithValue("@Password", password);
+
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                int id = Convert.ToInt32(reader["id"]);
+                                string Email = reader["email"].ToString();
+                                string Password = reader["password"].ToString();
+
+                                usuario = new Usuario(id, Email);
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Manejar la excepción
+                MessageBox.Show("Error al obtener el usuario: " + ex.Message);
+            }
+
+            return usuario;
+        }
+
+
 
 
     }

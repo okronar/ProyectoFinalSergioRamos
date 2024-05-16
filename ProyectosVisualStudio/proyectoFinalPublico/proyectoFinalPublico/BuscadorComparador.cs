@@ -444,68 +444,68 @@ namespace proyectoFinalPublico
             }
         }
 
-        private void RealizarBusqueda(string nombreGuitarra)
-        {
-            try
-            {
-                SqlConnection connection = new SqlConnection(connectionString);
-                connection.Open();
+        //private void RealizarBusqueda(string nombreGuitarra)
+        //{
+        //    try
+        //    {
+        //        SqlConnection connection = new SqlConnection(connectionString);
+        //        connection.Open();
 
-                // Consulta SQL para buscar guitarras por nombre
-                string query = "SELECT * FROM Guitarras WHERE Modelo LIKE @nombreGuitarra";
+        //        // Consulta SQL para buscar guitarras por nombre
+        //        string query = "SELECT * FROM Guitarras WHERE Modelo LIKE @nombreGuitarra";
 
-                // Crear el comando SQL con la consulta y la conexión
-                SqlCommand cmd = new SqlCommand(query, connection);
+        //        // Crear el comando SQL con la consulta y la conexión
+        //        SqlCommand cmd = new SqlCommand(query, connection);
 
-                // Parametrizar la consulta para buscar coincidencias parciales del nombre de la guitarra
-                cmd.Parameters.AddWithValue("@nombreGuitarra", "%" + nombreGuitarra + "%");
+        //        // Parametrizar la consulta para buscar coincidencias parciales del nombre de la guitarra
+        //        cmd.Parameters.AddWithValue("@nombreGuitarra", "%" + nombreGuitarra + "%");
 
-                // Ejecutar la consulta y obtener los resultados
-                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-                DataTable dt = new DataTable();
-                adapter.Fill(dt);
+        //        // Ejecutar la consulta y obtener los resultados
+        //        SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+        //        DataTable dt = new DataTable();
+        //        adapter.Fill(dt);
 
-                // Mostrar los resultados en el DataGridView
-                gridBuscar.DataSource = dt;
+        //        // Mostrar los resultados en el DataGridView
+        //        gridBuscar.DataSource = dt;
 
-                connection.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error al realizar la búsqueda: " + ex.Message);
-            }
-        }
-        private void RealizarComparacion(string nombreGuitarra)
-        {
-            try
-            {
-                SqlConnection connection = new SqlConnection(connectionString);
-                connection.Open();
+        //        connection.Close();
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show("Error al realizar la búsqueda: " + ex.Message);
+        //    }
+        //}
+        //private void RealizarComparacion(string nombreGuitarra)
+        //{
+        //    try
+        //    {
+        //        SqlConnection connection = new SqlConnection(connectionString);
+        //        connection.Open();
 
-                // Consulta SQL para buscar guitarras por nombre
-                string query = "SELECT * FROM Guitarras WHERE Modelo LIKE @nombreGuitarra";
+        //        // Consulta SQL para buscar guitarras por nombre
+        //        string query = "SELECT * FROM Guitarras WHERE Modelo LIKE @nombreGuitarra";
 
-                // Crear el comando SQL con la consulta y la conexión
-                SqlCommand cmd = new SqlCommand(query, connection);
+        //        // Crear el comando SQL con la consulta y la conexión
+        //        SqlCommand cmd = new SqlCommand(query, connection);
 
-                // Parametrizar la consulta para buscar coincidencias parciales del nombre de la guitarra
-                cmd.Parameters.AddWithValue("@nombreGuitarra", "%" + nombreGuitarra + "%");
+        //        // Parametrizar la consulta para buscar coincidencias parciales del nombre de la guitarra
+        //        cmd.Parameters.AddWithValue("@nombreGuitarra", "%" + nombreGuitarra + "%");
 
-                // Ejecutar la consulta y obtener los resultados
-                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-                DataTable dt = new DataTable();
-                adapter.Fill(dt);
+        //        // Ejecutar la consulta y obtener los resultados
+        //        SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+        //        DataTable dt = new DataTable();
+        //        adapter.Fill(dt);
 
-                // Mostrar los resultados en el DataGridView
-                gridComparar.DataSource = dt;
+        //        // Mostrar los resultados en el DataGridView
+        //        gridComparar.DataSource = dt;
 
-                connection.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error al realizar la búsqueda: " + ex.Message);
-            }
-        }
+        //        connection.Close();
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show("Error al realizar la búsqueda: " + ex.Message);
+        //    }
+        //}
 
 
 

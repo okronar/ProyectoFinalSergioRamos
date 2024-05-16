@@ -413,7 +413,6 @@ namespace ProyectoFinalBuscador
         }
 
 
-
         private void GridActualizarGuitarra_CellClick(object sender, DataGridViewCellEventArgs e)
         {
 

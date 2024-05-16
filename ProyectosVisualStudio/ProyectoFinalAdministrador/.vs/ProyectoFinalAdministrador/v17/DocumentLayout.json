@@ -3,12 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\ProyectoFinalAdministrador\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2FD765D6-8147-4AA1-B7C1-19080B16CD16}|ProyectoFinalBuscador\\ProyectoFinalAdministrador.csproj|c:\\users\\okron\\damd\\proyectofinalsergioramos\\proyectosvisualstudio\\proyectofinaladministrador\\proyectofinalbuscador\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2FD765D6-8147-4AA1-B7C1-19080B16CD16}|ProyectoFinalBuscador\\ProyectoFinalAdministrador.csproj|C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\ProyectoFinalAdministrador\\proyectofinalbuscador\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2FD765D6-8147-4AA1-B7C1-19080B16CD16}|ProyectoFinalBuscador\\ProyectoFinalAdministrador.csproj|solutionrelative:proyectofinalbuscador\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FD765D6-8147-4AA1-B7C1-19080B16CD16}|ProyectoFinalBuscador\\ProyectoFinalAdministrador.csproj|C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\ProyectoFinalAdministrador\\proyectofinalbuscador\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2FD765D6-8147-4AA1-B7C1-19080B16CD16}|ProyectoFinalBuscador\\ProyectoFinalAdministrador.csproj|solutionrelative:proyectofinalbuscador\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2FD765D6-8147-4AA1-B7C1-19080B16CD16}|ProyectoFinalBuscador\\ProyectoFinalAdministrador.csproj|C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\ProyectoFinalAdministrador\\proyectofinalbuscador\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2FD765D6-8147-4AA1-B7C1-19080B16CD16}|ProyectoFinalBuscador\\ProyectoFinalAdministrador.csproj|solutionrelative:proyectofinalbuscador\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{2FD765D6-8147-4AA1-B7C1-19080B16CD16}|ProyectoFinalBuscador\\ProyectoFinalAdministrador.csproj|C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\ProyectoFinalAdministrador\\proyectofinalbuscador\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FD765D6-8147-4AA1-B7C1-19080B16CD16}|ProyectoFinalBuscador\\ProyectoFinalAdministrador.csproj|solutionrelative:proyectofinalbuscador\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FD765D6-8147-4AA1-B7C1-19080B16CD16}|ProyectoFinalBuscador\\ProyectoFinalAdministrador.csproj|C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\ProyectoFinalAdministrador\\proyectofinalbuscador\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FD765D6-8147-4AA1-B7C1-19080B16CD16}|ProyectoFinalBuscador\\ProyectoFinalAdministrador.csproj|solutionrelative:proyectofinalbuscador\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FD765D6-8147-4AA1-B7C1-19080B16CD16}|ProyectoFinalBuscador\\ProyectoFinalAdministrador.csproj|c:\\users\\okron\\damd\\proyectofinalsergioramos\\proyectosvisualstudio\\proyectofinaladministrador\\proyectofinalbuscador\\auxiliar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FD765D6-8147-4AA1-B7C1-19080B16CD16}|ProyectoFinalBuscador\\ProyectoFinalAdministrador.csproj|solutionrelative:proyectofinalbuscador\\auxiliar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FD765D6-8147-4AA1-B7C1-19080B16CD16}|ProyectoFinalBuscador\\ProyectoFinalBuscador.csproj|C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\ProyectoFinalAdministrador\\proyectofinalbuscador\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FD765D6-8147-4AA1-B7C1-19080B16CD16}|ProyectoFinalBuscador\\ProyectoFinalBuscador.csproj|solutionrelative:proyectofinalbuscador\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2FD765D6-8147-4AA1-B7C1-19080B16CD16}|ProyectoFinalBuscador\\ProyectoFinalAdministrador.csproj|C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\ProyectoFinalAdministrador\\proyectofinalbuscador\\guitarra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,14 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{2FD765D6-8147-4AA1-B7C1-19080B16CD16}|ProyectoFinalBuscador\\ProyectoFinalAdministrador.csproj|C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\ProyectoFinalAdministrador\\proyectofinalbuscador\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{2FD765D6-8147-4AA1-B7C1-19080B16CD16}|ProyectoFinalBuscador\\ProyectoFinalAdministrador.csproj|solutionrelative:proyectofinalbuscador\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2FD765D6-8147-4AA1-B7C1-19080B16CD16}|ProyectoFinalBuscador\\ProyectoFinalAdministrador.csproj|C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\ProyectoFinalAdministrador\\proyectofinalbuscador\\auxiliar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2FD765D6-8147-4AA1-B7C1-19080B16CD16}|ProyectoFinalBuscador\\ProyectoFinalAdministrador.csproj|solutionrelative:proyectofinalbuscador\\auxiliar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2FD765D6-8147-4AA1-B7C1-19080B16CD16}|ProyectoFinalBuscador\\ProyectoFinalBuscador.csproj|C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\ProyectoFinalAdministrador\\proyectofinalbuscador\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2FD765D6-8147-4AA1-B7C1-19080B16CD16}|ProyectoFinalBuscador\\ProyectoFinalBuscador.csproj|solutionrelative:proyectofinalbuscador\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,20 +50,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\ProyectoFinalAdministrador\\ProyectoFinalBuscador\\Program.cs",
+              "RelativeDocumentMoniker": "ProyectoFinalBuscador\\Program.cs",
+              "ToolTip": "C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\ProyectoFinalAdministrador\\ProyectoFinalBuscador\\Program.cs",
+              "RelativeToolTip": "ProyectoFinalBuscador\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T09:20:39.477Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\ProyectoFinalAdministrador\\ProyectoFinalBuscador\\Usuario.cs",
+              "RelativeDocumentMoniker": "ProyectoFinalBuscador\\Usuario.cs",
+              "ToolTip": "C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\ProyectoFinalAdministrador\\ProyectoFinalBuscador\\Usuario.cs",
+              "RelativeToolTip": "ProyectoFinalBuscador\\Usuario.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T09:20:07.052Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\ProyectoFinalAdministrador\\ProyectoFinalBuscador\\Form1.cs",
               "RelativeDocumentMoniker": "ProyectoFinalBuscador\\Form1.cs",
               "ToolTip": "C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\ProyectoFinalAdministrador\\ProyectoFinalBuscador\\Form1.cs",
               "RelativeToolTip": "ProyectoFinalBuscador\\Form1.cs",
-              "ViewState": "AQIAAFUBAAAAAAAAAAAYwHEBAAAAAAAA",
+              "ViewState": "AQIAAJ4BAAAAAAAAAAAAAJ4BAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-01T11:32:53.045Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Guitarra.cs",
               "DocumentMoniker": "C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\ProyectoFinalAdministrador\\ProyectoFinalBuscador\\Guitarra.cs",
               "RelativeDocumentMoniker": "ProyectoFinalBuscador\\Guitarra.cs",
@@ -67,7 +101,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "App.config",
               "DocumentMoniker": "C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\ProyectoFinalAdministrador\\ProyectoFinalBuscador\\App.config",
               "RelativeDocumentMoniker": "ProyectoFinalBuscador\\App.config",
@@ -79,14 +113,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Form1.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\ProyectoFinalAdministrador\\ProyectoFinalBuscador\\Form1.cs",
               "RelativeDocumentMoniker": "ProyectoFinalBuscador\\Form1.cs",
               "ToolTip": "C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\ProyectoFinalAdministrador\\ProyectoFinalBuscador\\Form1.cs [Dise\u00F1o]",
               "RelativeToolTip": "ProyectoFinalBuscador\\Form1.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-27T09:26:39.694Z"
+              "WhenOpened": "2024-04-27T09:26:39.694Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
@@ -108,9 +143,10 @@
               "RelativeDocumentMoniker": "ProyectoFinalBuscador\\Auxiliar.cs",
               "ToolTip": "C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\ProyectoFinalAdministrador\\ProyectoFinalBuscador\\Auxiliar.cs",
               "RelativeToolTip": "ProyectoFinalBuscador\\Auxiliar.cs",
-              "ViewState": "AQIAACgAAAAAAAAAAAAnwFIAAAAoAAAA",
+              "ViewState": "AQIAAF8AAAAAAAAAAAAgwIcAAABLAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-16T14:49:09.956Z"
+              "WhenOpened": "2024-04-16T14:49:09.956Z",
+              "EditorCaption": ""
             }
           ]
         }
