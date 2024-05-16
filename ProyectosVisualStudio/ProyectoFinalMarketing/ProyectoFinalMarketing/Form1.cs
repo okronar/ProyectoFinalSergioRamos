@@ -21,6 +21,7 @@ namespace ProyectoFinalMarketing
 
             visualizarPopular();
             visualizarMenosPopular();
+            visualizarMasPopuMarca();
 
 
 
