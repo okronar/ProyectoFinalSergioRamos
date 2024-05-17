@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\ProyectoFinalAdministrador\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2FD765D6-8147-4AA1-B7C1-19080B16CD16}|ProyectoFinalBuscador\\ProyectoFinalAdministrador.csproj|C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\ProyectoFinalAdministrador\\proyectofinalbuscador\\auxiliar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2FD765D6-8147-4AA1-B7C1-19080B16CD16}|ProyectoFinalBuscador\\ProyectoFinalAdministrador.csproj|c:\\users\\okron\\damd\\proyectofinalsergioramos\\proyectosvisualstudio\\proyectofinaladministrador\\proyectofinalbuscador\\auxiliar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2FD765D6-8147-4AA1-B7C1-19080B16CD16}|ProyectoFinalBuscador\\ProyectoFinalAdministrador.csproj|solutionrelative:proyectofinalbuscador\\auxiliar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -19,7 +19,7 @@
       "RelativeMoniker": "D:0:0:{2FD765D6-8147-4AA1-B7C1-19080B16CD16}|ProyectoFinalBuscador\\ProyectoFinalAdministrador.csproj|solutionrelative:proyectofinalbuscador\\guitarra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2FD765D6-8147-4AA1-B7C1-19080B16CD16}|ProyectoFinalBuscador\\ProyectoFinalAdministrador.csproj|c:\\users\\okron\\damd\\proyectofinalsergioramos\\proyectosvisualstudio\\proyectofinaladministrador\\proyectofinalbuscador\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{2FD765D6-8147-4AA1-B7C1-19080B16CD16}|ProyectoFinalBuscador\\ProyectoFinalAdministrador.csproj|C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\ProyectoFinalAdministrador\\proyectofinalbuscador\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{2FD765D6-8147-4AA1-B7C1-19080B16CD16}|ProyectoFinalBuscador\\ProyectoFinalAdministrador.csproj|solutionrelative:proyectofinalbuscador\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
@@ -82,8 +82,7 @@
               "RelativeToolTip": "ProyectoFinalBuscador\\Form1.cs",
               "ViewState": "AQIAACQAAAAAAAAAAAAAAJ4BAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T11:32:53.045Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-01T11:32:53.045Z"
             },
             {
               "$type": "Document",
@@ -95,8 +94,7 @@
               "RelativeToolTip": "ProyectoFinalBuscador\\Guitarra.cs",
               "ViewState": "AQIAABoAAAAAAAAAAAAcwCAAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-04T09:11:22.543Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-04T09:11:22.543Z"
             },
             {
               "$type": "Document",
@@ -108,8 +106,7 @@
               "RelativeToolTip": "ProyectoFinalBuscador\\App.config",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAADCAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-05-07T13:58:34.043Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-07T13:58:34.043Z"
             },
             {
               "$type": "Document",
@@ -120,8 +117,7 @@
               "ToolTip": "C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\ProyectoFinalAdministrador\\ProyectoFinalBuscador\\Form1.cs [Dise\u00F1o]",
               "RelativeToolTip": "ProyectoFinalBuscador\\Form1.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-27T09:26:39.694Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-04-27T09:26:39.694Z"
             },
             {
               "$type": "Document",
@@ -143,7 +139,7 @@
               "RelativeDocumentMoniker": "ProyectoFinalBuscador\\Auxiliar.cs",
               "ToolTip": "C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\ProyectoFinalAdministrador\\ProyectoFinalBuscador\\Auxiliar.cs",
               "RelativeToolTip": "ProyectoFinalBuscador\\Auxiliar.cs",
-              "ViewState": "AQIAAFMAAAAAAAAAAAAwwFgAAAAAAAAA",
+              "ViewState": "AQIAABAAAAAAAAAAAAA5wDEAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-16T14:49:09.956Z",
               "EditorCaption": ""

@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\proyectoFinalPublico\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{40E94040-096D-43F1-85CB-EAD5D6E4AF3B}|proyectoFinalPublico\\proyectoFinalPublico.csproj|C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\proyectoFinalPublico\\proyectofinalpublico\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{40E94040-096D-43F1-85CB-EAD5D6E4AF3B}|proyectoFinalPublico\\proyectoFinalPublico.csproj|c:\\users\\okron\\damd\\proyectofinalsergioramos\\proyectosvisualstudio\\proyectofinalpublico\\proyectofinalpublico\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{40E94040-096D-43F1-85CB-EAD5D6E4AF3B}|proyectoFinalPublico\\proyectoFinalPublico.csproj|solutionrelative:proyectofinalpublico\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40E94040-096D-43F1-85CB-EAD5D6E4AF3B}|proyectoFinalPublico\\proyectoFinalPublico.csproj|c:\\users\\okron\\damd\\proyectofinalsergioramos\\proyectosvisualstudio\\proyectofinalpublico\\proyectofinalpublico\\terminosycondiciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{40E94040-096D-43F1-85CB-EAD5D6E4AF3B}|proyectoFinalPublico\\proyectoFinalPublico.csproj|C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\proyectoFinalPublico\\proyectofinalpublico\\terminosycondiciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{40E94040-096D-43F1-85CB-EAD5D6E4AF3B}|proyectoFinalPublico\\proyectoFinalPublico.csproj|solutionrelative:proyectofinalpublico\\terminosycondiciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -106,8 +106,7 @@
               "RelativeToolTip": "proyectoFinalPublico\\TerminosYCondiciones.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-11T22:11:22.114Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-11T22:11:22.114Z"
             },
             {
               "$type": "Document",
@@ -117,7 +116,7 @@
               "RelativeDocumentMoniker": "proyectoFinalPublico\\Form1.cs",
               "ToolTip": "C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\proyectoFinalPublico\\proyectoFinalPublico\\Form1.cs",
               "RelativeToolTip": "proyectoFinalPublico\\Form1.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAowDQAAABGAAAA",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAowCoAAABJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-29T16:32:20.477Z",
               "EditorCaption": ""
@@ -200,8 +199,7 @@
               "ToolTip": "C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\proyectoFinalPublico\\proyectoFinalPublico\\Form1.cs [Dise\u00F1o]",
               "RelativeToolTip": "proyectoFinalPublico\\Form1.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T14:47:10.949Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-05-05T14:47:10.949Z"
             },
             {
               "$type": "Document",
@@ -237,8 +235,7 @@
               "RelativeToolTip": "proyectoFinalPublico\\Form1.Designer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T15:09:54.216Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-07T15:09:54.216Z"
             }
           ]
         }
