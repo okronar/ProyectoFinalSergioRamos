@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BuscadorComparador));
             tableLayoutPanel1 = new TableLayoutPanel();
             tableLayoutPanel3 = new TableLayoutPanel();
             tableLayoutPanel4 = new TableLayoutPanel();
@@ -956,6 +957,7 @@
             BackColor = Color.FromArgb(252, 248, 239);
             ClientSize = new Size(1253, 1048);
             Controls.Add(tableLayoutPanel1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "BuscadorComparador";
             Text = "BuscadorComparador";
             FormClosing += BuscadorComparador_FormClosing;

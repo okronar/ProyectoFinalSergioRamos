@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "proyectoFinalPublico", "proyectoFinalPublico\proyectoFinalPublico.csproj", "{40E94040-096D-43F1-85CB-EAD5D6E4AF3B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "proyectoFinalPublico", "proyectoFinalPublico\proyectoFinalPublico.csproj", "{40E94040-096D-43F1-85CB-EAD5D6E4AF3B}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetupBuscador", "SetupBuscador\SetupBuscador.vdproj", "{F2AC76CF-1026-43AC-A2CA-FD51323CB377}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,8 @@ Global
 		{40E94040-096D-43F1-85CB-EAD5D6E4AF3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40E94040-096D-43F1-85CB-EAD5D6E4AF3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40E94040-096D-43F1-85CB-EAD5D6E4AF3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2AC76CF-1026-43AC-A2CA-FD51323CB377}.Debug|Any CPU.ActiveCfg = Debug
+		{F2AC76CF-1026-43AC-A2CA-FD51323CB377}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

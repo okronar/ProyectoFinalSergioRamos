@@ -167,6 +167,7 @@ namespace ProyectoFinalBuscador
                         connection.Close();
                         MessageBox.Show("Exito insertando guitarra");
                         visualizarGuitarras();
+                        limpito();
 
                     }
                 }
@@ -179,6 +180,22 @@ namespace ProyectoFinalBuscador
             {
                 MessageBox.Show("Fallo, revise si el producto ya existe: " + ex.Message);
             }
+        }
+
+        private void limpito()
+        {
+            txtbModelo.Text = null;
+            txtbMarca.Text = null;
+            txtbCuerpo.Text = null;
+            txtBEscala.Text = null;
+            txtbMaderaMastil.Text = null;
+            txtbMaderaDiapa.Text = null;    
+            txtbMaderaCuer.Text = null;
+            txtbUrl.Text = null;
+            txtbYear.Text = null;
+            txtbFijac.Text = null;
+            txtbPastillas.Text = null;
+            txtbPuente.Text = null;
         }
 
 
