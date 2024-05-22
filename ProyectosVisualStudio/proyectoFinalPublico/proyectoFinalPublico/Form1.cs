@@ -59,6 +59,10 @@ namespace proyectoFinalPublico
                             
                             
                         }else if (loginSuccessful == 0) {
+
+
+                            MessageBox.Show("Contraseña incorrecta", "Error");
+
                            
                         }
                         else if (loginSuccessful == -1) {

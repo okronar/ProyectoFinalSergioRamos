@@ -56,7 +56,7 @@
             tabBusquedas.Location = new Point(0, 0);
             tabBusquedas.Name = "tabBusquedas";
             tabBusquedas.SelectedIndex = 0;
-            tabBusquedas.Size = new Size(312, 945);
+            tabBusquedas.Size = new Size(477, 945);
             tabBusquedas.TabIndex = 0;
             // 
             // MasPopular
@@ -65,7 +65,7 @@
             MasPopular.Location = new Point(4, 24);
             MasPopular.Name = "MasPopular";
             MasPopular.Padding = new Padding(3);
-            MasPopular.Size = new Size(304, 917);
+            MasPopular.Size = new Size(469, 917);
             MasPopular.TabIndex = 0;
             MasPopular.Text = "MasPopular";
             MasPopular.UseVisualStyleBackColor = true;
@@ -80,7 +80,7 @@
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 1;
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel1.Size = new Size(298, 911);
+            tableLayoutPanel1.Size = new Size(463, 911);
             tableLayoutPanel1.TabIndex = 0;
             // 
             // gridMasPopu
@@ -89,7 +89,7 @@
             gridMasPopu.Dock = DockStyle.Fill;
             gridMasPopu.Location = new Point(3, 3);
             gridMasPopu.Name = "gridMasPopu";
-            gridMasPopu.Size = new Size(292, 905);
+            gridMasPopu.Size = new Size(457, 905);
             gridMasPopu.TabIndex = 0;
             // 
             // PopularMarca
@@ -98,7 +98,7 @@
             PopularMarca.Location = new Point(4, 24);
             PopularMarca.Name = "PopularMarca";
             PopularMarca.Padding = new Padding(3);
-            PopularMarca.Size = new Size(1176, 917);
+            PopularMarca.Size = new Size(419, 917);
             PopularMarca.TabIndex = 1;
             PopularMarca.Text = "PopularMarca";
             PopularMarca.UseVisualStyleBackColor = true;
@@ -109,7 +109,7 @@
             gridPopuMarca.Dock = DockStyle.Fill;
             gridPopuMarca.Location = new Point(3, 3);
             gridPopuMarca.Name = "gridPopuMarca";
-            gridPopuMarca.Size = new Size(1170, 911);
+            gridPopuMarca.Size = new Size(413, 911);
             gridPopuMarca.TabIndex = 0;
             // 
             // Menos_Popular
@@ -118,7 +118,7 @@
             Menos_Popular.Location = new Point(4, 24);
             Menos_Popular.Name = "Menos_Popular";
             Menos_Popular.Padding = new Padding(3);
-            Menos_Popular.Size = new Size(1176, 917);
+            Menos_Popular.Size = new Size(419, 917);
             Menos_Popular.TabIndex = 2;
             Menos_Popular.Text = "MenosPopular";
             Menos_Popular.UseVisualStyleBackColor = true;
@@ -129,14 +129,14 @@
             gridMenosPopu.Dock = DockStyle.Fill;
             gridMenosPopu.Location = new Point(3, 3);
             gridMenosPopu.Name = "gridMenosPopu";
-            gridMenosPopu.Size = new Size(1170, 911);
+            gridMenosPopu.Size = new Size(413, 911);
             gridMenosPopu.TabIndex = 0;
             // 
             // Marketing
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(312, 945);
+            ClientSize = new Size(477, 945);
             Controls.Add(tabBusquedas);
             Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;

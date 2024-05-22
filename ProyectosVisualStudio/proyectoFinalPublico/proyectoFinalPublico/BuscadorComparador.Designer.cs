@@ -229,11 +229,11 @@
             tableLayoutPanel16.ColumnCount = 1;
             tableLayoutPanel16.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel16.Controls.Add(gridBuscar, 0, 0);
-            tableLayoutPanel16.Location = new Point(119, 48);
+            tableLayoutPanel16.Location = new Point(79, 48);
             tableLayoutPanel16.Name = "tableLayoutPanel16";
             tableLayoutPanel16.RowCount = 1;
             tableLayoutPanel16.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel16.Size = new Size(375, 71);
+            tableLayoutPanel16.Size = new Size(455, 87);
             tableLayoutPanel16.TabIndex = 3;
             // 
             // gridBuscar
@@ -243,7 +243,7 @@
             gridBuscar.Dock = DockStyle.Fill;
             gridBuscar.Location = new Point(3, 3);
             gridBuscar.Name = "gridBuscar";
-            gridBuscar.Size = new Size(369, 65);
+            gridBuscar.Size = new Size(449, 81);
             gridBuscar.TabIndex = 0;
             gridBuscar.Visible = false;
             gridBuscar.CellClick += gridBuscar_CellClick;
@@ -749,11 +749,11 @@
             tableLayoutPanel2.ColumnCount = 1;
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel2.Controls.Add(gridComparar, 0, 0);
-            tableLayoutPanel2.Location = new Point(119, 45);
+            tableLayoutPanel2.Location = new Point(80, 45);
             tableLayoutPanel2.Name = "tableLayoutPanel2";
             tableLayoutPanel2.RowCount = 1;
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel2.Size = new Size(375, 71);
+            tableLayoutPanel2.Size = new Size(454, 91);
             tableLayoutPanel2.TabIndex = 3;
             // 
             // gridComparar
@@ -763,7 +763,7 @@
             gridComparar.Dock = DockStyle.Fill;
             gridComparar.Location = new Point(3, 3);
             gridComparar.Name = "gridComparar";
-            gridComparar.Size = new Size(369, 65);
+            gridComparar.Size = new Size(448, 85);
             gridComparar.TabIndex = 0;
             gridComparar.Visible = false;
             gridComparar.CellClick += gridComparar_CellClick;

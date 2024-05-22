@@ -83,34 +83,74 @@ namespace ProyectoFinalMarketing
 
             }
         }
+
         private void visualizarMasPopuMarca()
         {
-            string sqlQuery = "WITH GuitarraPopularPorMarca AS (SELECT Modelo, Marca, IdGuitarra, ROW_NUMBER() OVER (PARTITION BY Marca ORDER BY COUNT(*) DESC) AS Rank FROM " +
-                "Busquedas GROUP BY Marca, Modelo, IdGuitarra) SELECT Modelo, Marca, IdGuitarra FROM GuitarraPopularPorMarca WHERE Rank = 1;";
-
+            string sqlQuery = @"
+        WITH GuitarraPopularPorMarca AS (
+            SELECT 
+                Modelo, 
+                Marca, 
+                IdGuitarra, 
+                COUNT(*) AS NumeroDeBusquedas,
+                ROW_NUMBER() OVER (PARTITION BY Marca ORDER BY COUNT(*) DESC) AS Rank
+            FROM Busquedas
+            GROUP BY Marca, Modelo, IdGuitarra
+        )
+        SELECT 
+            Modelo, 
+            Marca, 
+            IdGuitarra,
+            NumeroDeBusquedas
+        FROM GuitarraPopularPorMarca
+        WHERE Rank = 1;
+    ";
 
             try
             {
-
-                SqlDataAdapter adapter = new SqlDataAdapter(sqlQuery, connectionString);
-                SqlConnection connection = new SqlConnection(connectionString);
-
-                DataTable dt = new DataTable();
-                adapter.Fill(dt);
-
-                gridPopuMarca.DataSource = dt;
-
-
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    SqlDataAdapter adapter = new SqlDataAdapter(sqlQuery, connection);
+                    DataTable dt = new DataTable();
+                    adapter.Fill(dt);
+                    gridPopuMarca.DataSource = dt;
+                }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                MessageBox.Show("Fallo");
+                MessageBox.Show("Fallo: " + ex.Message);
                 throw;
-
-
             }
         }
+
+        //private void visualizarMasPopuMarca()
+        //{
+        //    string sqlQuery = "WITH GuitarraPopularPorMarca AS (SELECT Modelo, Marca, IdGuitarra, ROW_NUMBER() OVER (PARTITION BY Marca ORDER BY COUNT(*) DESC) AS Rank FROM " +
+        //        "Busquedas GROUP BY Marca, Modelo, IdGuitarra) SELECT Modelo, Marca, IdGuitarra FROM GuitarraPopularPorMarca WHERE Rank = 1;";
+
+
+        //    try
+        //    {
+
+        //        SqlDataAdapter adapter = new SqlDataAdapter(sqlQuery, connectionString);
+        //        SqlConnection connection = new SqlConnection(connectionString);
+
+        //        DataTable dt = new DataTable();
+        //        adapter.Fill(dt);
+
+        //        gridPopuMarca.DataSource = dt;
+
+
+        //    }
+        //    catch (Exception)
+        //    {
+
+        //        MessageBox.Show("Fallo");
+        //        throw;
+
+
+        //    }
+        //}
 
 
 

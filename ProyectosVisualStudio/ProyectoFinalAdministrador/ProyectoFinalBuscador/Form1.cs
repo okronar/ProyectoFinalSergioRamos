@@ -50,7 +50,8 @@ namespace ProyectoFinalBuscador
         }
         private void visualizarUsuarios()
         {
-            string sqlQuery = "SELECT Email, Id FROM Usuarios";
+            string sqlQuery = "SELECT Email, Id FROM Usuarios WHERE Email IS NOT NULL";
+
 
             try
             {
