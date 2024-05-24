@@ -406,6 +406,7 @@ namespace ProyectoFinalBuscador
             }
         }
 
+
         private void EliminarDirectorioCliente(string clienteId)
         {
             try
@@ -417,11 +418,21 @@ namespace ProyectoFinalBuscador
                 {
                     Directory.Delete(rutaDatosUsuarios, true); // true para eliminar subdirectorios y archivos
                     MessageBox.Show("Directorio del cliente eliminado correctamente.");
-
                 }
                 else
                 {
-                    MessageBox.Show("El directorio del cliente no existe.");
+                    // Ruta alternativa para instalación
+                    string rutaAlternativa = Path.Combine(@"C:\Program Files (x86)\Default Company Name\SetupBuscador\data\", clienteId);
+
+                    if (Directory.Exists(rutaAlternativa))
+                    {
+                        Directory.Delete(rutaAlternativa, true); // true para eliminar subdirectorios y archivos
+                        MessageBox.Show("Directorio del cliente en ruta alternativa eliminado correctamente.");
+                    }
+                    else
+                    {
+                        MessageBox.Show("El directorio del cliente no existe.");
+                    }
                 }
             }
             catch (Exception ex)
@@ -429,6 +440,31 @@ namespace ProyectoFinalBuscador
                 MessageBox.Show("Error al eliminar el directorio del cliente: " + ex.Message);
             }
         }
+
+
+        //private void EliminarDirectorioCliente(string clienteId)
+        //{
+        //    try
+        //    {
+        //        string proyectoPath = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location); // Ruta del ejecutable del proyecto
+        //        string rutaDatosUsuarios = Path.Combine(proyectoPath, @"..\..\..\..\..\proyectoFinalPublico\proyectoFinalPublico\bin\Debug\net8.0-windows\data\", clienteId);
+
+        //        if (Directory.Exists(rutaDatosUsuarios))
+        //        {
+        //            Directory.Delete(rutaDatosUsuarios, true); // true para eliminar subdirectorios y archivos
+        //            MessageBox.Show("Directorio del cliente eliminado correctamente.");
+
+        //        }
+        //        else
+        //        {
+        //            MessageBox.Show("El directorio del cliente no existe.");
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show("Error al eliminar el directorio del cliente: " + ex.Message);
+        //    }
+        //}
 
 
         private void GridActualizarGuitarra_CellClick(object sender, DataGridViewCellEventArgs e)

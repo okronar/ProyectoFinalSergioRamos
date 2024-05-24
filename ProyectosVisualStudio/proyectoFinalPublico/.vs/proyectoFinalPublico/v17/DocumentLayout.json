@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\proyectoFinalPublico\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{40E94040-096D-43F1-85CB-EAD5D6E4AF3B}|proyectoFinalPublico\\proyectoFinalPublico.csproj|C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\proyectoFinalPublico\\proyectofinalpublico\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{40E94040-096D-43F1-85CB-EAD5D6E4AF3B}|proyectoFinalPublico\\proyectoFinalPublico.csproj|c:\\users\\okron\\damd\\proyectofinalsergioramos\\proyectosvisualstudio\\proyectofinalpublico\\proyectofinalpublico\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{40E94040-096D-43F1-85CB-EAD5D6E4AF3B}|proyectoFinalPublico\\proyectoFinalPublico.csproj|solutionrelative:proyectofinalpublico\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40E94040-096D-43F1-85CB-EAD5D6E4AF3B}|proyectoFinalPublico\\proyectoFinalPublico.csproj|c:\\users\\okron\\damd\\proyectofinalsergioramos\\proyectosvisualstudio\\proyectofinalpublico\\proyectofinalpublico\\buscadorcomparador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{40E94040-096D-43F1-85CB-EAD5D6E4AF3B}|proyectoFinalPublico\\proyectoFinalPublico.csproj|C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\proyectoFinalPublico\\proyectofinalpublico\\buscadorcomparador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{40E94040-096D-43F1-85CB-EAD5D6E4AF3B}|proyectoFinalPublico\\proyectoFinalPublico.csproj|solutionrelative:proyectofinalpublico\\buscadorcomparador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -50,35 +50,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BuscadorComparador.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\proyectoFinalPublico\\proyectoFinalPublico\\BuscadorComparador.cs",
-              "RelativeDocumentMoniker": "proyectoFinalPublico\\BuscadorComparador.cs",
-              "ToolTip": "C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\proyectoFinalPublico\\proyectoFinalPublico\\BuscadorComparador.cs [Dise\u00F1o]",
-              "RelativeToolTip": "proyectoFinalPublico\\BuscadorComparador.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T19:37:41.86Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Registro.cs",
-              "DocumentMoniker": "C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\proyectoFinalPublico\\proyectoFinalPublico\\Registro.cs",
-              "RelativeDocumentMoniker": "proyectoFinalPublico\\Registro.cs",
-              "ToolTip": "C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\proyectoFinalPublico\\proyectoFinalPublico\\Registro.cs",
-              "RelativeToolTip": "proyectoFinalPublico\\Registro.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAAAwwFAAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T16:32:39.985Z"
             },
             {
               "$type": "Document",
@@ -92,6 +68,29 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-29T16:32:20.477Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BuscadorComparador.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\proyectoFinalPublico\\proyectoFinalPublico\\BuscadorComparador.cs",
+              "RelativeDocumentMoniker": "proyectoFinalPublico\\BuscadorComparador.cs",
+              "ToolTip": "C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\proyectoFinalPublico\\proyectoFinalPublico\\BuscadorComparador.cs [Dise\u00F1o]",
+              "RelativeToolTip": "proyectoFinalPublico\\BuscadorComparador.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T19:37:41.86Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Registro.cs",
+              "DocumentMoniker": "C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\proyectoFinalPublico\\proyectoFinalPublico\\Registro.cs",
+              "RelativeDocumentMoniker": "proyectoFinalPublico\\Registro.cs",
+              "ToolTip": "C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\proyectoFinalPublico\\proyectoFinalPublico\\Registro.cs",
+              "RelativeToolTip": "proyectoFinalPublico\\Registro.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAwwFAAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T16:32:39.985Z"
             },
             {
               "$type": "Document",
@@ -137,8 +136,7 @@
               "ToolTip": "C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\proyectoFinalPublico\\proyectoFinalPublico\\Form1.cs [Dise\u00F1o]",
               "RelativeToolTip": "proyectoFinalPublico\\Form1.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T14:47:10.949Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-05-05T14:47:10.949Z"
             },
             {
               "$type": "Document",
@@ -174,8 +172,7 @@
               "RelativeToolTip": "proyectoFinalPublico\\Form1.Designer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T15:09:54.216Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-07T15:09:54.216Z"
             }
           ]
         }
