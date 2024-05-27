@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\ProyectoFinalAdministrador\\ProyectoFinalBuscador\\ProyectoFinalAdministrador.csproj": {}
+    "D:\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\ProyectoFinalAdministrador\\ProyectoFinalBuscador\\ProyectoFinalAdministrador.csproj": {}
   },
   "projects": {
-    "C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\ProyectoFinalAdministrador\\ProyectoFinalBuscador\\ProyectoFinalAdministrador.csproj": {
+    "D:\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\ProyectoFinalAdministrador\\ProyectoFinalBuscador\\ProyectoFinalAdministrador.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\ProyectoFinalAdministrador\\ProyectoFinalBuscador\\ProyectoFinalAdministrador.csproj",
+        "projectUniqueName": "D:\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\ProyectoFinalAdministrador\\ProyectoFinalBuscador\\ProyectoFinalAdministrador.csproj",
         "projectName": "ProyectoFinalAdministrador",
-        "projectPath": "C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\ProyectoFinalAdministrador\\ProyectoFinalBuscador\\ProyectoFinalAdministrador.csproj",
-        "packagesPath": "C:\\Users\\okron\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\okron\\DAMD\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\ProyectoFinalAdministrador\\ProyectoFinalBuscador\\obj\\",
+        "projectPath": "D:\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\ProyectoFinalAdministrador\\ProyectoFinalBuscador\\ProyectoFinalAdministrador.csproj",
+        "packagesPath": "C:\\Users\\Alumno\\.nuget\\packages\\",
+        "outputPath": "D:\\ProyectoFinalSergioRamos\\ProyectosVisualStudio\\ProyectoFinalAdministrador\\ProyectoFinalBuscador\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\okron\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Alumno\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
